@@ -1,4 +1,3 @@
-{% if page.title == "splash" %}
 main:
   - title: "Quick-Start Guide"
     url: /docs/quick-start-guide/
@@ -14,12 +13,3 @@ main:
     url: /collection-archive/
   - title: "External Link"
     url: https://bing.com
-{% elseif page.title == "about" %}
-main:
-  - title: "Quick-Start Guide"
-    url: /docs/quick-start-guide/
-{% else %}
-main:
-  - title: "External Link"
-    url: https://google.com
-{% endif %}
