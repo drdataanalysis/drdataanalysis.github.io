@@ -143,7 +143,6 @@ footer:
 include:
   - .htaccess
   - _pages
-  - index.md
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
