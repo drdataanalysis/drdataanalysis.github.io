@@ -7,7 +7,7 @@ header:
   overlay_image: /assets/images/banner.png
   actions:
     - label: "About Me"
-      url: "/#about-me"
+      url: "/#about"
   caption: "Photo credit: [**DataKind**](https://twitter.com/datakinduk)"
 excerpt: "My Portfolio and Blog!."
 intro: 
@@ -55,5 +55,7 @@ feature_row4:
 
 {% include feature_row id="intro" type="center" %}
 <br>
+<a name="about"></a>
+<br><br>
 # About Me
 {% include feature_row %}
