@@ -3,8 +3,8 @@ title: "DR Data Analysis"
 layout: splash
 permalink: /
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.8"
+  overlay_color: "#ffffff"
+  overlay_filter: "0.6"
   overlay_image: /assets/images/banner.png
   actions:
     - label: "About Me"
@@ -23,8 +23,8 @@ feature_row:
     title: "Skilled Data Analyst"
     excerpt: "Over a decade of experience of working with customers to understand their data. Successfully lead on moving from legacy approaches to utilizing modern and scalable tools like **Power BI**."
   - image_path: /assets/images/developing.svg
-    title: "Developing"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    title: "Developing Data Scientist"
+    excerpt: "In the past few years I have been expanding my use of **Python** in particular for Text Analysis and Web Scraping.<br><br>[More detail here...](/readmore)"
 feature_row2:
   - image_path: "https://openclipart.org/image/800px/303266"
     alt: "placeholder image 2"
@@ -49,11 +49,39 @@ feature_row4:
     url: "#test-link"
     btn_label: "Read More"
     btn_class: "btn--primary"
+feature_row5:
+  - url: "#test-link"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+
 ---
 
 {% include feature_row id="intro" type="center" %}
 <br>
 <a name="about"></a>
-<br><br>
+<br>
+<br>
 # About Me
+<table style="width: 80%; margin-left: auto; margin-right: auto;">
+<tr>
+<td>
 {% include feature_row %}
+</td>
+</tr>
+</table>
+<br>
+<a name="portfolio"></a>
+<br>
+# Portfolio
+<table style="width: 80%; margin-left: auto; margin-right: auto;">
+<tr>
+<td>
+{% include feature_row id="feature_row2" type="left" %}
+</td>
+</tr>
+<tr>
+<td>
+{% include feature_row id="feature_row3" type="right" %}
+</td>
+</tr>
+</table>
