@@ -12,26 +12,23 @@ header:
   caption: "Photo credit: [**DataKind**](https://twitter.com/datakinduk)"
 excerpt: "My Portfolio and Blog!."
 intro: 
-  - excerpt: 'Thank you for visitng!'
+  - excerpt: 'Thank you for visiting!'
 feature_row:
-  - image_path: "https://openclipart.org/image/800px/309895"
+  - image_path: /assets/images/team.svg
     alt: "placeholder image 1"
-    title: "Placeholder 1"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-  - image_path: "https://openclipart.org/image/800px/303266"
+    title: "Experienced Manager"
+    excerpt: "I have lead high performance data teams since **2015** supporting major change initiatives. I am immensely proud of the amazing progress we have made and our collaborative culture."
+  - image_path: /assets/images/experience.svg
     alt: "placeholder image 2"
-    title: "Placeholder 2"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: "https://openclipart.org/image/800px/300280"
-    title: "Placeholder 3"
+    title: "Skilled Data Analyst"
+    excerpt: "Over a decade of experience of working with customers to understand their data. Successfully lead on moving from legacy approaches to utilizing modern and scalable tools like **Power BI**."
+  - image_path: /assets/images/developing.svg
+    title: "Developing"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 feature_row2:
   - image_path: "https://openclipart.org/image/800px/303266"
     alt: "placeholder image 2"
-    title: "Placeholder Image Left Aligned"
+    title: ""
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
     url: "#test-link"
     btn_label: "Read More"

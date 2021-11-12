@@ -20,6 +20,7 @@
 
 .archive__item {
   position: relative;
+  text-align: center;
 
   a {
     position: relative;
@@ -37,6 +38,7 @@
   font-size: $type-size-5;
   color: $muted-text-color;
   border-bottom: 1px solid $border-color;
+  text-align: center;
 
   + .list__item .archive__item-title {
     margin-top: 0.5em;
@@ -49,6 +51,7 @@
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: center;
 
   a[rel="permalink"]::before {
     content: '';
@@ -91,7 +94,10 @@
   overflow: hidden;
 
   img {
-    width: 100%;
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -109,6 +115,7 @@
   z-index: 5;
   opacity: 0.5;
   border-radius: $border-radius 0 0 0;
+  text-align: center;
 
   @include breakpoint($large) {
     padding: 5px 10px;

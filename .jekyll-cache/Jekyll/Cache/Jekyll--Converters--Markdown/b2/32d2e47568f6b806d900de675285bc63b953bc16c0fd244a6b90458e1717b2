@@ -1,0 +1,45 @@
+I"Ê
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item--center">
+      <div class="archive__item">
+        
+
+        <div class="archive__item-body">
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Thank you for visitng!</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<p><br />
+<a name="about"></a>
+<br /><br /></p>
+<h1 id="about-me">About Me</h1>
+<p><br />
+&lt;table style=‚Äùwidth: 80%, margin-left: auto;&gt;</p>
+<tr>
+    <td>
+      <img src="/assets/images/team.png" />
+    </td>
+    <td>
+      <img src="/assets/images/team.png" />
+    </td>
+    <td>
+      <img src="/assets/images/team.png" />
+    </td>
+  </tr>
+<p>&lt;/table&gt;</p>
+:ET
