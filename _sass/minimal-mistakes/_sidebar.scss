@@ -33,6 +33,7 @@
          viewport height - nav height - masthead x-padding
       */
       max-height: calc(100vh - #{$nav-height} - 2em);
+      margin-top: -40px;
     }
   }
 
@@ -73,6 +74,7 @@
 
 .sidebar__right {
   margin-bottom: 1em;
+
 
   @include breakpoint($large) {
     position: absolute;
@@ -126,6 +128,7 @@
   vertical-align: top;
   width: 36px;
   height: 36px;
+  margin-top: 40px;
 
   @include breakpoint($large) {
     display: block;

@@ -93,7 +93,8 @@ analytics:
 # Site Author
 author:
   name             : "Dean Robinson"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  nicname          : "Dean"
+  avatar           : https://avatars.githubusercontent.com/u/43471619?s=400&u=2740f03b579edf5c1c1f6471c86f5e4808de7a51&v=4
   bio              : "I am a data analysit and growing data scientist."
   location         : "Sheffield, UK"
   email            :

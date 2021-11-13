@@ -51,9 +51,9 @@
 <meta name="description" content="{{ seo_description }}">
 
 {% if author.name %}
-  <meta name="author" content="{{ author.name | default: author }}">
+  <meta name="author" content="{{ author.nicname | default: author }}">
   {% if og_type == "article" %}
-  <meta property="article:author" content="{{ author.name | default: author }}">
+  <meta property="article:author" content="{{ author.nicname | default: author }}">
   {% endif %}
 {% endif %}
 
