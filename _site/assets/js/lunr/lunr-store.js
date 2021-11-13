@@ -5,6 +5,12 @@ var store = [{
         "url": "/blog/Starting-PyFun/",
         "teaser": null
       },{
+        "title": "Lost in spaCy",
+        "excerpt":"In spaCy no one can hear you scream… when you get a Syntax error. Experiments with spaCy are going well in the appropriately named Jupyter notebooks. There are two spaCy Natural Language Processing (NLP) components I am working with 1. Position of Speech (POS) and 2. Named Entity Recognition This...","categories": ["Blog"],
+        "tags": ["Python"],
+        "url": "/blog/Lost-in-spaCy/",
+        "teaser": null
+      },{
         "title": "Creating my New Blog!",
         "excerpt":"Blog post about creating this blog  ","categories": ["Blog"],
         "tags": ["Jekyll","GitHub","Web Design"],

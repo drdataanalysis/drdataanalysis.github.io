@@ -1,5 +1,5 @@
 ---
-title: "DR Data Analysis"
+title: "My Portfolio"
 layout: splash
 permalink: /
 header:
@@ -10,9 +10,9 @@ header:
     - label: "About Me"
       url: "/#about"
   caption: "Photo credit: [**DataKind**](https://twitter.com/datakinduk)"
-excerpt: "My Portfolio and Blog!."
+excerpt: "Thank you for visiting 👍"
 intro: 
-  - excerpt: 'Thank you for visiting 👍<br>I have created this site to showcase some of the cool stuff I have been up to and to host my blog which features guides and tips. I am a Microsoft fan boy so am looking at ways to use Python and data science tools within Power BI and other Azure products.'
+  - excerpt: 'I have created this site to showcase some of the cool stuff I have been up to and to host my blog which features guides and tips. I am a Microsoft fan boy so am looking at ways to use Python and data science tools within Power BI and other Azure products.<br>[🔽](/#about)'
 feature_row:
   - image_path: /assets/images/team.svg
     alt: "placeholder image 1"
@@ -24,7 +24,10 @@ feature_row:
     excerpt: "Over a decade of experience of working with customers to understand their data. Successfully lead on moving from legacy approaches to utilizing modern and scalable tools like **Power BI**."
   - image_path: /assets/images/developing.svg
     title: "Developing Data Scientist"
-    excerpt: "In the past few years I have been expanding my use of **Python** in particular for Text Analysis and Web Scraping.<br><br>[More detail here...](/about)"
+    excerpt: "In the past few years I have been expanding my use of **Python** in particular for Text Analysis and Web Scraping."
+    url: "/about"
+    btn_label: "Click here to see more..."
+    btn_class: "btn--inverse"
 feature_row2:
   - image_path: "https://openclipart.org/image/800px/303266"
     alt: "placeholder image 2"

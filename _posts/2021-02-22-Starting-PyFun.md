@@ -5,9 +5,11 @@ categories:
 tags:
   - Python
 layout: single
+header:
+  image: /assets/images/posts/2021-02-22-Header.png
+  caption: "Photo credit: [**revac**](https://www.pexels.com/@revac-film-s-photography-10400)"
 ---
 ## 💡 The Idea
-![image-left]({{ site.url }}{{ site.baseurl }}/assets/images/image-alignment-150x150.jpg){: .align-left} 
 > I wanted a way to document and encourage practicing of my experiments with Python and integrating it with Azure ML, Power BI which is a major project I am currently working on.
 
 ## 📋 The Plan
