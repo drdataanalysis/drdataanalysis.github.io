@@ -1,5 +1,6 @@
 ---
 title: "My Portfolio"
+description: "My Portfolio & Blog"
 layout: splash
 permalink: /
 header:

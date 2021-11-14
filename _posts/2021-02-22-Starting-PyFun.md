@@ -1,11 +1,13 @@
 ---
 title: "Starting Py-Fun!"
+excerpt: "Intro to the blog and the work that I am planning to do with Python"
 categories:
   - Blog
 tags:
   - Python
 layout: single
 header:
+  teaser: /assets/images/posts/2021-02-22-Teaser.png
   image: /assets/images/posts/2021-02-22-Header.png
   caption: "Photo credit: [**revac**](https://www.pexels.com/@revac-film-s-photography-10400)"
 ---
