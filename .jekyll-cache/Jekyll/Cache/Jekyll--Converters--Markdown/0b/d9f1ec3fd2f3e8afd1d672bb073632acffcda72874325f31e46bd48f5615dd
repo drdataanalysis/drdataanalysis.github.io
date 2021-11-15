@@ -1,0 +1,13 @@
+I"3<h6 id="experience">Experience</h6>
+<iframe src="/timeline.html" allowfullscreen="true" loading="lazy" width="100%"></iframe>
+<embed type="text/html" src="/assets/images/timeline.svg" height="100" width="250" />
+
+<h2 id="this-post-has-a-custom-sidebar-set-in-the-posts-yaml-front-matter">This post has a custom sidebar set in the post’s YAML Front Matter.</h2>
+
+<p>An example of how that YAML could look is:</p>
+
+<h6 id="interests">Interests</h6>
+<h2 id="my-interests-and-hobbies">My Interests and Hobbies</h2>
+<embed src="/assets/images/key-interests.svg" />
+
+:ET
