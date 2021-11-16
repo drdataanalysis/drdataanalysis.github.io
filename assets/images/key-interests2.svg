@@ -1,21 +1,6 @@
----
-layout: single
-permalink: /about/
-title: "About"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
-toc: true
-toc_label: "Links"
-toc_icon: "address-card"  
----
-###### Experience
-
-## This post has a custom sidebar set in the post’s YAML Front Matter.
-
-An example of how that YAML could look is:
-
-###### Interests
-## My Interests and Hobbies  
-<svg width="100%" height="97.25mm" enable-background="new" version="1.1" viewBox="0 0 151.68 97.25" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="151.68mm" height="97.25mm" enable-background="new" version="1.1" viewBox="0 0 151.68 97.25" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
  <metadata>
   <rdf:RDF>
    <cc:Work rdf:about="">
@@ -42,21 +27,3 @@ An example of how that YAML could look is:
   </a>
  </g>
 </svg>
-
-<i class="fas fa-seedling" aria-hidden="true"></i> 
-`Vegan since Jan 2020`
-<br>
-<i class="fas fa-running" aria-hidden="true"></i> 
-`Usually trail run 5k+ 3 or 4 times a week.`
-<br>
-<i class="far fa-hand-spock" aria-hidden="true"></i> 
-`Big Science Fiction fan`
-<br>
-<i class="fas fa-gamepad" aria-hidden="true"></i>
-`Play Minecraft and vintage games`
-<br>
-<i class="fas fa-guitar" aria-hidden="true"></i>
-`Mess arround on Ukele, Banjo and Guitar`
-<br>
-<i class="fas fa-record-vinyl" aria-hidden="true"></i>
-`Slowly expanding vinal collection`
