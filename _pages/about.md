@@ -15,4 +15,7 @@ An example of how that YAML could look is:
 
 ###### Interests
 ## My Interests and Hobbies  
-<embed src="/assets/images/key-interests.svg">
+<iframe style=" width: 100%; height: 50vh;  overflow: hidden;" scrolling="no" src="/assets/images/key-interests.svg"></iframe>
+<object data="/assets/images/key-interests.svg"></object>
+<i class="far fa-fw fa-hand-spock" aria-hidden="true"></i> 
+I am a big Science Fiction fan in particular things like Star Trek and the Expanse.

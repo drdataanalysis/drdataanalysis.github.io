@@ -10,13 +10,14 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="151.67857mm"
+   height="97.25mm"
+   viewBox="0 0 151.67858 97.25"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="key-interests.svg">
+   sodipodi:docname="key-interests.svg"
+   style="enable-background:new">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -27,8 +28,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="477.1817"
-     inkscape:cy="884.7536"
+     inkscape:cx="380.96122"
+     inkscape:cy="270.17389"
      inkscape:document-units="mm"
      inkscape:current-layer="svg8"
      showgrid="false"
@@ -37,7 +38,11 @@
      inkscape:window-x="72"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:pagecheckerboard="true" />
+     inkscape:pagecheckerboard="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -52,22 +57,22 @@
   </metadata>
   <circle
      r="47.625"
-     cy="89.869049"
-     cx="128.5119"
+     cy="48.625"
+     cx="103.05357"
      id="circle4520"
      style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0" />
   <circle
      style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
      id="path4518"
-     cx="74.083336"
-     cy="89.869049"
+     cx="48.625"
+     cy="48.625"
      r="47.625" />
   <a
      id="a4734"
      xlink:href="https://veganuary.com/"
      target="_blank"
      xlink:title="Have been Vegan since Jan 2020"
-     transform="translate(1.230938,0.08406634)">
+     transform="translate(-24.227398,-41.159983)">
     <path
        id="path3729"
        d="m 54.227113,70.86758 c -5.304345,-2.3e-5 -10.391455,2.109816 -14.14221,5.865365 -3.75073,3.755546 -5.857867,8.849172 -5.857841,14.160318 2.03e-4,10.288607 7.78696,18.902957 18.011482,19.925887 -0.02773,-0.63778 -0.06969,-1.3205 -0.13531,-1.80198 -0.803933,-5.89879 -1.946192,-11.801736 -3.869552,-17.435118 -2.509881,-7.351277 -7.831146,-14.667626 -7.831146,-14.667626 0,0 2.620346,1.141197 3.793208,2.094668 1.764913,1.434795 3.351095,3.673297 4.563735,5.644035 3.305125,5.37131 5.647002,16.984021 5.647002,16.984021 0,0 2.594838,-7.052573 4.238074,-10.424105 1.460121,-2.995769 3.530794,-5.933058 5.170487,-8.60616 -0.981033,-0.121744 -1.828719,0.68328 -2.640145,1.363224 -1.112852,0.932507 -2.871929,4.009591 -2.871929,4.009591 0,0 0.238155,-3.569837 0.640364,-4.733659 0.5907,-1.709313 1.804334,-3.177882 3.197565,-3.906169 0.999482,-0.522468 5.557636,-1.313206 7.152201,-1.579049 -3.791016,-4.369957 -9.285024,-6.883678 -15.065985,-6.893243 0,0 0,0 0,0 m 16.998825,9.501515 c -0.262338,2.016718 -0.76464,4.737808 -1.667189,6.096342 -0.605683,0.911679 -2.244969,1.686643 -3.231099,2.159993 -1.591992,0.764199 -4.051852,0.873088 -4.051852,0.873088 0,0 -2.430045,4.419561 -3.262823,6.788218 -1.631617,4.640634 -2.749922,9.744514 -3.338125,14.376014 -0.0087,0.0684 -0.01631,0.13656 -0.02446,0.20483 10.466577,-0.74771 18.576395,-9.46767 18.576675,-19.974317 -0.0051,-3.719022 -1.044128,-7.363197 -3.001073,-10.524168 0,0 0,0 0,0"
@@ -75,15 +80,16 @@
        inkscape:connector-curvature="0" />
   </a>
   <path
-     style="opacity:1;fill:#227f0b;fill-opacity:1;stroke:#000000;stroke-width:7.55905522;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
-     d="M 382.97461 192.11914 A 180 180 0 0 0 305.71484 339.66211 A 180 180 0 0 0 382.74023 487.20508 A 180 180 0 0 0 460 339.66211 A 180 180 0 0 0 382.97461 192.11914 z "
+     style="opacity:1;fill:#227f0b;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0"
+     d="M 75.870362,9.5874727 A 47.624999,47.624999 0 0 0 55.428715,48.624883 47.624999,47.624999 0 0 0 75.808349,87.662293 47.624999,47.624999 0 0 0 96.249996,48.624883 47.624999,47.624999 0 0 0 75.870362,9.5874727 Z"
      id="circle4659"
-     transform="scale(0.26458333)" />
+     inkscape:connector-curvature="0" />
   <a
      id="a4726"
      xlink:href="https://www.veganrunners.org.uk/"
      target="_blank"
-     xlink:title="Memeber of Vegan Runners UK">
+     xlink:title="Memeber of Vegan Runners UK"
+     transform="translate(-25.458336,-41.244049)">
     <image
        width="32.924583"
        height="14.698475"
@@ -96,7 +102,7 @@
   </a>
   <g
      id="g4543"
-     transform="translate(-3.264794,-0.0840664)">
+     transform="translate(-28.72313,-41.328115)">
     <a
        xlink:title="Used Couch to 5K during lock down to start running 3 or 4 times a week"
        target="_blank"
