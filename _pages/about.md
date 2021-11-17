@@ -7,11 +7,10 @@ toc: true
 toc_label: "Links"
 toc_icon: "address-card"  
 ---
-###### Experience
+###### Timeline
+## Timeline
 
-## This post has a custom sidebar set in the post’s YAML Front Matter.
 
-An example of how that YAML could look is:
 
 ###### Interests
 ## My Interests and Hobbies  

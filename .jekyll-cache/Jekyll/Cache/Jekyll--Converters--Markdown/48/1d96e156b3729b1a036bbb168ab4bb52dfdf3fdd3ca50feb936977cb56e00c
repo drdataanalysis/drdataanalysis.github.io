@@ -1,12 +1,9 @@
-I"dŒ<h6 id="experience">Experience</h6>
-
-<h2 id="this-post-has-a-custom-sidebar-set-in-the-posts-yaml-front-matter">This post has a custom sidebar set in the post‚Äôs YAML Front Matter.</h2>
-
-<p>An example of how that YAML could look is:</p>
+I"ù–<h6 id="timeline">Timeline</h6>
+<h2 id="timeline-1">Timeline</h2>
 
 <h6 id="interests">Interests</h6>
 <h2 id="my-interests-and-hobbies">My Interests and Hobbies</h2>
-<svg width="151.68mm" height="97.25mm" enable-background="new" version="1.1" viewBox="0 0 151.68 97.25" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="100%" height="97.25mm" enable-background="new" version="1.1" viewBox="0 0 151.68 97.25" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
  <metadata>
   <rdf:RDF>
    <cc:Work rdf:about="">
@@ -34,6 +31,21 @@
  </g>
 </svg>
 
-<p><i class="far fa-fw fa-hand-spock" aria-hidden="true"></i> 
-I am a big Science Fiction fan in particular things like Star Trek and the Expanse.</p>
+<p><i class="fas fa-seedling" aria-hidden="true"></i> 
+<code class="language-plaintext highlighter-rouge">Vegan since Jan 2020</code>
+<br />
+<i class="fas fa-running" aria-hidden="true"></i> 
+<code class="language-plaintext highlighter-rouge">Usually trail run 5k+ 3 or 4 times a week.</code>
+<br />
+<i class="far fa-hand-spock" aria-hidden="true"></i> 
+<code class="language-plaintext highlighter-rouge">Big Science Fiction fan</code>
+<br />
+<i class="fas fa-gamepad" aria-hidden="true"></i>
+<code class="language-plaintext highlighter-rouge">Play Minecraft and vintage games</code>
+<br />
+<i class="fas fa-guitar" aria-hidden="true"></i>
+<code class="language-plaintext highlighter-rouge">Mess arround on Ukele, Banjo and Guitar</code>
+<br />
+<i class="fas fa-record-vinyl" aria-hidden="true"></i>
+<code class="language-plaintext highlighter-rouge">Slowly expanding vinal collection</code></p>
 :ET
