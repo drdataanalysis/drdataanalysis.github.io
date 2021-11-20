@@ -11,6 +11,12 @@ var store = [{
         "url": "/blog/Lost-in-spaCy/",
         "teaser": "/assets/images/posts/2021-02-24-Teaser.png"
       },{
+        "title": "NLP in PowerBI",
+        "excerpt":"With great Power BI comes great responsibility It is time: Power BI + Python = Amazing! It worked, it is relatively easy to convert the code to run within Power BI. The main thing that changes is the emphasis of using print() or exporting data in some ways things are...","categories": ["Blog"],
+        "tags": ["Python","Natural Language Processing","Power BI","spaCy","pandas"],
+        "url": "/blog/NLP-in-PowerBI/",
+        "teaser": "/assets/images/posts/2021-02-22-Teaser.png"
+      },{
         "title": "Creating my New Blog!",
         "excerpt":"Blog post about creating this blog  ","categories": ["Blog"],
         "tags": ["Jekyll","GitHub","Web Design"],

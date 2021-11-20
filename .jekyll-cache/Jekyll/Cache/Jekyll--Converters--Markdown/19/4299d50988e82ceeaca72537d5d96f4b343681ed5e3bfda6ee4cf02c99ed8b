@@ -1,4 +1,4 @@
-I"ë<blockquote>
+I"w<blockquote>
   <p>In spaCy no one can hear you screamâ€¦ <br />when you get a Syntax error.</p>
 </blockquote>
 
@@ -17,4 +17,8 @@
 <p>With the following I am assuming that you know the basics of installing modules and have done some introductory Python stuff all of which is very widely available online.</p>
 
 <p>The files and code is all available on <a href="https://github.com/drdataanalysis/blog_python-text-analysis">GitHub</a></p>
+
+<noscript><pre>400: Invalid request</pre></noscript>
+<script src="https://gist.github.com/a81e176f18bd11dc90f8b3ffb4b53b69.js"> </script>
+
 :ET

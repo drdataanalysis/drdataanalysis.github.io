@@ -29,3 +29,5 @@ With the following I am assuming that you know the basics of installing modules 
 
 
 The files and code is all available on [GitHub](https://github.com/drdataanalysis/blog_python-text-analysis)
+
+{% gist a81e176f18bd11dc90f8b3ffb4b53b69 %}
