@@ -2,7 +2,7 @@
 title: "Starting Py-Fun!"
 excerpt: "Intro to the blog and the work that I am planning to do with Python"
 categories:
-  - Blog
+  - News
 tags:
   - Python
 layout: single

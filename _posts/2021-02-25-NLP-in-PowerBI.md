@@ -11,10 +11,10 @@ tags:
   - pandas
 layout: single
 header:
-  teaser: /assets/images/posts/2021-02-22-Teaser.png
-  image: /assets/images/posts/2021-02-22-Header.webp
+  teaser: /assets/images/posts/2021-02-25-Teaser.webp
+  image: /assets/images/posts/2021-02-25-Header.webp
   image_description: "Trainers on a road or track"
-  caption: "Photo credit: [**revac**](https://www.pexels.com/@revac-film-s-photography-10400)"
+  caption: "Photo credit: [**Bhargava Marripati**](https://www.pexels.com/@bhargava-marripati-674798)"
 ---
 
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/blog/Starting-PyFun/</loc>
+<loc>http://localhost:4000/news/Starting-PyFun/</loc>
 <lastmod>2021-02-22T00:00:00+00:00</lastmod>
 </url>
 <url>
@@ -13,7 +13,23 @@
 <lastmod>2021-02-25T00:00:00+00:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/blog/My-New-Blog/</loc>
+<loc>http://localhost:4000/blog/RAKE/</loc>
+<lastmod>2021-02-26T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/TextBlob-and-PowerBI/</loc>
+<lastmod>2021-03-01T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/VADER-and-PowerBI/</loc>
+<lastmod>2021-03-03T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/blog/Shape-Maps/</loc>
+<lastmod>2021-03-09T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/news/My-New-Blog/</loc>
 <lastmod>2021-11-12T00:00:00+00:00</lastmod>
 </url>
 <url>

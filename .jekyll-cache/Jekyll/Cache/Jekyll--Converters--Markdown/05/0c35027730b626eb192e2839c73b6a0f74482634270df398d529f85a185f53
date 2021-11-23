@@ -1,0 +1,31 @@
+I"P<blockquote>
+  <p>“Search your feelings. you know it to be true”</p>
+</blockquote>
+
+<p>Valence Aware Dictionary and sEntiment Reasoner (<a href="https://github.com/cjhutto/vaderSentiment">VADER</a>) is the main alternative to TextBlob and is designed to work with social media text primarily.</p>
+
+<p>Again this has been a really simple adaptation of the code used so far in all of the text analytics tools we have applied.</p>
+
+<p>The <a href="https://github.com/cjhutto/vaderSentiment#about-the-scoring">outputs</a> of VADER are a little different to TextBlob and does not include scoring for subjectivity but does break down into 4 aspects the Compound Score which is the key sentiment scale but also individual scores for pos: positive, neu: neural and neg:negative that are ratios of the proportion of the text analysed so you can drill into a bit more context.</p>
+
+<p>TextBlob in Power BI</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+    <span class="kn">from</span> <span class="nn">vaderSentiment.vaderSentiment</span> <span class="kn">import</span> <span class="n">SentimentIntensityAnalyzer</span>
+    <span class="n">analyser</span> <span class="o">=</span> <span class="n">SentimentIntensityAnalyzer</span><span class="p">()</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">.</span><span class="n">iterrows</span><span class="p">():</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">'text'</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="k">continue</span>
+        <span class="n">score</span> <span class="o">=</span> <span class="n">analyser</span><span class="p">.</span><span class="n">polarity_scores</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">'text'</span><span class="p">])</span>
+        <span class="n">row_data</span> <span class="o">=</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">"id"</span><span class="p">],</span><span class="n">score</span><span class="p">[</span><span class="s">"compound"</span><span class="p">],</span><span class="n">score</span><span class="p">[</span><span class="s">"neg"</span><span class="p">],</span><span class="n">score</span><span class="p">[</span><span class="s">"neu"</span><span class="p">],</span><span class="n">score</span><span class="p">[</span><span class="s">"pos"</span><span class="p">])</span>
+        <span class="n">data</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">row_data</span><span class="p">)</span>
+    <span class="n">new_df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">'id'</span><span class="p">,</span><span class="s">'compound'</span><span class="p">,</span><span class="s">'negative'</span><span class="p">,</span><span class="s">'neutral'</span><span class="p">,</span><span class="s">'positive'</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>Comparison with TextBlob
+So the sample data I have been using in my template is thousands of tweets so it is no surprise that for that data VADER seems to have an advantage over TextBlob:
+<img src="http://localhost:4000/assets/images/posts/2021-03-03-Comparison.webp" alt="image-center" />
+On other data I have tested on TextBlob has the advantage when comparing against a satisfaction score within the data but this is also very different to social media forms of data.</p>
+
+<p>The other key consideration is that this is the out of the box use of both tools with stop words and further customisation it is likely that a great deal more accuracy can be gained for both tools.</p>
+:ET
