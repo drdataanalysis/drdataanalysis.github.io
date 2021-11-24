@@ -13,7 +13,7 @@ layout: single
 header:
   teaser: /assets/images/posts/2021-02-25-Teaser.webp
   image: /assets/images/posts/2021-02-25-Header.webp
-  image_description: "Trainers on a road or track"
+  image_description: "Lightning hitting a skyscraper"
   caption: "Photo credit: [**Bhargava Marripati**](https://www.pexels.com/@bhargava-marripati-674798)"
 ---
 
@@ -27,9 +27,9 @@ It worked, it is relatively easy to convert the code to run within Power BI. The
 
 In terms of a step by step guide the first thing I did was get the code working in Jupyter as a proof that the code will execute successfully. 
 
-### Following on from using spaCy.
+Following on from [using spaCy](https://drdataanalysis.github.io/blog/Lost-in-spaCy/).
 
-When you add a Python Script to a Power BI Query it basically takes the data as it stands in the previous step and converts it to a data frame called dataset. This means that for the code I had for spaCy the name "df" needed to be changed to "dataset".
+When you add a Python Script to a Power BI Query it basically takes the data as it stands in the previous step and converts it to a data frame called dataset. **This means that for the code I had for spaCy the name "df" needed to be changed to "dataset".**
 
 The other thing that needs to be different is what you do with the outputs of your code. I previously was printing out the values to test that it was working which does not work with what we need for Power BI. Another common way of using python is to output to a CSV or summarize in a visual but again this is not something that we want to do when using Python scripts with Power BI Queries (Python with visuals is a whole other conversation). The solution is to either update a the dataset data frame or to create a new dataframe that stores your outputs. In the case of NLP we are taking text and splitting it up into component parts as rows so outputting to a new dataframe is the easiest way to do this - the advantage with Power BI is that you can always load your data in as another table an join your Python powered query outputs back to it which is really useful.
 
