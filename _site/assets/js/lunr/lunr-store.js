@@ -1,13 +1,13 @@
 var store = [{
         "title": "Starting Py-Fun!",
-        "excerpt":"💡 The Idea I wanted a way to document and encourage practicing of my experiments with Python and integrating it with Azure ML, Power BI which is a major project I am currently working on. 📋 The Plan I am going to blog as regularly as possible covering the Python...","categories": ["News"],
-        "tags": ["Python"],
+        "excerpt":"💡 The Idea I want a way to document my experiments with Python and integrating it with Azure ML and Power BI. 📋 The Plan I am going to blog as regularly as possible covering the Python exploration and investigation that I am doing. The plan is to help document...","categories": ["News"],
+        "tags": ["Python","Power BI"],
         "url": "/news/Starting-PyFun/",
         "teaser": "/assets/images/posts/2021-02-22-Teaser.png"
       },{
         "title": "Lost in spaCy",
-        "excerpt":"In spaCy no one can hear you scream… when you get a Syntax error. Experiments with spaCy are going well in the appropriately named Jupyter notebooks. There are two spaCy Natural Language Processing (NLP) components I am working with 1) Position of Speech (POS) and 2) Named Entity Recognition This...","categories": ["Blog"],
-        "tags": ["Python"],
+        "excerpt":"In spaCy no one can hear you scream… when you get a Syntax error. Experiments with spaCy are going well in the appropriately named Jupyter notebooks. There are two spaCy Natural Language Processing (NLP) components I am working with: Position of Speech (POS) Named Entity Recognition This tutorial was really...","categories": ["Blog"],
+        "tags": ["Python","Natural Language Processing","spaCy"],
         "url": "/blog/Lost-in-spaCy/",
         "teaser": "/assets/images/posts/2021-02-24-Teaser.png"
       },{
@@ -35,7 +35,7 @@ var store = [{
         "url": "/blog/VADER-and-PowerBI/",
         "teaser": "/assets/images/posts/2021-03-03-Teaser.webp"
       },{
-        "title": " Shape Maps in Power BI",
+        "title": "Shape Maps in Power BI",
         "excerpt":"Thought it was about time to get in shape This is a bit of a tangent but wanted to share useful links as this is something that I have pulled together with multiple sources and not something that I could find a joined view of. So maps are tricky. Getting...","categories": ["Blog"],
         "tags": ["Power BI","Geomaping","ONS"],
         "url": "/blog/Shape-Maps/",
@@ -46,4 +46,10 @@ var store = [{
         "tags": ["Jekyll","Ruby","GitHub"],
         "url": "/news/My-New-Blog/",
         "teaser": "/assets/images/posts/2021-11-12-Teaser.webp"
+      },{
+        "title": "Infographic Designer in Power BI",
+        "excerpt":"5 Years since it was released and I am only now realising quite how amazing this is! So I have used this tool a few times over the years but have never really grasped its capabilities. The basic use is pretty straight forward and there is quite a bit of...","categories": ["Blog"],
+        "tags": ["Power BI","Infographic Designer","Custom Visual"],
+        "url": "/blog/Infographic-Designer/",
+        "teaser": "/assets/images/posts/2021-11-24-Teaser.webp"
       }]

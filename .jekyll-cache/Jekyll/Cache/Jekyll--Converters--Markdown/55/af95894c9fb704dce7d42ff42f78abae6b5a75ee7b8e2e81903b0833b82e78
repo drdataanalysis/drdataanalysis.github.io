@@ -1,0 +1,17 @@
+I"�<h2 id="-the-idea">💡 The Idea</h2>
+<blockquote>
+  <p>I want a way to document my experiments with Python and integrating it with Azure ML and Power BI.</p>
+</blockquote>
+
+<h2 id="-the-plan">📋 The Plan</h2>
+<p>I am going to blog as regularly as possible covering the Python exploration and investigation that I am doing.</p>
+
+<p>The plan is to help document the challenges and experience of trying to work to bring Python into the Microsoft Power Platform and processes that are used in my team. This area is something that I have not found many resources about in my work so far so I am conscious that some of this may be of help to others which is another reason to put this into a blog.</p>
+
+<h2 id="-next-steps">👣 Next Steps</h2>
+<ol>
+  <li><del>Publish this post</del></li>
+  <li>Start looking at Natural Language Processing in Python (using Jupyter notebooks)</li>
+  <li>Convert Jupyter code to Power BI for use in data models</li>
+</ol>
+:ET

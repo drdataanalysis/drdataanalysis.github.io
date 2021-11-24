@@ -1,0 +1,27 @@
+I"f<blockquote>
+  <p>5 Years since it was released and I am only now realising quite how amazing this is!</p>
+</blockquote>
+
+<p>So I have used this tool a few times over the years but have never really grasped its capabilities. The basic use is pretty straight forward and there is quite a bit of documentation on how to create some of the more basic charts which I will list below but after some deeper investigation there are a few more advanced examples that I have been able to adapt.</p>
+
+<p>In terms of guidance there are a number of guide videos on You Tube which go creating fill charts using shapes and some of the more standard use for instance these ones from Curbal: <a href="https://www.youtube.com/watch?v=XwOIIuRg-EI">#37 Easily create infographics in Power BI with infographic designer</a> and <a href="https://www.youtube.com/watch?v=3671_O2iOu0">#D52 Easy and fast infographics in Power BI 📈</a></p>
+
+<p>The <a href="https://www.microsoft.com/en-us/research/uploads/prod/2016/07/InfoNice-Quick-Start.pdf">official quick start guide</a> is a really good and goes into a good level of detail on the capabilities of the tool. The videos and gallery on the <a href="https://www.microsoft.com/en-us/research/project/infonice/">original research site</a> give a great overview of capabilities and I will embed a few of the most interesting below.</p>
+
+<h3 id="demo-video"><a href="https://youtu.be/QyxQ-ceN1d8">Demo Video</a></h3>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QyxQ-ceN1d8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+
+<h3 id="demo-video-1"><a href="https://youtu.be/H8sRlqEYf7c">Demo Video</a></h3>
+<iframe width="640" height="360" src="https://youtu.be/H8sRlqEYf7c" frameborder="0" allowfullscreen=""></iframe>
+
+<h3 id="demo-video-2"><a href="https://youtu.be/AUxc_E3idSY">Demo Video</a></h3>
+<iframe width="640" height="360" src="https://youtu.be/AUxc_E3idSY" frameborder="0" allowfullscreen=""></iframe>
+<h3 id="my-ideas">My Ideas</h3>
+
+<h4 id="custom-icon-line-chart">Custom Icon Line Chart</h4>
+<p><img src="http://localhost:4000/assets/images/posts/2021-11-24-LineChart.webp" alt="image-center" />
+This is an quick example that I have created using the line chart option and overlaying a custom shape which I then bound to the Month which is the X-Axis of my chart. This allows you to customise the shape used and in the case of the above I have manually set these to represent weather to present seasonality but this could be useful for things like identifying the start of a global pandemic or lockdowns (to pull random hypothetical scenarios from the air).</p>
+
+<h4 id="category-picture-charts">Category Picture Charts</h4>
+<p><img src="http://localhost:4000/assets/images/posts/2021-11-24-BarChart.webp" alt="image-center" /></p>
+:ET

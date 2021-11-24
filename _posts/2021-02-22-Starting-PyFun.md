@@ -1,10 +1,11 @@
 ---
 title: "Starting Py-Fun!"
-excerpt: "Intro to the blog and the work that I am planning to do with Python"
+excerpt: "Intro to the blog and the stuff I am planning to do with Python and Power BI"
 categories:
   - News
 tags:
   - Python
+  - Power BI
 layout: single
 header:
   teaser: /assets/images/posts/2021-02-22-Teaser.png
@@ -13,7 +14,7 @@ header:
   caption: "Photo credit: [**revac**](https://www.pexels.com/@revac-film-s-photography-10400)"
 ---
 ## 💡 The Idea
-> I wanted a way to document and encourage practicing of my experiments with Python and integrating it with Azure ML, Power BI which is a major project I am currently working on.
+> I want a way to document my experiments with Python and integrating it with Azure ML and Power BI.
 
 ## 📋 The Plan
 I am going to blog as regularly as possible covering the Python exploration and investigation that I am doing.
@@ -24,4 +25,3 @@ The plan is to help document the challenges and experience of trying to work to 
 1. ~~Publish this post~~ 
 2. Start looking at Natural Language Processing in Python (using Jupyter notebooks)
 3. Convert Jupyter code to Power BI for use in data models
-

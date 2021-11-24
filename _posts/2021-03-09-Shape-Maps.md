@@ -1,5 +1,5 @@
 ---
-title: " Shape Maps in Power BI"
+title: "Shape Maps in Power BI"
 excerpt: "How to use ONS Local Authority shape maps in Power BI and how to create custom maps based of existing."
 categories:
   - Blog

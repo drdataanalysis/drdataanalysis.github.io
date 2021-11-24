@@ -1,4 +1,30 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-23T09:01:13+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>My Portfolio and Blog</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Creating my New Blog!</title><link href="http://localhost:4000/news/My-New-Blog/" rel="alternate" type="text/html" title="Creating my New Blog!" /><published>2021-11-12T00:00:00+00:00</published><updated>2021-11-12T00:00:00+00:00</updated><id>http://localhost:4000/news/My-New-Blog</id><content type="html" xml:base="http://localhost:4000/news/My-New-Blog/">&lt;p&gt;Blog post about creating this blog&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Jekyll" /><category term="Ruby" /><category term="GitHub" /><summary type="html">Update on the new blog and portfolio using Jekyll and GitHub</summary></entry><entry><title type="html">Shape Maps in Power BI</title><link href="http://localhost:4000/blog/Shape-Maps/" rel="alternate" type="text/html" title="Shape Maps in Power BI" /><published>2021-03-09T00:00:00+00:00</published><updated>2021-03-09T00:00:00+00:00</updated><id>http://localhost:4000/blog/Shape-Maps</id><content type="html" xml:base="http://localhost:4000/blog/Shape-Maps/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-11-24T07:14:27+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>My Portfolio and Blog</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Infographic Designer in Power BI</title><link href="http://localhost:4000/blog/Infographic-Designer/" rel="alternate" type="text/html" title="Infographic Designer in Power BI" /><published>2021-11-24T00:00:00+00:00</published><updated>2021-11-24T00:00:00+00:00</updated><id>http://localhost:4000/blog/Infographic-Designer</id><content type="html" xml:base="http://localhost:4000/blog/Infographic-Designer/">&lt;blockquote&gt;
+  &lt;p&gt;5 Years since it was released and I am only now realising quite how amazing this is!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So I have used this tool a few times over the years but have never really grasped its capabilities. The basic use is pretty straight forward and there is quite a bit of documentation on how to create some of the more basic charts which I will list below but after some deeper investigation there are a few more advanced examples that I have been able to adapt.&lt;/p&gt;
+
+&lt;p&gt;In terms of guidance there are a number of guide videos on You Tube which go creating fill charts using shapes and some of the more standard use for instance these ones from Curbal: &lt;a href=&quot;https://www.youtube.com/watch?v=XwOIIuRg-EI&quot;&gt;#37 Easily create infographics in Power BI with infographic designer&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=3671_O2iOu0&quot;&gt;#D52 Easy and fast infographics in Power BI 📈&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.microsoft.com/en-us/research/uploads/prod/2016/07/InfoNice-Quick-Start.pdf&quot;&gt;official quick start guide&lt;/a&gt; is a really good and goes into a good level of detail on the capabilities of the tool. The videos and gallery on the &lt;a href=&quot;https://www.microsoft.com/en-us/research/project/infonice/&quot;&gt;original research site&lt;/a&gt; give a great overview of capabilities and I will embed a few of the most interesting below.&lt;/p&gt;
+
+&lt;h4 id=&quot;demo-video&quot;&gt;&lt;a href=&quot;https://youtu.be/QyxQ-ceN1d8&quot;&gt;Demo Video&lt;/a&gt;&lt;/h4&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/QyxQ-ceN1d8&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h4 id=&quot;demo-video-1&quot;&gt;&lt;a href=&quot;https://youtu.be/H8sRlqEYf7c&quot;&gt;Demo Video&lt;/a&gt;&lt;/h4&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/H8sRlqEYf7c&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h4 id=&quot;demo-video-2&quot;&gt;&lt;a href=&quot;https://youtu.be/AUxc_E3idSY&quot;&gt;Demo Video&lt;/a&gt;&lt;/h4&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/AUxc_E3idSY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;some-of-my-ideas&quot;&gt;Some of My Ideas&lt;/h3&gt;
+
+&lt;h4 id=&quot;custom-icon-line-chart&quot;&gt;Custom Icon Line Chart&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-11-24-LineChart.webp&quot; alt=&quot;image-center&quot; /&gt;
+This is an quick example that I have created using the line chart option and overlaying a custom shape which I then bound to the Month which is the X-Axis of my chart. This allows you to customise the shape used and in the case of the above I have manually set these to represent weather to present seasonality but this could be useful for things like identifying the start of a global pandemic or lockdowns (to pull random hypothetical scenarios from the air).&lt;/p&gt;
+
+&lt;h4 id=&quot;category-picture-charts&quot;&gt;Category Picture Charts&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-11-24-BarChart.webp&quot; alt=&quot;image-center&quot; /&gt;&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Power BI" /><category term="Infographic Designer" /><category term="Custom Visual" /><summary type="html">Resources and experience of using the Infographic Designer custom visual in Power BI</summary></entry><entry><title type="html">Creating my New Blog!</title><link href="http://localhost:4000/news/My-New-Blog/" rel="alternate" type="text/html" title="Creating my New Blog!" /><published>2021-11-12T00:00:00+00:00</published><updated>2021-11-12T00:00:00+00:00</updated><id>http://localhost:4000/news/My-New-Blog</id><content type="html" xml:base="http://localhost:4000/news/My-New-Blog/">&lt;p&gt;Blog post about creating this blog&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Jekyll" /><category term="Ruby" /><category term="GitHub" /><summary type="html">Update on the new blog and portfolio using Jekyll and GitHub</summary></entry><entry><title type="html">Shape Maps in Power BI</title><link href="http://localhost:4000/blog/Shape-Maps/" rel="alternate" type="text/html" title="Shape Maps in Power BI" /><published>2021-03-09T00:00:00+00:00</published><updated>2021-03-09T00:00:00+00:00</updated><id>http://localhost:4000/blog/Shape-Maps</id><content type="html" xml:base="http://localhost:4000/blog/Shape-Maps/">&lt;blockquote&gt;
   &lt;p&gt;Thought it was about time to get in shape&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -162,26 +188,32 @@ Then you can load that to your model and join it up with other data sets and if 
   &lt;p&gt;In spaCy no one can hear you scream… &lt;br /&gt;when you get a Syntax error.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Experiments with spaCy are going well in the appropriately named Jupyter notebooks.&lt;/p&gt;
+&lt;p&gt;Experiments with &lt;a href=&quot;https://spacy.io/&quot;&gt;spaCy&lt;/a&gt; are going well in the appropriately named Jupyter notebooks.&lt;/p&gt;
 
-&lt;p&gt;There are two spaCy Natural Language Processing (NLP) components I am working with 1) Position of Speech (POS) and 2) Named Entity Recognition&lt;/p&gt;
+&lt;p&gt;There are two spaCy Natural Language Processing (NLP) components I am working with:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Position of Speech (POS)&lt;/li&gt;
+  &lt;li&gt;Named Entity Recognition&lt;/li&gt;
+&lt;/ol&gt;
 
-&lt;p&gt;This tutorial was really helpful in generalising the experiments I have been doing and looking at different aspects and capabilities of NLP.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.machinelearningplus.com/spacy-tutorial-nlp/&quot;&gt;This tutorial&lt;/a&gt; was really helpful in generalising the experiments I have been doing and looking at different aspects and capabilities of NLP.&lt;/p&gt;
 
 &lt;p&gt;The idea with this is to get a general set of tools developed in a notebook before looking at adapting the code to be used in Power BI to run NLP as a step in Power Query.&lt;/p&gt;
 
 &lt;p&gt;The big question is if you can load the NLP language library into Python running in Power BI (if not it is going to be tricky).&lt;/p&gt;
+
 &lt;h3 id=&quot;starting-point&quot;&gt;Starting Point&lt;/h3&gt;
 &lt;p&gt;So I am starting from an example here where NLP tools have been used to get an overview count of the contents of a csv of text values - which is great - but not what I need for a Power BI report to be able to explore the context of the results further so the following is simplified to just return the results of the NLP steps per result.&lt;/p&gt;
 
 &lt;p&gt;With the following I am assuming that you know the basics of installing modules and have done some introductory Python stuff all of which is very widely available online.&lt;/p&gt;
 
-&lt;p&gt;The files and code is all available on &lt;a href=&quot;https://github.com/drdataanalysis/blog_python-text-analysis&quot;&gt;GitHub&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The notebook and files are available in this &lt;a href=&quot;https://github.com/drdataanalysis/blog_python-text-analysis&quot;&gt;GitHub Repo&lt;/a&gt;&lt;/p&gt;
 
+&lt;p&gt;Here is the Notebook/ Code:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/a81e176f18bd11dc90f8b3ffb4b53b69.js&quot;&gt; &lt;/script&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Python" /><summary type="html">Post covering getting started with spaCy in Python for Natural Language Processing (NLP)</summary></entry><entry><title type="html">Starting Py-Fun!</title><link href="http://localhost:4000/news/Starting-PyFun/" rel="alternate" type="text/html" title="Starting Py-Fun!" /><published>2021-02-22T00:00:00+00:00</published><updated>2021-02-22T00:00:00+00:00</updated><id>http://localhost:4000/news/Starting-PyFun</id><content type="html" xml:base="http://localhost:4000/news/Starting-PyFun/">&lt;h2 id=&quot;-the-idea&quot;&gt;💡 The Idea&lt;/h2&gt;
+&lt;script src=&quot;https://gist.github.com/a81e176f18bd11dc90f8b3ffb4b53b69.js&quot;&gt; &lt;/script&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Python" /><category term="Natural Language Processing" /><category term="spaCy" /><summary type="html">Post covering getting started with spaCy in Python for Natural Language Processing (NLP)</summary></entry><entry><title type="html">Starting Py-Fun!</title><link href="http://localhost:4000/news/Starting-PyFun/" rel="alternate" type="text/html" title="Starting Py-Fun!" /><published>2021-02-22T00:00:00+00:00</published><updated>2021-02-22T00:00:00+00:00</updated><id>http://localhost:4000/news/Starting-PyFun</id><content type="html" xml:base="http://localhost:4000/news/Starting-PyFun/">&lt;h2 id=&quot;-the-idea&quot;&gt;💡 The Idea&lt;/h2&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;I wanted a way to document and encourage practicing of my experiments with Python and integrating it with Azure ML, Power BI which is a major project I am currently working on.&lt;/p&gt;
+  &lt;p&gt;I want a way to document my experiments with Python and integrating it with Azure ML and Power BI.&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h2 id=&quot;-the-plan&quot;&gt;📋 The Plan&lt;/h2&gt;
@@ -194,4 +226,4 @@ Then you can load that to your model and join it up with other data sets and if 
   &lt;li&gt;&lt;del&gt;Publish this post&lt;/del&gt;&lt;/li&gt;
   &lt;li&gt;Start looking at Natural Language Processing in Python (using Jupyter notebooks)&lt;/li&gt;
   &lt;li&gt;Convert Jupyter code to Power BI for use in data models&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Python" /><summary type="html">Intro to the blog and the work that I am planning to do with Python</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Python" /><category term="Power BI" /><summary type="html">Intro to the blog and the stuff I am planning to do with Python and Power BI</summary></entry></feed>
