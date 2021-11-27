@@ -42,7 +42,7 @@ var store = [{
         "teaser": "/assets/images/posts/2021-03-09-Teaser.webp"
       },{
         "title": "Creating my New Blog!",
-        "excerpt":"Blog post about creating this blog  ","categories": ["News"],
+        "excerpt":"“When Alexander saw the breadth of his domain, he wept, for there were no more worlds to conquer” It has been a few weeks since my first commit on the .io github repo for this site and it has been a really interesting learning experience which I would highly recommend…...","categories": ["News"],
         "tags": ["Jekyll","Ruby","GitHub"],
         "url": "/news/My-New-Blog/",
         "teaser": "/assets/images/posts/2021-11-12-Teaser.webp"

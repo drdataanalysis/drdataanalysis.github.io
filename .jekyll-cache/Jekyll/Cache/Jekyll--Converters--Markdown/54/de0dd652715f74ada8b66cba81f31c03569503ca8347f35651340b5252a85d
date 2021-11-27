@@ -1,4 +1,4 @@
-I"X,<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
+I"è-<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
 
 <h2>Pages</h2>
 
@@ -175,6 +175,21 @@
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
         <a href="/tags/" rel="permalink">Posts by Tag</a>
+      
+    </h2>
+    
+
+
+    
+  </article>
+</div>
+
+<div class="list__item">
+  <article class="archive__item" itemscope="" itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/terms" rel="permalink">Terms and Privacy Policy</a>
       
     </h2>
     
