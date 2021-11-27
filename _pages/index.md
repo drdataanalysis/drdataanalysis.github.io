@@ -4,8 +4,8 @@ description: "My Portfolio & Blog"
 layout: splash
 permalink: /
 header:
-  image: /assets/images/logo.webp
-  og_image: /assets/images/Logo.webp
+  image: /assets/images/logo.png
+  og_image: /assets/images/Logo.png
   overlay_color: "#ffffff"
   overlay_filter: "0.6"
   overlay_image: /assets/images/header.webp
