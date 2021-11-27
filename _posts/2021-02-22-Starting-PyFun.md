@@ -8,7 +8,9 @@ tags:
   - Power BI
 layout: single
 header:
-  teaser: /assets/images/posts/2021-02-22-Teaser.png
+  image: /assets/images/posts/2021-02-22-Teaser.webp
+  og_image: /assets/images/posts/2021-02-22-Teaser.webp
+  teaser: /assets/images/posts/2021-02-22-Teaser.webp
   image: /assets/images/posts/2021-02-22-Header.webp
   image_description: "Trainers on a road or track"
   caption: "Photo credit: [**revac**](https://www.pexels.com/@revac-film-s-photography-10400)"

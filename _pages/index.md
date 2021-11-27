@@ -4,16 +4,18 @@ description: "My Portfolio & Blog"
 layout: splash
 permalink: /
 header:
+  image: /assets/images/logo.webp
+  og_image: /assets/images/Logo.webp
   overlay_color: "#ffffff"
   overlay_filter: "0.6"
-  overlay_image: /assets/images/banner.png
+  overlay_image: /assets/images/header.webp
   actions:
     - label: "About Me"
       url: "/#about"
   caption: "Photo credit: [**DataKind**](https://twitter.com/datakinduk)"
 excerpt: "Thank you for visiting 👍"
 intro: 
-  - excerpt: 'I have created this site to showcase some of the cool stuff I have been up to and to host my blog which features guides and tips. I am a Microsoft fan boy so am looking at ways to use Python and data science tools within Power BI and other Azure products.<br>[🔽](/#about)'
+  - excerpt: 'I have created this site to showcase some of the cool stuff I have been up to and to host my blog which features guides and tips. I am a Microsoft fan boy so am looking at ways to use Python and data science tools within Power BI and other Azure products.<br>[<i class="fas fa-chevron-down" aria-hidden="true"></i>](/#about)'
 feature_row:
   - image_path: /assets/images/team.svg
     alt: "placeholder image 1"

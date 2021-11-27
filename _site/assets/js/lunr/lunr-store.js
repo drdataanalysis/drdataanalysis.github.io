@@ -3,13 +3,13 @@ var store = [{
         "excerpt":"💡 The Idea I want a way to document my experiments with Python and integrating it with Azure ML and Power BI. 📋 The Plan I am going to blog as regularly as possible covering the Python exploration and investigation that I am doing. The plan is to help document...","categories": ["News"],
         "tags": ["Python","Power BI"],
         "url": "/news/Starting-PyFun/",
-        "teaser": "/assets/images/posts/2021-02-22-Teaser.png"
+        "teaser": "/assets/images/posts/2021-02-22-Teaser.webp"
       },{
         "title": "Lost in spaCy",
         "excerpt":"In spaCy no one can hear you scream… when you get a Syntax error. Experiments with spaCy are going well in the appropriately named Jupyter notebooks. There are two spaCy Natural Language Processing (NLP) components I am working with: Position of Speech (POS) Named Entity Recognition This tutorial was really...","categories": ["Blog"],
         "tags": ["Python","Natural Language Processing","spaCy"],
         "url": "/blog/Lost-in-spaCy/",
-        "teaser": "/assets/images/posts/2021-02-24-Teaser.png"
+        "teaser": "/assets/images/posts/2021-02-24-Teaser.webp"
       },{
         "title": "NLP in PowerBI",
         "excerpt":"With great Power BI comes great responsibility It is time: Power BI + Python = Amazing! It worked, it is relatively easy to convert the code to run within Power BI. The main thing that changes is the emphasis of using print() or exporting data in some ways things are...","categories": ["Blog"],

@@ -1,11 +1,11 @@
-I"
+I"5
 
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-          <a class="site-logo" href="/"><img src="/assets/images/Logo.png" alt="Dean Robinson"></a>
+          <a class="site-logo" href="/"><img src="/assets/images/Logo.webp" alt="Dean Robinson"></a>
         
         <a class="site-title" href="/">
           Dean Robinson
@@ -18,7 +18,7 @@
             </li><li class="masthead__menu-item">
               <a href="/blog">Blog</a>
             </li><li class="masthead__menu-item">
-              <a href="/search">🔍</a>
+              <a href="/search"><i class="fas fa-search" aria-hidden="true"></i></a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">

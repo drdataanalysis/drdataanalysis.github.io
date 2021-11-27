@@ -9,8 +9,10 @@ tags:
   - spaCy
 layout: single
 header:
-  teaser: /assets/images/posts/2021-02-24-Teaser.png
-  image: /assets/images/posts/2021-02-24-Header.png
+  image: /assets/images/posts/2021-02-24-Teaser.webp
+  og_image: /assets/images/posts/2021-02-24-Teaser.webp
+  teaser: /assets/images/posts/2021-02-24-Teaser.webp
+  image: /assets/images/posts/2021-02-24-Header.webp
   image_description: "Astronaut waiting for a bus"
   caption: "Photo credit: [**A Koolshooter**](https://www.pexels.com/@tom-leishman)"
 ---
