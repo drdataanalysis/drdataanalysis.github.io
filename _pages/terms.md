@@ -26,22 +26,20 @@ All of this information is not linked to anything that is personally identifiabl
 
 ### Cookies and Web Beacons
 
-When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](http://disqus.com) the next time you leave a comment.
+This site does not currently use cookies.
 
-Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
+### Intellectual Property
 
-If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
+The Site and its original content, features, and functionality are owned by Dean Robinson and are protected by international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.
 
-#### Google Analytics
+Wherever possible content based on the intellectual property of third parties has been acknowledged in line with usage polices of the platform policies or license identified by the creators. To the best of my knowledge the material used is not proprietary and has been used in good faith, please [contact me](mailto:drdataanalysis@gmail.com) directly if there are any concerns about any of the content produced.
 
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
+### Content Disclaimer
 
-#### Google Adsense
+The content on this site has been produced based on work done and experience of myself using platforms and configurations that have not been tested extensively for different languages, geographies or systems (i.e. I am a Windows/ Ubuntu user so have no knowledge of apple architectures). Any replication or adaptation of the code or content described in this site are the responsibility of the end users discretion and the site owner does not accept responsibility for any errors or complications experienced.
 
-Google Adsense, a third party affiliate marketing network, uses cookies to help make sure I get a commission when you buy a product after clicking on a link or ad banner that takes you to the site of one of their merchants. You can read [Google Adsense Privacy Policy](http://support.google.com/adsense/bin/answer.py?hl=en&answer=48182).
+The Python libraries and other tools used and described in any code produced has been utilized in good faith and with as much verification as possible (as this is running on my devices as well). It is recommended that site users ensure that they are comfortable with the validity of any libraries or tools demonstrated before running code and I am not responsible for any issues related to these third party tools.
 
-## Disclosure Policy
+### Website Location
 
-I make money on this website through affiliate programs. If you click an affiliate link or ad banner and buy the product, you help support this website because I'll get a percentage of that sale.
-
-Currently I'm an affiliate for Amazon and Google Adsense.
+These terms are governed by the laws of United Kingdom. All efforts have been taken to ensure compliance with General Data Protection Regulation (GDPR).

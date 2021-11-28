@@ -36,7 +36,7 @@ feature_row2:
     alt: "placeholder image 2"
     title: ""
     excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
-    url: "#test-link"
+    url: "/tags/#natural-language-processing"
     btn_label: "Read More"
     btn_class: "btn--primary"
 feature_row3:
