@@ -37,7 +37,7 @@ var store = [{
       },{
         "title": "Shape Maps in Power BI",
         "excerpt":"Thought it was about time to get in shape This is a bit of a tangent but wanted to share useful links as this is something that I have pulled together with multiple sources and not something that I could find a joined view of. So maps are tricky. Getting...","categories": ["Blog"],
-        "tags": ["Power BI","Geomaping","ONS"],
+        "tags": ["Power BI","Advanced Visual","Geomaping","ONS"],
         "url": "/blog/Shape-Maps/",
         "teaser": "/assets/images/posts/2021-03-09-Teaser.webp"
       },{
@@ -49,7 +49,7 @@ var store = [{
       },{
         "title": "Infographic Designer in Power BI",
         "excerpt":"5 Years since it was released and I am only now realising quite how amazing this is! So I have used this tool a few times over the years but have never really grasped its capabilities. The basic use is pretty straight forward and there is quite a bit of...","categories": ["Blog"],
-        "tags": ["Power BI","Infographic Designer","Custom Visual"],
+        "tags": ["Power BI","Infographic Designer","Advanced Visual"],
         "url": "/blog/Infographic-Designer/",
         "teaser": "/assets/images/posts/2021-11-24-Teaser.webp"
       }]

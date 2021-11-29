@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /about/
-title: "About"
+title: "More About Me"
 excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
 toc: true
 toc_label: "Links"
@@ -9,11 +9,23 @@ toc_icon: "address-card"
 ---
 ###### Timeline
 ## Timeline
+##### 2010
+<br><i class="fas fa-user-graduate" aria-hidden="true"></i> Graduated from Aberdeen University with a 2:1 MA Hons in Politics and International Relations
+<br><span style="color: Dodgerblue;"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span> Moved to Sheffield (the Peoples Republic of South Yorkshire)
+<br>
+##### 2011
+<br><i class="fas fa-building" aria-hidden="true"></i> Hired at Voice Marketing
+<br><i class="fas fa-database" aria-hidden="true"></i> Learnt to use Microsft Access using online tutorials and discovered the power of databases!
+<br><i class="fas fa-phone-square-alt" aria-hidden="true"></i> Started to manage diallers and plan data strategies
+<br><i class="fas fa-file-excel" aria-hidden="true"></i> Started to develop reporting with a datamodel approach within excel (pre-power pivot and query)
 
 
+
+###### Skills
+## Skills and Experience  
 
 ###### Interests
-## My Interests and Hobbies  
+## Interests and Hobbies  
 <svg width="100%" height="97.25mm" enable-background="new" version="1.1" viewBox="0 0 151.68 97.25" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
  <metadata>
   <rdf:RDF>

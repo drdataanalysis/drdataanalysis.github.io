@@ -1,0 +1,44 @@
+I"�<blockquote>
+  <p>With great Power BI comes great responsibility</p>
+</blockquote>
+
+<h3 id="it-is-time-power-bi--python--amazing">It is time: Power BI + Python = Amazing!</h3>
+
+<p>It worked, it is relatively easy to convert the code to run within Power BI. The main thing that changes is the emphasis of using print() or exporting data in some ways things are easier in that you just need to update or create data frames so 🐼s is key… Pandas.</p>
+
+<p>In terms of a step by step guide the first thing I did was get the code working in Jupyter as a proof that the code will execute successfully.</p>
+
+<p>Following on from <a href="https://drdataanalysis.github.io/blog/Lost-in-spaCy/">using spaCy</a>.</p>
+
+<p>When you add a Python Script to a Power BI Query it basically takes the data as it stands in the previous step and converts it to a data frame called dataset. <strong>This means that for the code I had for spaCy the name “df” needed to be changed to “dataset”.</strong></p>
+
+<p>The other thing that needs to be different is what you do with the outputs of your code. I previously was printing out the values to test that it was working which does not work with what we need for Power BI. Another common way of using python is to output to a CSV or summarize in a visual but again this is not something that we want to do when using Python scripts with Power BI Queries (Python with visuals is a whole other conversation). The solution is to either update a the dataset data frame or to create a new dataframe that stores your outputs. In the case of NLP we are taking text and splitting it up into component parts as rows so outputting to a new dataframe is the easiest way to do this - the advantage with Power BI is that you can always load your data in as another table an join your Python powered query outputs back to it which is really useful.</p>
+
+<p>I created a list called “data” to store the outputs of the for loop and then a last step to create a new data frame called “new_df”. Hopefully the following comparison should make sense of the differences here. The other thing to mention is that I have added the dependencies above the code like you would in Jupiter but Power BI is like a standard Python Script so you need to all code needs to be in one step.</p>
+
+<h3 id="previous-position-of-speech-code">Previous Position of Speech Code</h3>
+<noscript><pre>400: Invalid request</pre></noscript>
+<script src="https://gist.github.com/a81e176f18bd11dc90f8b3ffb4b53b69.js"> </script>
+
+<h3 id="putting-this-in-power-bi">Putting this in Power BI</h3>
+<p>Hopefully this next step should be simple. To get stuff running in Jupyter you will have needed to install the modules etc. so as long as Power BI is using the same Python environment that you are this should work fine.</p>
+
+<p>First step is to extract and load your data - this is pretty core to Power BI so I am not going to go through it other than to say that the code here is the same as with the spaCy example and expecting a inputs of <code class="language-plaintext highlighter-rouge">id|text</code> with those headers and only those columns. If you have more columns that you want to include do it in another query and join in your data model - the same is true if you have two (or more) text columns you can either add them all as sperare queries.</p>
+
+<p>The source I am using is on SharePoint and is a CSV but the advantage of using Power Query on this is it is very easy to pull in data from wherever you want. The data has been processed and converted including filtering out blanks (even though the code will also check for this).</p>
+
+<p>Once your data looks like this:
+<img src="http://localhost:4000/assets/images/posts/2021-02-25-DataView.webp" alt="image-center" class="align-center" />
+Click on the Transform tab and the Run Python Script button in the far right:
+<img src="http://localhost:4000/assets/images/posts/2021-02-25-Transform.webp" alt="image-center" class="align-center" />
+Paste your code into the box that pops up and click on OK to run. Once the preview has loaded you will see a list of data frames, one is the original data set and the other is the new_df frame the script created:
+<img src="http://localhost:4000/assets/images/posts/2021-02-25-DataView2.webp" alt="image-center" class="align-center" />
+To load the new_df data you can just click on table in the corresponding value column and that import the data frame and automatically do things like changing data types:
+<img src="http://localhost:4000/assets/images/posts/2021-02-25-DataView3.webp" alt="image-center" class="align-center" />
+Then you can load that to your model and join it up with other data sets and if you include both way filters can do some really cool stuff:
+<img src="http://localhost:4000/assets/images/posts/2021-02-25-DataModel.webp" alt="image-center" class="align-center" /></p>
+
+<p>As you can see I have included in this template NER (code bellow), RAKE which I will do a separate posts about and TextBlob which is sentiment analysis and something that there will be many more posts about!</p>
+<h3 id="named-entity-recognition-power-bi-code">Named Entity Recognition Power BI Code</h3>
+<p>true<script src="https://gist.github.com/68a5fdd61221a67cdaa575db53f1d4aa.js"> </script></p>
+:ET

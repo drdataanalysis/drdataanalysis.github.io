@@ -5,6 +5,7 @@ categories:
   - Blog
 tags:
   - Power BI
+  - Advanced Visual
   - Geomaping
   - ONS
 layout: single
@@ -29,6 +30,6 @@ In Power Maps (plugin for excel) this is achieved through Shape or KML files but
 
 So that gives you any boundary published by the ONS as a format that can be loaded into Power BI, from a bit of testing the associated shape data can be matched according to any of the parameters so for Local Authority that is the JSON file ID, Local Authority Code or Local Authority name which is pretty helpful.
 
-So that is all great until you realise that the latest boundary map (at time of writing) is the 2019 Local Authority list and the latest local authority list is 2020 which includes the merging of Aylesbury Vale, Chiltern, South Bucks and Wycombe into Buckinghamshire Local Authority and my data is aligned to the 2020 list. I was able to use [this guide](https://help.flourish.studio/article/187-how-to-merge-regions-with-mapshaper) to merge together the old local authority boundaries and adapt this one to create field names for the new shape then re-join the maps and...
+So that is all great until you rightealise that the latest boundary map (at time of writing) is the 2019 Local Authority list and the latest local authority list is 2020 which includes the merging of Aylesbury Vale, Chiltern, South Bucks and Wycombe into Buckinghamshire Local Authority and my data is aligned to the 2020 list. I was able to use [this guide](https://help.flourish.studio/article/187-how-to-merge-regions-with-mapshaper) to merge together the old local authority boundaries and adapt this one to create field names for the new shape then re-join the maps and...
 ![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/posts/2021-03-09-Comparison.webp)
 So a bit of a tangent but useful set of tools to be able to use shape maps for the geographies that I need and something that can be built on in the future if I need to do something like creating custom region maps that are not available from the ONS.

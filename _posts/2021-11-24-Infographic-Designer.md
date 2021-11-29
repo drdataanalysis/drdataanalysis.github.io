@@ -6,7 +6,7 @@ categories:
 tags:
   - Power BI
   - Infographic Designer
-  - Custom Visual
+  - Advanced Visual
 layout: single
 header:
   teaser: /assets/images/posts/2021-11-24-Teaser.webp

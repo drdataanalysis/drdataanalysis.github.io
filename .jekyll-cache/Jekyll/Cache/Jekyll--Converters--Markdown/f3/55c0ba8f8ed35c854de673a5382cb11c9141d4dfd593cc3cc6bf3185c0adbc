@@ -1,0 +1,28 @@
+I"ò<blockquote>
+  <p>In spaCy no one can hear you screamâ€¦ <br />when you get a Syntax error.</p>
+</blockquote>
+
+<p>Experiments with <a href="https://spacy.io/">spaCy</a> are going well in the appropriately named Jupyter notebooks.</p>
+
+<p>There are two spaCy Natural Language Processing (NLP) components I am working with:</p>
+<ol>
+  <li>Position of Speech (POS)</li>
+  <li>Named Entity Recognition</li>
+</ol>
+
+<p><a href="https://www.machinelearningplus.com/spacy-tutorial-nlp/">This tutorial</a> was really helpful in generalising the experiments I have been doing and looking at different aspects and capabilities of NLP.</p>
+
+<p>The idea with this is to get a general set of tools developed in a notebook before looking at adapting the code to be used in Power BI to run NLP as a step in Power Query.</p>
+
+<p>The big question is if you can load the NLP language library into Python running in Power BI (if not it is going to be tricky).</p>
+
+<h3 id="starting-point">Starting Point</h3>
+<p>So I am starting from an example here where NLP tools have been used to get an overview count of the contents of a csv of text values - which is great - but not what I need for a Power BI report to be able to explore the context of the results further so the following is simplified to just return the results of the NLP steps per result.</p>
+
+<p>With the following I am assuming that you know the basics of installing modules and have done some introductory Python stuff all of which is very widely available online.</p>
+
+<p>The notebook and files are available in this <a href="https://github.com/drdataanalysis/blog_python-text-analysis">GitHub Repo</a></p>
+
+<p>Here is the Notebook/ Code:
+true<script src="https://gist.github.com/a81e176f18bd11dc90f8b3ffb4b53b69.js"> </script></p>
+:ET
