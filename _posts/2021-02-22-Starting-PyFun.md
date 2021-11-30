@@ -9,7 +9,7 @@ tags:
 layout: single
 header:
   image: /assets/images/posts/2021-02-22-Teaser.webp
-  og_image: /assets/images/posts/2021-02-22-Teaser.png
+  og_image: assets/images/posts/2021-02-22-Teaser.png
   teaser: /assets/images/posts/2021-02-22-Teaser.webp
   image: /assets/images/posts/2021-02-22-Header.webp
   image_description: "Trainers on a road or track"
