@@ -8,7 +8,7 @@ tags:
   - Power BI
 layout: single
 header:
-  image: /assets/images/posts/2021-02-22-Teaser.webp
+  header.image: /assets/images/posts/2021-02-22-Teaser.webp
   og_image: /assets/images/posts/2021-02-22-Teaser.webp
   teaser: /assets/images/posts/2021-02-22-Teaser.webp
   image: /assets/images/posts/2021-02-22-Header.webp

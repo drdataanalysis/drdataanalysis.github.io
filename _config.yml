@@ -10,7 +10,7 @@ title                    : "Dean Robinson"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Dean Robinson"
-description              : "My Portfolio and Blog"
+description              : "Check out my Portfolio and Blog about the cool stuff I am doing with Python and Power BI!"
 url                      : "https://drdataanalysis.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "drdataanalysis/drdataanalysis.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -74,7 +74,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : # Open Graph/Twitter default site image
+og_image                 : /assets/images/Logo.webp # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:

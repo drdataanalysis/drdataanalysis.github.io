@@ -1,4 +1,0 @@
-I"Ó<blockquote>
-  <p>In this project I have adapted core Python text analytics tools to extract key information and sentiment within the Power BI data import processes.<br />The key aim was to develop generalized versions of the code that can easily be adapted for a variety of text sources. <br />Using Power BI to extract, Python to transform and Power BI to load and present the data means that any data analyst can use powerful data science tools.</p>
-</blockquote>
-:ET
