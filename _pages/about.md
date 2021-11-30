@@ -7,22 +7,16 @@ toc: true
 toc_label: "Links"
 toc_icon: "address-card"  
 ---
-###### Timeline
-## Timeline
-##### 2010
-<br><i class="fas fa-user-graduate" aria-hidden="true"></i> Graduated from Aberdeen University with a 2:1 MA Hons in Politics and International Relations
-<br><span style="color: Dodgerblue;"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></span> Moved to Sheffield (the Peoples Republic of South Yorkshire)
-<br>
-##### 2011
-<br><i class="fas fa-building" aria-hidden="true"></i> Hired at Voice Marketing
-<br><i class="fas fa-database" aria-hidden="true"></i> Learnt to use Microsft Access using online tutorials and discovered the power of databases!
-<br><i class="fas fa-phone-square-alt" aria-hidden="true"></i> Started to manage diallers and plan data strategies
-<br><i class="fas fa-file-excel" aria-hidden="true"></i> Started to develop reporting with a datamodel approach within excel (pre-power pivot and query)
+###### Vision
+## Vision
+> I want to make it easy for everyone to use data for good. I share simplified and multipurpose techniques help people utilize powerful data tools. I create blog posts, github repos, project overviews and videos to share what I am doing.
 
+###### Skills and Experience
+## Skills and Experience
 
+I have worked with data for over 10 years and have managed data and systems teams since 2015. 
 
-###### Skills
-## Skills and Experience  
+Please check out my [![Linkedin Profile](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/drdataanalysis) for full details of the roles I have had and the companies I have worked for and the skills that I have developed.
 
 ###### Interests
 ## Interests and Hobbies  
