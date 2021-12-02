@@ -1,0 +1,446 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Creating digital citations for physical notes - Dean Robinson</title>
+<meta name="description" content="Dive into how to use GitHub issues, Python and Mail Merge to create and print QR Code stickers">
+
+
+  <meta name="author" content="My Profile">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_UK">
+<meta property="og:site_name" content="Dean Robinson">
+<meta property="og:title" content="Creating digital citations for physical notes">
+<meta property="og:url" content="http://localhost:4000/draft/">
+
+
+  <meta property="og:description" content="Dive into how to use GitHub issues, Python and Mail Merge to create and print QR Code stickers">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/posts/2021-11-12-Header.webp">
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/draft/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Dean Robinson",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Dean Robinson Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+<meta name ="theme-color" content="#252a34" />
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/Logo.webp" alt="Dean Robinson"></a>
+        
+        <a class="site-title" href="/">
+          Dean Robinson
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/#about">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/#portfolio">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/search"><i class="fas fa-search" aria-hidden="true"></i></a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="/assets/images/posts/2021-11-12-Header.webp" alt="Laptop surrounded by wood working tools" class="page__hero-image">
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://www.pexels.com/@ivan-samkov"><strong>Ivan Samkov</strong></a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://avatars.githubusercontent.com/u/43471619?s=400&u=2740f03b579edf5c1c1f6471c86f5e4808de7a51&v=4" alt="Dean Robinson" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">My Profile</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>I’m an experienced Data Analyst and aspiring Data Scientist</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Sheffield, UK</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:drdataanalysis@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://linkedin.com/drdataanalysis" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/drdataanalysis" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Creating digital citations for physical notes">
+    <meta itemprop="description" content="Dive into how to use GitHub issues, Python and Mail Merge to create and print QR Code stickers">
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/draft/" class="u-url" itemprop="url">Creating digital citations for physical notes
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <blockquote>
+  <p>My obsession with QR codes has gone to another extreme</p>
+</blockquote>
+
+<h3 id="the-problem">The Problem</h3>
+<p>A few weeks ago I started a <a href="https://www.youtube.com/watch?v=fm15cmYU0IM">Bullet Journal</a> and got hooked instantly. The only problem I had was that if I am using a website, video or other digital tool how do I include it in the journal?</p>
+
+<p>There are a number of options that I could think of but each one had pretty major drawbacks:</p>
+<ol>
+  <li>Write the URL<br /><code class="language-plaintext highlighter-rouge">I am not writing out URLs and then Typing them again if I need them in the future</code></li>
+  <li>Use a URL Shortener<br /><code class="language-plaintext highlighter-rouge">Still have to type a URL in the future it is just shorter, and I have to hope that the service remains active or create my own URL shortener and support that long term</code></li>
+  <li>Use Bookmarks in Browser and reference them<br /><code class="language-plaintext highlighter-rouge">This may work for some people but I am not a bookmark person, and I use multiple devices and browsers which are not all synchronized</code></li>
+  <li>Use a digital notetaking app and cross reference both ways<br /><code class="language-plaintext highlighter-rouge">Again could work for some people but I don't want to have to use another app on multiple devices and to have to open it and find the right reference when trying to find things in the future.</code></li>
+  <li>Bookmarking Apps<br /><code class="language-plaintext highlighter-rouge">Similar to the above two issues plus a whole other app just for bookmarks</code></li>
+</ol>
+
+<h3 id="what-i-wanted">What I Wanted</h3>
+
+<ol>
+  <li>Create</li>
+</ol>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#bullet-journal" class="page__taxonomy-item p-category" rel="tag">Bullet Journal</a><span class="sep">, </span>
+    
+      <a href="/tags/#github" class="page__taxonomy-item p-category" rel="tag">GitHub</a><span class="sep">, </span>
+    
+      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#blog" class="page__taxonomy-item p-category" rel="tag">Blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a>|&nbsp;&nbsp;<a href=/terms><i class="fas fa-balance-scale" aria-hidden="true"></i> Terms and Legal Stuff</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2021 Dean Robinson. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
