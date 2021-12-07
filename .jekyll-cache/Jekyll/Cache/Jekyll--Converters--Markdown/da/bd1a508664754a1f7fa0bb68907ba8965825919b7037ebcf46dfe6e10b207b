@@ -1,0 +1,27 @@
+I"�<blockquote>
+  <p>“When Alexander saw the breadth of his domain, he wept, for there were no more worlds to conquer”</p>
+</blockquote>
+
+<p>It has been a few weeks since my first commit on the .io github repo for this site and it has been a really interesting learning experience which I would highly recommend… assuming that you already have quite a good grasp of HTML.</p>
+
+<h3 id="github-pages">Github Pages</h3>
+<p>I can’t remember exactly what it was that brought <a href="https://docs.github.com/en/pages/quickstart">GitHub</a> Pages to my attention. I did not know that this was a feature offered and considering how powerful this is I am amazed it is completely free!</p>
+
+<p>The only requirement for standard Git Hub users is that your repo for the site that you build has to be public, you can just enable Git Hub pages in the repo settings and with the <a href="https://docs.github.com/en/pages/quickstart">quick start guide</a> you can get a basic blog or site spun up in a few min.</p>
+
+<h3 id="jekyll--ruby">Jekyll &amp; Ruby</h3>
+<p>https://jekyllrb.com/</p>
+
+<p>https://jekyllrb.com/docs/installation/ubuntu/#install-dependencies</p>
+
+<h3 id="minimal-mistakes">Minimal Mistakes</h3>
+<p>https://github.com/topics/jekyll-theme</p>
+
+<p>https://mmistakes.github.io/minimal-mistakes/</p>
+
+<p>https://github.com/mmistakes/minimal-mistakes</p>
+
+<h3 id="customisation">Customisation</h3>
+<p>https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+https://github.com/mmistakes/minimal-mistakes/issues/490</p>
+:ET

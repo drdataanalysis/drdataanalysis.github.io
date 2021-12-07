@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-02T07:46:09+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Python and Power BI!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Infographic Designer in Power BI</title><link href="http://localhost:4000/blog/Infographic-Designer/" rel="alternate" type="text/html" title="Infographic Designer in Power BI" /><published>2021-11-24T00:00:00+00:00</published><updated>2021-11-24T00:00:00+00:00</updated><id>http://localhost:4000/blog/Infographic-Designer</id><content type="html" xml:base="http://localhost:4000/blog/Infographic-Designer/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-07T06:34:03+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Python and Power BI!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Infographic Designer in Power BI</title><link href="http://localhost:4000/blog/Infographic-Designer/" rel="alternate" type="text/html" title="Infographic Designer in Power BI" /><published>2021-11-24T00:00:00+00:00</published><updated>2021-11-24T00:00:00+00:00</updated><id>http://localhost:4000/blog/Infographic-Designer</id><content type="html" xml:base="http://localhost:4000/blog/Infographic-Designer/">&lt;blockquote&gt;
   &lt;p&gt;5 Years since it was released and I am only now realising quite how amazing this is!&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;So I have used this tool a few times over the years but have never really grasped its capabilities. The basic use is pretty straight forward and there is quite a bit of documentation on how to create some of the more basic charts which I will list below but after some deeper investigation there are a few more advanced examples that I have been able to adapt.&lt;/p&gt;
+&lt;p&gt;I have used this tool a few times over the years but have never really grasped its capabilities. Making basic charts is pretty straight forward and there is quite a bit of documentation available. After some investigation there are a few more advanced examples that I have been able to adapt which I have included below.&lt;/p&gt;
 
 &lt;p&gt;In terms of guidance there are a number of guide videos on You Tube which go creating fill charts using shapes and some of the more standard use for instance these ones from Curbal: &lt;a href=&quot;https://www.youtube.com/watch?v=XwOIIuRg-EI&quot;&gt;#37 Easily create infographics in Power BI with infographic designer&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=3671_O2iOu0&quot;&gt;#D52 Easy and fast infographics in Power BI 📈&lt;/a&gt;&lt;/p&gt;
 
@@ -18,25 +18,48 @@
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/AUxc_E3idSY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h3 id=&quot;some-of-my-ideas&quot;&gt;Some of My Ideas&lt;/h3&gt;
+&lt;p&gt;I have used some of the above examples in reports to replace things like gauges with something more engaging and relevant to the measure being used. The one extra tip I would give from using these practically is to open the visual in full screen when you want to use the edit pane. This makes it a lot easier to make design changes as the edit pane will only be as big as the size of the visual on the screen so it can be quite difficult to see even if your chart is quite big.&lt;/p&gt;
 
 &lt;h4 id=&quot;custom-icon-line-chart&quot;&gt;Custom Icon Line Chart&lt;/h4&gt;
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-11-24-LineChart.webp&quot; alt=&quot;image-center&quot; /&gt;
 This is an quick example that I have created using the line chart option and overlaying a custom shape which I then bound to the Month which is the X-Axis of my chart. This allows you to customise the shape used and in the case of the above I have manually set these to represent weather to present seasonality but this could be useful for things like identifying the start of a global pandemic or lockdowns (to pull random hypothetical scenarios from the air).&lt;/p&gt;
 
 &lt;h4 id=&quot;category-picture-charts&quot;&gt;Category Picture Charts&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-11-24-BarChart.webp&quot; alt=&quot;image-center&quot; /&gt;&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Power BI" /><category term="Infographic Designer" /><category term="Advanced Visual" /><summary type="html">Resources and experience of using the Infographic Designer custom visual in Power BI</summary></entry><entry><title type="html">Creating my New Blog!</title><link href="http://localhost:4000/news/My-New-Blog/" rel="alternate" type="text/html" title="Creating my New Blog!" /><published>2021-11-12T00:00:00+00:00</published><updated>2021-11-27T00:00:00+00:00</updated><id>http://localhost:4000/news/My-New-Blog</id><content type="html" xml:base="http://localhost:4000/news/My-New-Blog/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-11-24-BarChart.webp&quot; alt=&quot;image-center&quot; /&gt;
+This example is really quite basic and adapted from some of the above. I think I have seen something similar in other custom visuals but this is quite a simple way of adding custom text, icon or image labels to a column chart (or bar chart).&lt;/p&gt;
+
+&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;I hope this has been helpful and given some ideas for the kinds of things that you can do with the infographic designer custom visual. The visual is defiantly not the most polished or dynamic custom visual available but I think it has some really powerful functionality and allows a degree of customization that is very cool.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Power BI" /><category term="Infographic Designer" /><category term="Advanced Visual" /><summary type="html">Resources and experience of using the Infographic Designer custom visual in Power BI</summary></entry><entry><title type="html">Creating my New Blog!</title><link href="http://localhost:4000/news/My-New-Blog/" rel="alternate" type="text/html" title="Creating my New Blog!" /><published>2021-11-12T00:00:00+00:00</published><updated>2021-11-27T00:00:00+00:00</updated><id>http://localhost:4000/news/My-New-Blog</id><content type="html" xml:base="http://localhost:4000/news/My-New-Blog/">&lt;blockquote&gt;
   &lt;p&gt;“When Alexander saw the breadth of his domain, he wept, for there were no more worlds to conquer”&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;It has been a few weeks since my first commit on the .io github repo for this site and it has been a really interesting learning experience which I would highly recommend… assuming that you already have quite a good grasp of HTML.&lt;/p&gt;
 
 &lt;h3 id=&quot;github-pages&quot;&gt;Github Pages&lt;/h3&gt;
+&lt;p&gt;I can’t remember exactly what it was that brought &lt;a href=&quot;https://docs.github.com/en/pages/quickstart&quot;&gt;GitHub&lt;/a&gt; Pages to my attention. I did not know that this was a feature offered and considering how powerful this is I am amazed it is completely free!&lt;/p&gt;
+
+&lt;p&gt;The only requirement for standard Git Hub users is that your repo for the site that you build has to be public, you can just enable Git Hub pages in the repo settings and with the &lt;a href=&quot;https://docs.github.com/en/pages/quickstart&quot;&gt;quick start guide&lt;/a&gt; you can get a basic blog or site spun up in a few min.&lt;/p&gt;
+
+&lt;p&gt;For a standard site you could write everything on GitHub online and you can choose from some of the standard themes available on github.
+&lt;img src=&quot;https://docs.github.com/assets/images/help/pages/select-theme.png&quot; alt=&quot;image-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is pretty amazing as a start. The default URL will be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io/[reponame]&lt;/code&gt; which is useful if you want multiple sites from multiple repos but what about if you want a landing page that is just &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt;? Well that is pretty simple - if you call your repo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt; this sets the pages url to be just your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;jekyll--ruby&quot;&gt;Jekyll &amp;amp; Ruby&lt;/h3&gt;
+&lt;p&gt;https://jekyllrb.com/&lt;/p&gt;
+
+&lt;p&gt;https://jekyllrb.com/docs/installation/ubuntu/#install-dependencies&lt;/p&gt;
 
 &lt;h3 id=&quot;minimal-mistakes&quot;&gt;Minimal Mistakes&lt;/h3&gt;
+&lt;p&gt;https://github.com/topics/jekyll-theme&lt;/p&gt;
 
-&lt;h3 id=&quot;customisation&quot;&gt;Customisation&lt;/h3&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Jekyll" /><category term="Ruby" /><category term="GitHub" /><summary type="html">Update on the new blog and portfolio using Jekyll and GitHub</summary></entry><entry><title type="html">Shape Maps in Power BI</title><link href="http://localhost:4000/blog/Shape-Maps/" rel="alternate" type="text/html" title="Shape Maps in Power BI" /><published>2021-03-09T00:00:00+00:00</published><updated>2021-03-09T00:00:00+00:00</updated><id>http://localhost:4000/blog/Shape-Maps</id><content type="html" xml:base="http://localhost:4000/blog/Shape-Maps/">&lt;blockquote&gt;
+&lt;p&gt;https://mmistakes.github.io/minimal-mistakes/&lt;/p&gt;
+
+&lt;p&gt;https://github.com/mmistakes/minimal-mistakes&lt;/p&gt;
+
+&lt;h3 id=&quot;customisation&quot;&gt;Customisation&lt;/h3&gt;
+&lt;p&gt;https://mmistakes.github.io/minimal-mistakes/docs/configuration/
+https://github.com/mmistakes/minimal-mistakes/issues/490&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Jekyll" /><category term="Ruby" /><category term="GitHub" /><summary type="html">Update on the new blog and portfolio using Jekyll and GitHub</summary></entry><entry><title type="html">Shape Maps in Power BI</title><link href="http://localhost:4000/blog/Shape-Maps/" rel="alternate" type="text/html" title="Shape Maps in Power BI" /><published>2021-03-09T00:00:00+00:00</published><updated>2021-03-09T00:00:00+00:00</updated><id>http://localhost:4000/blog/Shape-Maps</id><content type="html" xml:base="http://localhost:4000/blog/Shape-Maps/">&lt;blockquote&gt;
   &lt;p&gt;Thought it was about time to get in shape&lt;/p&gt;
 &lt;/blockquote&gt;
 

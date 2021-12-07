@@ -48,7 +48,7 @@ var store = [{
         "teaser": "/assets/images/posts/2021-11-12-Teaser.webp"
       },{
         "title": "Infographic Designer in Power BI",
-        "excerpt":"5 Years since it was released and I am only now realising quite how amazing this is! So I have used this tool a few times over the years but have never really grasped its capabilities. The basic use is pretty straight forward and there is quite a bit of...","categories": ["Blog"],
+        "excerpt":"5 Years since it was released and I am only now realising quite how amazing this is! I have used this tool a few times over the years but have never really grasped its capabilities. Making basic charts is pretty straight forward and there is quite a bit of documentation...","categories": ["Blog"],
         "tags": ["Power BI","Infographic Designer","Advanced Visual"],
         "url": "/blog/Infographic-Designer/",
         "teaser": "/assets/images/posts/2021-11-24-Teaser.webp"

@@ -1,4 +1,4 @@
-I"y0<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
+I"©0<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
 
 <h2>Pages</h2>
 
@@ -83,13 +83,13 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/draft/" rel="permalink">Creating my New Blog!</a>
+        <a href="/draft/" rel="permalink">Creating digital citations for physical notes</a>
       
     </h2>
     
 
 
-    <p class="archive__item-excerpt" itemprop="description">Update on the new blog and portfolio using Jekyll and GitHub
+    <p class="archive__item-excerpt" itemprop="description">Dive into how to use GitHub issues, Python and Mail Merge to create and print QR Code stickers
 </p>
   </article>
 </div>
@@ -315,7 +315,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          2 minute read
         
       </span>
     
@@ -350,7 +350,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
