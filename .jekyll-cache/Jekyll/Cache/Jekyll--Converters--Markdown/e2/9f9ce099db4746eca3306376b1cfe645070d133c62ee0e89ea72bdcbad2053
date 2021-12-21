@@ -1,4 +1,4 @@
-I"©0<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
+I"¨0<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
 
 <h2>Pages</h2>
 
@@ -350,14 +350,14 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          1 minute read
+          3 minute read
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Update on the new blog and portfolio using Jekyll and GitHub
+    <p class="archive__item-excerpt" itemprop="description">Update on my new blog and portfolio using Jekyll and GitHub
 </p>
   </article>
 </div>

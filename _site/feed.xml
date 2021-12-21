@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-07T06:34:03+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Python and Power BI!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Infographic Designer in Power BI</title><link href="http://localhost:4000/blog/Infographic-Designer/" rel="alternate" type="text/html" title="Infographic Designer in Power BI" /><published>2021-11-24T00:00:00+00:00</published><updated>2021-11-24T00:00:00+00:00</updated><id>http://localhost:4000/blog/Infographic-Designer</id><content type="html" xml:base="http://localhost:4000/blog/Infographic-Designer/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-21T18:02:16+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Python and Power BI!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Infographic Designer in Power BI</title><link href="http://localhost:4000/blog/Infographic-Designer/" rel="alternate" type="text/html" title="Infographic Designer in Power BI" /><published>2021-11-24T00:00:00+00:00</published><updated>2021-11-24T00:00:00+00:00</updated><id>http://localhost:4000/blog/Infographic-Designer</id><content type="html" xml:base="http://localhost:4000/blog/Infographic-Designer/">&lt;blockquote&gt;
   &lt;p&gt;5 Years since it was released and I am only now realising quite how amazing this is!&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -45,21 +45,30 @@ This example is really quite basic and adapted from some of the above. I think I
 
 &lt;p&gt;This is pretty amazing as a start. The default URL will be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io/[reponame]&lt;/code&gt; which is useful if you want multiple sites from multiple repos but what about if you want a landing page that is just &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt;? Well that is pretty simple - if you call your repo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt; this sets the pages url to be just your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;jekyll--ruby&quot;&gt;Jekyll &amp;amp; Ruby&lt;/h3&gt;
-&lt;p&gt;https://jekyllrb.com/&lt;/p&gt;
+&lt;h3 id=&quot;jekyll--ruby--vs-code&quot;&gt;Jekyll &amp;amp; Ruby &amp;amp; VS Code&lt;/h3&gt;
+&lt;p&gt;While the out of the box pages functionality is great I wanted something more. Pages can still support other Jekyll themes and functionality that is published to your pages repo but you need to do that from your PC. In my case I am using VS code and GIT to connect to the repo from my Ubuntu laptop and installed the &lt;a href=&quot;https://jekyllrb.com/docs/installation/ubuntu/#install-dependencies&quot;&gt;Ruby and Jekyll dependencies&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;https://jekyllrb.com/docs/installation/ubuntu/#install-dependencies&lt;/p&gt;
+&lt;p&gt;Before starting the final site I had a go at creating a clean install based on the following this &lt;a href=&quot;https://www.youtube.com/watch?v=T1itpPvFWHI&amp;amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&quot;&gt;youtube guide&lt;/a&gt; to learn the fundamentals of Jekyll.&lt;/p&gt;
+
+&lt;p&gt;Once I had the basics I started to look at options in terms of &lt;a href=&quot;https://github.com/topics/jekyll-theme&quot;&gt;themes&lt;/a&gt;. One that looks really good was &lt;a href=&quot;https://raviriley.github.io/agency-jekyll-theme-starter/&quot;&gt;the agency theme&lt;/a&gt; which I really like the look of but because I wanted to do a combined Portfolio and Blog I needed a theme that worked for both of those uses.&lt;/p&gt;
 
 &lt;h3 id=&quot;minimal-mistakes&quot;&gt;Minimal Mistakes&lt;/h3&gt;
-&lt;p&gt;https://github.com/topics/jekyll-theme&lt;/p&gt;
 
-&lt;p&gt;https://mmistakes.github.io/minimal-mistakes/&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;Minimal Mistakes&lt;/a&gt; is a really popular theme that includes a lot of page styles and theme options. The documentation is also very good and it was very easy to get started and customise fom the &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes&quot;&gt;github repo&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;https://github.com/mmistakes/minimal-mistakes&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-post.png&quot; alt=&quot;image-center&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;customisation&quot;&gt;Customisation&lt;/h3&gt;
-&lt;p&gt;https://mmistakes.github.io/minimal-mistakes/docs/configuration/
-https://github.com/mmistakes/minimal-mistakes/issues/490&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Jekyll" /><category term="Ruby" /><category term="GitHub" /><summary type="html">Update on the new blog and portfolio using Jekyll and GitHub</summary></entry><entry><title type="html">Shape Maps in Power BI</title><link href="http://localhost:4000/blog/Shape-Maps/" rel="alternate" type="text/html" title="Shape Maps in Power BI" /><published>2021-03-09T00:00:00+00:00</published><updated>2021-03-09T00:00:00+00:00</updated><id>http://localhost:4000/blog/Shape-Maps</id><content type="html" xml:base="http://localhost:4000/blog/Shape-Maps/">&lt;blockquote&gt;
+
+&lt;p&gt;I did end up messing around in the templates to customise the theme a little and going quite deep into the &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/configuration/&quot;&gt;configuration&lt;/a&gt;. I should probably have done that in a forked repo that I could customise but instead I brought the code into the site repo to edit which means that it is a bit of a mess… but then I am still trying to figure stuff out.&lt;/p&gt;
+
+&lt;p&gt;Another great thing about minimal mistakes is that it is very popular so there is quite a bit of guidance available in issues etc. One example is finding &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/issues/490&quot;&gt;this issue&lt;/a&gt; explaining how I could edit the header to make it fixed at the top of each page.&lt;/p&gt;
+
+&lt;h3 id=&quot;take-aways&quot;&gt;Take Aways&lt;/h3&gt;
+
+&lt;p&gt;I have really enjoyed learning to use Jekyll and building the site so far. It defiantly takes work and effort to get to grips with but the results are pretty immediate and rewarding. Knowing some core HTML will definitely be helpful to getting into customisation and more advanced functionality.&lt;/p&gt;
+
+&lt;p&gt;Of course one of the key positives is that GitHub pages are completely free as is the theme and functionality I am using which is amazing!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Jekyll" /><category term="Ruby" /><category term="GitHub" /><summary type="html">Update on my new blog and portfolio using Jekyll and GitHub</summary></entry><entry><title type="html">Shape Maps in Power BI</title><link href="http://localhost:4000/blog/Shape-Maps/" rel="alternate" type="text/html" title="Shape Maps in Power BI" /><published>2021-03-09T00:00:00+00:00</published><updated>2021-03-09T00:00:00+00:00</updated><id>http://localhost:4000/blog/Shape-Maps</id><content type="html" xml:base="http://localhost:4000/blog/Shape-Maps/">&lt;blockquote&gt;
   &lt;p&gt;Thought it was about time to get in shape&lt;/p&gt;
 &lt;/blockquote&gt;
 
