@@ -1,6 +1,6 @@
 ---
-title: "Creating Organisational Data in Power BI"
-excerpt: "You can setup a organisational data type in Power BI and what you need to know to get it working like I did for Local Authorities."
+title: "Org Data in Power BI"
+excerpt: "How to set up organisational data in Power BI and what you need to know to get it working right."
 categories:
   - Blog
 tags:
@@ -8,9 +8,9 @@ tags:
   - Geography
 layout: single
 header:
-  teaser: /assets/images/posts/2021-11-12-Teaser.webp
-  image: /assets/images/posts/2021-11-12-Header.webp
-  image_description: "Laptop surrounded by wood working tools"
-  caption: "Photo credit: [**Ivan Samkov**](https://www.pexels.com/@ivan-samkov)"
+  teaser: /assets/images/posts/2022-03-01-Teaser.webp
+  image: /assets/images/posts/2022-03-01-Header.webp
+  image_description: "Modern looking library"
+  caption: "Photo credit: [**mentatdgt**](https://www.pexels.com/@mentatdgt-330508)"
 ---
 # DRAFT

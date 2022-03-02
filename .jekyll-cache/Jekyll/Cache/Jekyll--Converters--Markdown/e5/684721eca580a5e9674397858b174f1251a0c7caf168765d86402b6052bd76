@@ -1,4 +1,4 @@
-I"b6<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
+I"76<p>A list of all the posts and pages found on the site. For you robots out there is an <a href="/sitemap.xml">XML version</a> available for digesting as well.</p>
 
 <h2>Pages</h2>
 
@@ -297,7 +297,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/Organisational-Data/" rel="permalink">Creating Organisational Data in Power BI
+        <a href="/blog/Organisational-Data/" rel="permalink">Organisational Data in Power BI
 </a>
       
     </h2>
@@ -322,7 +322,7 @@
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">You can setup a organisational data type in Power BI and what you need to know to get it working like I did for Local Authorities.
+    <p class="archive__item-excerpt" itemprop="description">How to set up organisational data in Power BI and what you need to know to get it working right.
 </p>
   </article>
 </div>
@@ -332,7 +332,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/blog/QR-Code-Citations/" rel="permalink">Digital citations for physical notes
+        <a href="/blog/QR-Code-Citations/" rel="permalink">Digital Citations for Physical Notes
 </a>
       
     </h2>

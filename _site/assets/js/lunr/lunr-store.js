@@ -59,9 +59,9 @@ var store = [{
         "url": "/blog/QR-Code-Citations/",
         "teaser": "/assets/images/posts/2022-02-24-Teaser.webp"
       },{
-        "title": "Creating Organisational Data in Power BI",
+        "title": "Org Data in Power BI",
         "excerpt":"DRAFT  ","categories": ["Blog"],
         "tags": ["Power BI","Geography"],
         "url": "/blog/Organisational-Data/",
-        "teaser": "/assets/images/posts/2021-11-12-Teaser.webp"
+        "teaser": "/assets/images/posts/2022-03-01-Teaser.webp"
       }]
