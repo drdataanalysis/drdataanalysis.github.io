@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-21T18:02:16+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Python and Power BI!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Infographic Designer in Power BI</title><link href="http://localhost:4000/blog/Infographic-Designer/" rel="alternate" type="text/html" title="Infographic Designer in Power BI" /><published>2021-11-24T00:00:00+00:00</published><updated>2021-11-24T00:00:00+00:00</updated><id>http://localhost:4000/blog/Infographic-Designer</id><content type="html" xml:base="http://localhost:4000/blog/Infographic-Designer/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-03-02T07:00:41+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Python and Power BI!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Creating Organisational Data in Power BI</title><link href="http://localhost:4000/blog/Organisational-Data/" rel="alternate" type="text/html" title="Creating Organisational Data in Power BI" /><published>2022-03-01T00:00:00+00:00</published><updated>2022-03-01T00:00:00+00:00</updated><id>http://localhost:4000/blog/Organisational-Data</id><content type="html" xml:base="http://localhost:4000/blog/Organisational-Data/">&lt;h1 id=&quot;draft&quot;&gt;DRAFT&lt;/h1&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Power BI" /><category term="Geography" /><summary type="html">You can setup a organisational data type in Power BI and what you need to know to get it working like I did for Local Authorities.</summary></entry><entry><title type="html">Creating digital citations for physical notes</title><link href="http://localhost:4000/blog/QR-Code-Citations/" rel="alternate" type="text/html" title="Creating digital citations for physical notes" /><published>2022-02-24T00:00:00+00:00</published><updated>2022-02-24T00:00:00+00:00</updated><id>http://localhost:4000/blog/QR-Code-Citations</id><content type="html" xml:base="http://localhost:4000/blog/QR-Code-Citations/">&lt;h1 id=&quot;draft&quot;&gt;DRAFT&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;My obsession with QR codes has gone to another extreme&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;the-problem&quot;&gt;The Problem&lt;/h3&gt;
+&lt;p&gt;A few weeks ago I started a &lt;a href=&quot;https://www.youtube.com/watch?v=fm15cmYU0IM&quot;&gt;Bullet Journal&lt;/a&gt; and got hooked instantly. The only problem I found was if I need to make notes about a website or video how do I reference it in my physical bullet journal?&lt;/p&gt;
+
+&lt;p&gt;There are a number of options that I could think of but each one had pretty major drawbacks:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Write the URL&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;I am not writing out URLs and then Typing them again if I need them in the future&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Use a URL Shortener&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Still have to type a URL in the future it is just shorter, and I have to hope that the service remains active or create my own URL shortener and support that long term&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Use Bookmarks in Browser and reference them&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;This may work for some people but I am not a bookmark person because I don't want to have to organise them&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Use a digital notetaking app and cross reference both ways&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Again could work for some people but I don't want to have to use another app and have to open it each time I want to access a link.&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Bookmarking Apps&lt;br /&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Similar to the above two issues plus it's a whole other app just for bookmarks&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;what-i-wanted-to-be-able-to-do&quot;&gt;What I wanted to be able to do&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Ideal Process&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Save URL using my phone&lt;/li&gt;
+  &lt;li&gt;Add a sticker to my notebook with a QR code&lt;/li&gt;
+  &lt;li&gt;Scan the QR Code to get the link that has been saved&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;So how do I do that?&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;the-idea&quot;&gt;The idea&lt;/h3&gt;
+&lt;p&gt;I spent a while trying to think of technical options and ways to build something to do this then finally had the idea to start with the beggining of the process - saving a link on my phone.&lt;br /&gt;&lt;br /&gt;
+On android there are many share options but it was “GitHub - Create Issue” that stood out. Clicking on that puts the URL into the body of an issue and auto populates the name of the issue with the link title. Best of all GitHub issues all have the same URL format &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;https://github.com/[UserName]/[RepoName]/issues/[IssueNumber]&lt;/code&gt; and the issue number just goes up by 1 with each new issue created.&lt;br /&gt;&lt;br /&gt;
+The rest of the process was pretty easy to sort out - I need to create QR codes which is easy in Python and I need to create stickers which is easy using mail merge&lt;/p&gt;
+&lt;h3 id=&quot;what-i-made&quot;&gt;What I made&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Created a private repo called “journal-links” but it could be public or called anything you want for this to work&lt;/li&gt;
+  &lt;li&gt;Setup a Excel file to be used in python and the mail merge with a row for each of the QR codes that need to be generated with formulas for the URls:
+&lt;img src=&quot;http://localhost:4000/assets/images/posts/2022-02-24-ExcelFile.webp&quot; alt=&quot;image-center&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;Generate the QR codes using python to create a PNG for each of the links:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/cde5e33b3110feb109e897beeefec976.js&quot;&gt; &lt;/script&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="GitHub" /><category term="Python" /><category term="Bullet Journal" /><summary type="html">Dive into how to use GitHub issues, Python and Mail Merge to create and print QR Code stickers</summary></entry><entry><title type="html">Infographic Designer in Power BI</title><link href="http://localhost:4000/blog/Infographic-Designer/" rel="alternate" type="text/html" title="Infographic Designer in Power BI" /><published>2021-11-24T00:00:00+00:00</published><updated>2021-11-24T00:00:00+00:00</updated><id>http://localhost:4000/blog/Infographic-Designer</id><content type="html" xml:base="http://localhost:4000/blog/Infographic-Designer/">&lt;blockquote&gt;
   &lt;p&gt;5 Years since it was released and I am only now realising quite how amazing this is!&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -255,19 +295,4 @@ Then you can load that to your model and join it up with other data sets and if 
 
 &lt;p&gt;Here is the Notebook/ Code:&lt;/p&gt;
 &lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/a81e176f18bd11dc90f8b3ffb4b53b69.js&quot;&gt; &lt;/script&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Python" /><category term="Natural Language Processing" /><category term="spaCy" /><summary type="html">Post covering getting started with spaCy in Python for Natural Language Processing (NLP)</summary></entry><entry><title type="html">Starting Py-Fun!</title><link href="http://localhost:4000/news/Starting-PyFun/" rel="alternate" type="text/html" title="Starting Py-Fun!" /><published>2021-02-22T00:00:00+00:00</published><updated>2021-02-22T00:00:00+00:00</updated><id>http://localhost:4000/news/Starting-PyFun</id><content type="html" xml:base="http://localhost:4000/news/Starting-PyFun/">&lt;h2 id=&quot;-the-idea&quot;&gt;💡 The Idea&lt;/h2&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;I want a way to document my experiments with Python and integrating it with Azure ML and Power BI.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;-the-plan&quot;&gt;📋 The Plan&lt;/h2&gt;
-&lt;p&gt;I am going to blog as regularly as possible covering the Python exploration and investigation that I am doing.&lt;/p&gt;
-
-&lt;p&gt;The plan is to help document the challenges and experience of trying to work to bring Python into the Microsoft Power Platform and processes that are used in my team. This area is something that I have not found many resources about in my work so far so I am conscious that some of this may be of help to others which is another reason to put this into a blog.&lt;/p&gt;
-
-&lt;h2 id=&quot;-next-steps&quot;&gt;👣 Next Steps&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;&lt;del&gt;Publish this post&lt;/del&gt;&lt;/li&gt;
-  &lt;li&gt;Start looking at Natural Language Processing in Python (using Jupyter notebooks)&lt;/li&gt;
-  &lt;li&gt;Convert Jupyter code to Power BI for use in data models&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Python" /><category term="Power BI" /><summary type="html">Intro to the blog and the stuff I am planning to do with Python and Power BI</summary></entry></feed>
+&lt;script src=&quot;https://gist.github.com/a81e176f18bd11dc90f8b3ffb4b53b69.js&quot;&gt; &lt;/script&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Python" /><category term="Natural Language Processing" /><category term="spaCy" /><summary type="html">Post covering getting started with spaCy in Python for Natural Language Processing (NLP)</summary></entry></feed>

@@ -52,4 +52,16 @@ var store = [{
         "tags": ["Power BI","Infographic Designer","Advanced Visual"],
         "url": "/blog/Infographic-Designer/",
         "teaser": "/assets/images/posts/2021-11-24-Teaser.webp"
+      },{
+        "title": "Creating digital citations for physical notes",
+        "excerpt":"DRAFT My obsession with QR codes has gone to another extreme The Problem A few weeks ago I started a Bullet Journal and got hooked instantly. The only problem I found was if I need to make notes about a website or video how do I reference it in my...","categories": ["Blog"],
+        "tags": ["GitHub","Python","Bullet Journal"],
+        "url": "/blog/QR-Code-Citations/",
+        "teaser": "/assets/images/posts/2022-02-24-Teaser.webp"
+      },{
+        "title": "Creating Organisational Data in Power BI",
+        "excerpt":"DRAFT  ","categories": ["Blog"],
+        "tags": ["Power BI","Geography"],
+        "url": "/blog/Organisational-Data/",
+        "teaser": "/assets/images/posts/2021-11-12-Teaser.webp"
       }]
