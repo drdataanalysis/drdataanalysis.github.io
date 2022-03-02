@@ -1,6 +1,6 @@
 ---
-title: "Creating digital citations for physical notes"
-excerpt: "Dive into how to use GitHub issues, Python and Mail Merge to create and print QR Code stickers"
+title: "Digital Citations for Physical Notes"
+excerpt: "How to use GitHub issues, Python and Mail Merge to QR Code Citations"
 categories:
   - Blog
 tags:
@@ -14,8 +14,6 @@ header:
   image_description: "Making notes while using laptop"
   caption: "Photo credit: [**Liza Summer**](https://www.pexels.com/@liza-summer)"
 ---
-# DRAFT
-
 > My obsession with QR codes has gone to another extreme
 
 ### The Problem
@@ -49,4 +47,8 @@ The rest of the process was pretty easy to sort out - I need to create QR codes 
 {% gist cde5e33b3110feb109e897beeefec976 %}
 4. Create a mail merge with the generated qr codes as images in stickers (I just googled how to do this)
 ### How it works
-So I have label sheets with 16 stickers per sheet and can set the Issue Number to where I am up to (1-16,17-32 etc.), run the Python QR code to generate the new numbers, open the mail merge and print.
+So I have label sheets with 16 stickers per sheet and can set the Issue Number to where I am up to (1-16,17-32 etc.), run the Python QR code to generate the new numbers, open the mail merge and print.<nr><br>
+When I want to create a citation I can select to share on my phone and create a issue in the journal-links repo or create one manually from GitHub online from my PC then add the next sticker to my bullet journal and add a description to the label. This has the added benefit of being able to add multiple links to a issue if there are several things I want to include in the citation and the links can be edited at any time.<br><be>
+To view the cited links I can use google lens search to read the qr code which then opens the issue in the GitHub app and it is one click to open each link.
+### Conclusion
+This may be a very niche need which is why I struggled to find a solution I liked but I am very happy with the solution I have created. It is worth noting that for my needs I created the first two sheets (32 stickers) and am still only half way through the first one. If high volumes are expected - i.e. your a full time student it may be necessary to tweak the process to be able to more easily generate larger numbers of stickers at once.

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Creating digital citations for physical notes - Dean Robinson</title>
-<meta name="description" content="Dive into how to use GitHub issues, Python and Mail Merge to create and print QR Code stickers">
+<!-- begin _includes/seo.html --><title>Digital Citations for Physical Notes - Dean Robinson</title>
+<meta name="description" content="How to use GitHub issues, Python and Mail Merge to QR Code Citations">
 
 
   <meta name="author" content="My Profile">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_UK">
 <meta property="og:site_name" content="Dean Robinson">
-<meta property="og:title" content="Creating digital citations for physical notes">
+<meta property="og:title" content="Digital Citations for Physical Notes">
 <meta property="og:url" content="http://localhost:4000/blog/QR-Code-Citations/">
 
 
-  <meta property="og:description" content="Dive into how to use GitHub issues, Python and Mail Merge to create and print QR Code stickers">
+  <meta property="og:description" content="How to use GitHub issues, Python and Mail Merge to QR Code Citations">
 
 
 
@@ -295,8 +295,8 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Creating digital citations for physical notes">
-    <meta itemprop="description" content="Dive into how to use GitHub issues, Python and Mail Merge to create and print QR Code stickers">
+    <meta itemprop="headline" content="Digital Citations for Physical Notes">
+    <meta itemprop="description" content="How to use GitHub issues, Python and Mail Merge to QR Code Citations">
     <meta itemprop="datePublished" content="2022-02-24T00:00:00+00:00">
     
 
@@ -304,7 +304,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/blog/QR-Code-Citations/" class="u-url" itemprop="url">Creating digital citations for physical notes
+            <a href="http://localhost:4000/blog/QR-Code-Citations/" class="u-url" itemprop="url">Digital Citations for Physical Notes
 </a>
           </h1>
           
@@ -321,7 +321,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          3 minute read
         
       </span>
     
@@ -333,9 +333,7 @@
 
       <section class="page__content e-content" itemprop="text">
         
-        <h1 id="draft">DRAFT</h1>
-
-<blockquote>
+        <blockquote>
   <p>My obsession with QR codes has gone to another extreme</p>
 </blockquote>
 
@@ -365,7 +363,7 @@
 <p>I spent a while trying to think of technical options and ways to build something to do this then finally had the idea to start with the beggining of the process - saving a link on my phone.<br /><br />
 On android there are many share options but it was “GitHub - Create Issue” that stood out. Clicking on that puts the URL into the body of an issue and auto populates the name of the issue with the link title. Best of all GitHub issues all have the same URL format <code class="language-plaintext highlighter-rouge">https://github.com/[UserName]/[RepoName]/issues/[IssueNumber]</code> and the issue number just goes up by 1 with each new issue created.<br /><br />
 The rest of the process was pretty easy to sort out - I need to create QR codes which is easy in Python and I need to create stickers which is easy using mail merge</p>
-<h3 id="what-i-made">What I made</h3>
+<h3 id="what-i-did">What I did</h3>
 <ol>
   <li>Created a private repo called “journal-links” but it could be public or called anything you want for this to work</li>
   <li>Setup a Excel file to be used in python and the mail merge with a row for each of the QR codes that need to be generated with formulas for the URls:
@@ -375,6 +373,16 @@ The rest of the process was pretty easy to sort out - I need to create QR codes 
 <noscript><pre>400: Invalid request</pre></noscript>
 <script src="https://gist.github.com/cde5e33b3110feb109e897beeefec976.js"> </script>
 
+<ol>
+  <li>Create a mail merge with the generated qr codes as images in stickers (I just googled how to do this)
+    <h3 id="how-it-works">How it works</h3>
+    <p>So I have label sheets with 16 stickers per sheet and can set the Issue Number to where I am up to (1-16,17-32 etc.), run the Python QR code to generate the new numbers, open the mail merge and print.<nr><br />
+When I want to create a citation I can select to share on my phone and create a issue in the journal-links repo or create one manually from GitHub online from my PC then add the next sticker to my bullet journal and add a description to the label. This has the added benefit of being able to add multiple links to a issue if there are several things I want to include in the citation and the links can be edited at any time.<br /><be>
+To view the cited links I can use google lens search to read the qr code which then opens the issue in the GitHub app and it is one click to open each link.</be></nr></p>
+    <h3 id="conclusion">Conclusion</h3>
+    <p>This may be a very niche need which is why I struggled to find a solution I liked but I am very happy with the solution I have created. It is worth noting that for my needs I created the first two sheets (32 stickers) and am still only half way through the first one. If high volumes are expected - i.e. your a full time student it may be necessary to tweak the process to be able to more easily generate larger numbers of stickers at once.</p>
+  </li>
+</ol>
 
         
       </section>
@@ -427,7 +435,7 @@ The rest of the process was pretty easy to sort out - I need to create QR codes 
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Creating+digital+citations+for+physical+notes%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2FQR-Code-Citations%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Digital+Citations+for+Physical+Notes%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2FQR-Code-Citations%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2FQR-Code-Citations%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
