@@ -105,7 +105,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  jekyll (~> 4.2.1)
+  jekyll
   jekyll-feed (~> 0.12)
   jekyll-gist
   minimal-mistakes-jekyll
