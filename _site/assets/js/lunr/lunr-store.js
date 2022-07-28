@@ -64,4 +64,10 @@ var store = [{
         "tags": ["Power BI","Geography"],
         "url": "/blog/Organisational-Data/",
         "teaser": "/assets/images/posts/2022-03-01-Teaser.webp"
+      },{
+        "title": "Fix Issue with Shapefile Maps",
+        "excerpt":"DRAFT  ","categories": ["Blog"],
+        "tags": ["Power BI Report Builder","Geography"],
+        "url": "/blog/Shapefile-Map-Report-Builder/",
+        "teaser": "/assets/images/posts/2022-07-28-Teaser.webp"
       }]
