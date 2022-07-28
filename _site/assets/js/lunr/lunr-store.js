@@ -66,7 +66,7 @@ var store = [{
         "teaser": "/assets/images/posts/2022-03-01-Teaser.webp"
       },{
         "title": "Fix Issue with Shapefile Maps",
-        "excerpt":"DRAFT  ","categories": ["Blog"],
+        "excerpt":"Shapefile up or ship out! Getting started with Power BI Report Builder and want to add a Shape File? If you are looking to use ONS files they will error without following this fix! The Error Length of the field of type N is 24. No spatial data available. The...","categories": ["Blog"],
         "tags": ["Power BI Report Builder","Geography"],
         "url": "/blog/Shapefile-Map-Report-Builder/",
         "teaser": "/assets/images/posts/2022-07-28-Teaser.webp"

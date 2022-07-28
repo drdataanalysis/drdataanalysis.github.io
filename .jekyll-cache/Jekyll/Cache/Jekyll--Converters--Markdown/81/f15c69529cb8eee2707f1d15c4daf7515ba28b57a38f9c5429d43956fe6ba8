@@ -1,4 +1,4 @@
-I"¯<blockquote>
+I"„<blockquote>
   <p>With great Power BI comes great responsibility</p>
 </blockquote>
 
@@ -38,7 +38,5 @@ Then you can load that to your model and join it up with other data sets and if 
 
 <p>As you can see I have included in this template NER (code bellow), RAKE which I will do a separate posts about and TextBlob which is sentiment analysis and something that there will be many more posts about!</p>
 <h3 id="named-entity-recognition-power-bi-code">Named Entity Recognition Power BI Code</h3>
-<noscript><pre>400: Invalid request</pre></noscript>
-<script src="https://gist.github.com/68a5fdd61221a67cdaa575db53f1d4aa.js"> </script>
-
+<p>true<script src="https://gist.github.com/68a5fdd61221a67cdaa575db53f1d4aa.js"> </script></p>
 :ET
