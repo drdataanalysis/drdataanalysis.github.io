@@ -1,8 +1,7 @@
-# Build settings mmistakes/minimal-mistakes
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-theme: "minimal-mistakes-jekyll"
-minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
+# Build settings
+#theme: minima
+remote_theme: "mmistakes/minimal-mistakes@4.24.0" 
+minimal_mistakes_skin: "dark"
 
 # Site Settings
 locale                   : "en-UK"
@@ -140,7 +139,6 @@ footer:
       icon: "fab fa-fw fa-instagram"
       # url:
 
-
 # Reading Files
 include:
   - .htaccess
@@ -211,12 +209,7 @@ permalink: /:categories/:title/
 #paginate_path: /page:num
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-
-# Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
 
