@@ -18,8 +18,10 @@ header:
 Getting started with Power BI Report Builder and want to add a Shape File? If you are looking to use ONS files they will error without following this fix!
 
 # The Error
-![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/posts/2022-07-28-Error.png)
-<br>```Length of the field of type N is 24. No spatial data available. The map display contains sample spatial data.```
+<figure>
+	<a href="/assets/images/posts/2022-07-28-Error.png"><img src="/assets/images/posts/2022-07-28-Error.png"></a>
+</figure>
+```Length of the field of type N is 24. No spatial data available. The map display contains sample spatial data.```
 
 I have been using Power BI Report builder for about a week now and have got to the point where I wanted to start playing with maps. So I download a shapefile from the ONS geoportal, select to use a ESRI Shapefile in Power BI Report builder and get this error.
 
@@ -34,16 +36,16 @@ I am using the [NUTS Level 1](https://geoportal.statistics.gov.uk/datasets/ons::
 1. Download Shapefile Zip from the [ONS Geoportal](https://geoportal.statistics.gov.uk/)
 2. Go to [https://mapshaper.org/](https://mapshaper.org/)
 3. Import Zip File
-<br>![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/posts/2022-07-28-Import.png)
+<br><figure><a href="/assets/images/posts/2022-07-28-Import.png"><img src="/assets/images/posts/2022-07-28-Import.png"></a></figure>
 4. Open Console
-<br>![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/posts/2022-07-28-Console.png) 
+<br><figure><a href="/assets/images/posts/2022-07-28-Console.png"><img src="/assets/images/posts/2022-07-28-Console.png"></a></figure>
 5. Use the info command to identify the field names in the Attribute data section of the result
-<br>![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/posts/2022-07-28-Console_Info.png)
+<br><figure><a href="/assets/images/posts/2022-07-28-Console_Info.png"><img src="/assets/images/posts/2022-07-28-Console_Info.png"></a></figure>
 6. Use the filter-fields command listing all of the field names (or just the ones you want to keep) - **the format is important, there should not be any spaces between the column names** ```filter-fields [field1],[field2],[field3],[ect.]```
-<br>![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/posts/2022-07-28-Console_Filter-Fields.png)
+<br><figure><a href="/assets/images/posts/2022-07-28-Console_Filter-Fields.png"><img src="/assets/images/posts/2022-07-28-Console_Filter-Fields.png"></a></figure>
 7. Export as Shapefile Zip then extract the zip
 8. In Power BI Report Builder open the map wizard or add a new layer to an existing map and select ESRI shapefile and load the .shp file from the folder that was just unzipped
 9. The shape map should now work and instead of the error you will see a preview of your map
-<br>![image-center]({{ site.url }}{{ site.baseurl }}/assets/images/posts/2022-07-28-Working.png)
+<br><figure><a href="/assets/images/posts/2022-07-28-Working.png"><img src="/assets/images/posts/2022-07-28-Working.png"></a></figure>
 # Final Note
 I don't know why this works. I assume that the filter-field command must change the field format of the .dbf file that gets generated but I am not really bothered about why it works just that it does. I assume this fix will work if you get this error in SSRS but given that Power BI report builder is virtually identical I am going to assume that it will work for both.

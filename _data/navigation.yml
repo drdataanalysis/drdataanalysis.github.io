@@ -2,7 +2,7 @@ main:
   - title: "About"
     url: /#about
   - title: "Projects"
-    url: /#portfolio
+    url: /#my-latest-projects
   - title: "Blog"
     url: /blog
   - title: <i class="fas fa-search" aria-hidden="true"></i>

@@ -127,7 +127,7 @@
         <ul class="visible-links"><li class="masthead__menu-item">
               <a href="/#about">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/#portfolio">Projects</a>
+              <a href="/#my-latest-projects">Projects</a>
             </li><li class="masthead__menu-item">
               <a href="/blog">Blog</a>
             </li><li class="masthead__menu-item">
@@ -203,12 +203,12 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       
-        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Sheffield, UK</span>
-        </li>
-      
 
       
+        
+          
+            <li><a href="https://drdataanalysis.github.io" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-house-user" aria-hidden="true"></i><span class="label">Home</span></a></li>
+          
         
           
             <li><a href="mailto:drdataanalysis@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
@@ -338,8 +338,10 @@
 <p>Getting started with Power BI Report Builder and want to add a Shape File? If you are looking to use ONS files they will error without following this fix!</p>
 
 <h1 id="the-error">The Error</h1>
-<p><img src="http://localhost:4000/assets/images/posts/2022-07-28-Error.png" alt="image-center" />
-<br /><code class="language-plaintext highlighter-rouge">Length of the field of type N is 24. No spatial data available. The map display contains sample spatial data.</code></p>
+<figure>
+	<a href="/assets/images/posts/2022-07-28-Error.png"><img src="/assets/images/posts/2022-07-28-Error.png" /></a>
+</figure>
+<p><code class="language-plaintext highlighter-rouge">Length of the field of type N is 24. No spatial data available. The map display contains sample spatial data.</code></p>
 
 <p>I have been using Power BI Report builder for about a week now and have got to the point where I wanted to start playing with maps. So I download a shapefile from the ONS geoportal, select to use a ESRI Shapefile in Power BI Report builder and get this error.</p>
 
@@ -355,17 +357,17 @@
   <li>Download Shapefile Zip from the <a href="https://geoportal.statistics.gov.uk/">ONS Geoportal</a></li>
   <li>Go to <a href="https://mapshaper.org/">https://mapshaper.org/</a></li>
   <li>Import Zip File
-<br /><img src="http://localhost:4000/assets/images/posts/2022-07-28-Import.png" alt="image-center" /></li>
+<br /><figure><a href="/assets/images/posts/2022-07-28-Import.png"><img src="/assets/images/posts/2022-07-28-Import.png" /></a></figure></li>
   <li>Open Console
-<br /><img src="http://localhost:4000/assets/images/posts/2022-07-28-Console.png" alt="image-center" /></li>
+<br /><figure><a href="/assets/images/posts/2022-07-28-Console.png"><img src="/assets/images/posts/2022-07-28-Console.png" /></a></figure></li>
   <li>Use the info command to identify the field names in the Attribute data section of the result
-<br /><img src="http://localhost:4000/assets/images/posts/2022-07-28-Console_Info.png" alt="image-center" /></li>
+<br /><figure><a href="/assets/images/posts/2022-07-28-Console_Info.png"><img src="/assets/images/posts/2022-07-28-Console_Info.png" /></a></figure></li>
   <li>Use the filter-fields command listing all of the field names (or just the ones you want to keep) - <strong>the format is important, there should not be any spaces between the column names</strong> <code class="language-plaintext highlighter-rouge">filter-fields [field1],[field2],[field3],[ect.]</code>
-<br /><img src="http://localhost:4000/assets/images/posts/2022-07-28-Console_Filter-Fields.png" alt="image-center" /></li>
+<br /><figure><a href="/assets/images/posts/2022-07-28-Console_Filter-Fields.png"><img src="/assets/images/posts/2022-07-28-Console_Filter-Fields.png" /></a></figure></li>
   <li>Export as Shapefile Zip then extract the zip</li>
   <li>In Power BI Report Builder open the map wizard or add a new layer to an existing map and select ESRI shapefile and load the .shp file from the folder that was just unzipped</li>
   <li>The shape map should now work and instead of the error you will see a preview of your map
-<br /><img src="http://localhost:4000/assets/images/posts/2022-07-28-Working.png" alt="image-center" />
+<br /><figure><a href="/assets/images/posts/2022-07-28-Working.png"><img src="/assets/images/posts/2022-07-28-Working.png" /></a></figure>
     <h1 id="final-note">Final Note</h1>
     <p>I don’t know why this works. I assume that the filter-field command must change the field format of the .dbf file that gets generated but I am not really bothered about why it works just that it does. I assume this fix will work if you get this error in SSRS but given that Power BI report builder is virtually identical I am going to assume that it will work for both.</p>
   </li>
@@ -526,7 +528,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     
@@ -570,7 +572,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          2 minute read
+          1 minute read
         
       </span>
     
@@ -614,7 +616,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          3 minute read
+          2 minute read
         
       </span>
     

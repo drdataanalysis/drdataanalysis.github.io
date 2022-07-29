@@ -63,8 +63,7 @@ feature_row5:
 ---
 
 {% include feature_row id="intro" type="center" %}
-###### About
-## A bit about me
+## About
 <table style="width: 80%; margin-left: auto; margin-right: auto;">
 <tr>
 <td>
@@ -73,7 +72,6 @@ feature_row5:
 </tr>
 </table>
 <br>
-###### Portfolio
 ## My Latest Projects
 <table style="width: 80%; margin-left: auto; margin-right: auto;">
 <tr>
