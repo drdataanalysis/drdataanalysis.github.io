@@ -1,0 +1,676 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Shape Maps in Power BI - Dean Robinson</title>
+<meta name="description" content="How to use ONS Local Authority shape maps in Power BI and how to create custom maps based of existing.">
+
+
+  <meta name="author" content="My Profile">
+  
+  <meta property="article:author" content="My Profile">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_UK">
+<meta property="og:site_name" content="Dean Robinson">
+<meta property="og:title" content="Shape Maps in Power BI">
+<meta property="og:url" content="http://localhost:4000/blog/Shape-Maps/">
+
+
+  <meta property="og:description" content="How to use ONS Local Authority shape maps in Power BI and how to create custom maps based of existing.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/posts/2021-03-09-Header.webp">
+
+
+
+
+
+  <meta property="article:published_time" content="2021-03-09T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/blog/Shape-Maps/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Dean Robinson",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Dean Robinson Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+<meta name ="theme-color" content="#252a34" />
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/Logo.webp" alt="Dean Robinson"></a>
+        
+        <a class="site-title" href="/">
+          Dean Robinson
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/#about">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/#portfolio">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/search"><i class="fas fa-search" aria-hidden="true"></i></a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="/assets/images/posts/2021-03-09-Header.webp" alt="Scattered collection of old maps on a table" class="page__hero-image">
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://www.pexels.com/@andrew"><strong>Andrew Neel</strong></a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://avatars.githubusercontent.com/u/43471619?s=400&u=2740f03b579edf5c1c1f6471c86f5e4808de7a51&v=4" alt="Dean Robinson" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">My Profile</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>I’m an experienced Data Analyst and aspiring Data Scientist</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Sheffield, UK</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:drdataanalysis@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://linkedin.com/drdataanalysis" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/drdataanalysis" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Shape Maps in Power BI">
+    <meta itemprop="description" content="How to use ONS Local Authority shape maps in Power BI and how to create custom maps based of existing.">
+    <meta itemprop="datePublished" content="2021-03-09T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/blog/Shape-Maps/" class="u-url" itemprop="url">Shape Maps in Power BI
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <blockquote>
+  <p>Thought it was about time to get in shape</p>
+</blockquote>
+
+<p>This is a bit of a tangent but wanted to share useful links as this is something that I have pulled together with multiple sources and not something that I could find a joined view of.</p>
+
+<p>So maps are tricky. Getting your data in the right format, right place and most difficult correct shape is really difficult. One approach is to focus only on getting your data in the right place by using latitude and longitude to plot data in the correct places but shape maps are definitely the best way to present data about geographies such as Countries, Regions, Local Authorities, Postcode Areas etc.</p>
+
+<p>Out of the box there are a few shape maps like US states, UK countries but for my purposes I need shape maps for Local Authorities, Postcode Areas, Regions and other geographic distributions inside the UK. Custom maps can be loaded and as <a href="https://docs.microsoft.com/en-us/power-bi/visuals/desktop-shape-map#use-custom-maps">this article</a> says:</p>
+
+<blockquote>
+  <p>“You can use custom maps with Shape Map as long as they are in the TopoJSON format. If your map is in another format, you can use online tools such as <a href="https://mapshaper.org/">Map Shaper</a> to convert your shapefiles or your GeoJSON maps into the TopoJSON format.”</p>
+</blockquote>
+
+<p>In Power Maps (plugin for excel) this is achieved through Shape or KML files but in here we need TopoJSON. On the <a href="https://geoportal.statistics.gov.uk/">ONS Geoportal</a> you need to go to the APIs rather than downloads for the GeoJSON link for whichever boundary you are wanting. Going to the URL and saving the JSON file locally you can then load it into <a href="https://mapshaper.org/">Map Shaper</a> and export as TopoJSON in the top right hand corner.</p>
+
+<p>So that gives you any boundary published by the ONS as a format that can be loaded into Power BI, from a bit of testing the associated shape data can be matched according to any of the parameters so for Local Authority that is the JSON file ID, Local Authority Code or Local Authority name which is pretty helpful.</p>
+
+<p>So that is all great until you rightealise that the latest boundary map (at time of writing) is the 2019 Local Authority list and the latest local authority list is 2020 which includes the merging of Aylesbury Vale, Chiltern, South Bucks and Wycombe into Buckinghamshire Local Authority and my data is aligned to the 2020 list. I was able to use <a href="https://help.flourish.studio/article/187-how-to-merge-regions-with-mapshaper">this guide</a> to merge together the old local authority boundaries and adapt this one to create field names for the new shape then re-join the maps and…
+<img src="http://localhost:4000/assets/images/posts/2021-03-09-Comparison.webp" alt="image-center" />
+So a bit of a tangent but useful set of tools to be able to use shape maps for the geographies that I need and something that can be built on in the future if I need to do something like creating custom region maps that are not available from the ONS.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#advanced-visual" class="page__taxonomy-item p-category" rel="tag">Advanced Visual</a><span class="sep">, </span>
+    
+      <a href="/tags/#geomaping" class="page__taxonomy-item p-category" rel="tag">Geomaping</a><span class="sep">, </span>
+    
+      <a href="/tags/#ons" class="page__taxonomy-item p-category" rel="tag">ONS</a><span class="sep">, </span>
+    
+      <a href="/tags/#power-bi" class="page__taxonomy-item p-category" rel="tag">Power BI</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#blog" class="page__taxonomy-item p-category" rel="tag">Blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2021-03-09T00:00:00+00:00">March 9, 2021</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Shape+Maps+in+Power+BI%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2FShape-Maps%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2FShape-Maps%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fblog%2FShape-Maps%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blog/VADER-and-PowerBI/" class="pagination--pager" title="VADER and Power BI
+">Previous</a>
+    
+    
+      <a href="/news/My-New-Blog/" class="pagination--pager" title="Creating my New Blog!
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You May Also Enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/posts/2022-07-28-Teaser.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/Shapefile-Map-Report-Builder/" rel="permalink">Fix Issue with Shapefile Maps
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">How to fix issue with Shapefile spacial data in Power BI Report Builder (and SSRS).
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/posts/2022-03-01-Teaser.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/Organisational-Data/" rel="permalink">Org Data in Power BI
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">How to set up organisational data in Power BI and what you need to know to get it working right.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/posts/2022-02-24-Teaser.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/QR-Code-Citations/" rel="permalink">Digital Citations for Physical Notes
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">How to use GitHub issues, Python and Mail Merge to QR Code Citations
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/posts/2021-11-24-Teaser.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/Infographic-Designer/" rel="permalink">Infographic Designer in Power BI
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Resources and experience of using the Infographic Designer custom visual in Power BI
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a>|&nbsp;&nbsp;<a href=/terms><i class="fas fa-balance-scale" aria-hidden="true"></i> Terms and Legal Stuff</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Dean Robinson. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

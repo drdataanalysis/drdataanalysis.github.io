@@ -1,0 +1,704 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>RAKE in Power BI - Dean Robinson</title>
+<meta name="description" content="How to use Rapid Automatic Keyword Extraction (RAKE) using the Natural Language Tool Kit (NLTK) in Python">
+
+
+  <meta name="author" content="My Profile">
+  
+  <meta property="article:author" content="My Profile">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_UK">
+<meta property="og:site_name" content="Dean Robinson">
+<meta property="og:title" content="RAKE in Power BI">
+<meta property="og:url" content="http://localhost:4000/blog/RAKE/">
+
+
+  <meta property="og:description" content="How to use Rapid Automatic Keyword Extraction (RAKE) using the Natural Language Tool Kit (NLTK) in Python">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/posts/2021-02-26-Header.webp">
+
+
+
+
+
+  <meta property="article:published_time" content="2021-02-26T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/blog/RAKE/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Dean Robinson",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Dean Robinson Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+<meta name ="theme-color" content="#252a34" />
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/Logo.webp" alt="Dean Robinson"></a>
+        
+        <a class="site-title" href="/">
+          Dean Robinson
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/#about">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/#portfolio">Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/blog">Blog</a>
+            </li><li class="masthead__menu-item">
+              <a href="/search"><i class="fas fa-search" aria-hidden="true"></i></a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+  
+
+
+
+
+
+
+
+<div class="page__hero"
+  style=" background-image: url('');"
+>
+  
+    <img src="/assets/images/posts/2021-02-26-Header.webp" alt="Rake in a golf course sand pit" class="page__hero-image">
+  
+  
+    <span class="page__hero-caption">Photo credit: <a href="https://www.pexels.com/@martin-magnemyr-2914907"><strong>Martin Magnemyr</strong></a>
+</span>
+  
+</div>
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="https://avatars.githubusercontent.com/u/43471619?s=400&u=2740f03b579edf5c1c1f6471c86f5e4808de7a51&v=4" alt="Dean Robinson" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">My Profile</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>I’m an experienced Data Analyst and aspiring Data Scientist</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Sheffield, UK</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:drdataanalysis@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://linkedin.com/drdataanalysis" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">Linkedin</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/drdataanalysis" rel="nofollow noopener noreferrer me"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="RAKE in Power BI">
+    <meta itemprop="description" content="How to use Rapid Automatic Keyword Extraction (RAKE) using the Natural Language Tool Kit (NLTK) in Python">
+    <meta itemprop="datePublished" content="2021-02-26T00:00:00+00:00">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/blog/RAKE/" class="u-url" itemprop="url">RAKE in Power BI
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          1 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <blockquote>
+  <p>I like Python but it needs more acronyms</p>
+</blockquote>
+
+<p>In this post I am going to go through the basic use of Rapid Automatic Keyword Extraction (RAKE) using the Natural Language Tool Kit (NLTK) as documented <a href="https://pypi.org/project/rake-nltk/">here</a>.</p>
+
+<p>So before we get into RAKE what is NLTK? It is a set of tools that do some quite similar stuff to Natural Language Processing as used in the spaCy Position of Speech (POS) and Named Entity Recognition (NER) tools that are explored <a href="https://drdataanalysis.github.io/blog/Lost-in-spaCy/">here</a>. Essentially the tools break down text into their component parts for scripts like RAKE, POS, NER to return results based on analysis of those components.</p>
+
+<p>What is RAKE? This tool extracts key words and phrases based on frequency and without any understanding of the context of the text being analysed. This makes it quite a general tool that will not work well with all text sources but like POS and NER is a good exploratory tool and may work well when joined up to other information about the text data. As an example I have found that using Named Entity Labels and RAKE outputs works well in Power BI.</p>
+
+<p>I have not included the same degree of comments as in previous posts because the code here is pretty much the same so please refer to <a href="https://drdataanalysis.github.io/blog/NLP-in-PowerBI/">this post</a> to understand the context of what each step is doing. These examples are also still based on the same assumption of the data used as in previous posts i.e. two columns “id” and “text”.</p>
+<h3 id="rake-example-for-jupyter">RAKE Example for Jupyter</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+    <span class="kn">import</span> <span class="nn">nltk</span>
+    <span class="kn">from</span> <span class="nn">rake_nltk</span> <span class="kn">import</span> <span class="n">Rake</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s">'../templates/data/Text Small Example.csv'</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">df</span><span class="p">.</span><span class="n">iterrows</span><span class="p">():</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">'text'</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="k">continue</span>
+        <span class="n">rake</span> <span class="o">=</span> <span class="n">Rake</span><span class="p">()</span>
+        <span class="n">rake</span><span class="p">.</span><span class="n">extract_keywords_from_text</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">'text'</span><span class="p">])</span>
+        <span class="c1">#doc = nlp(row['text'])
+</span>        <span class="k">for</span> <span class="n">score</span><span class="p">,</span> <span class="n">phrase</span> <span class="ow">in</span> <span class="n">rake</span><span class="p">.</span><span class="n">get_ranked_phrases_with_scores</span><span class="p">():</span>
+            <span class="n">row_data</span> <span class="o">=</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">"id"</span><span class="p">],</span><span class="n">phrase</span><span class="p">,</span><span class="n">score</span><span class="p">)</span>
+            <span class="n">data</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">row_data</span><span class="p">)</span>
+    <span class="n">new_df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">'id'</span><span class="p">,</span><span class="s">'phrase'</span><span class="p">,</span><span class="s">'score'</span><span class="p">])</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">new_df</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="rake-example-for-power-bi">RAKE Example for Power BI</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+    <span class="kn">import</span> <span class="nn">nltk</span>
+    <span class="kn">from</span> <span class="nn">rake_nltk</span> <span class="kn">import</span> <span class="n">Rake</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">.</span><span class="n">iterrows</span><span class="p">():</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">'text'</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="k">continue</span>
+        <span class="n">rake</span> <span class="o">=</span> <span class="n">Rake</span><span class="p">()</span>
+        <span class="n">rake</span><span class="p">.</span><span class="n">extract_keywords_from_text</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">'text'</span><span class="p">])</span>
+        <span class="c1">#doc = nlp(row['text'])
+</span>        <span class="k">for</span> <span class="n">score</span><span class="p">,</span> <span class="n">phrase</span> <span class="ow">in</span> <span class="n">rake</span><span class="p">.</span><span class="n">get_ranked_phrases_with_scores</span><span class="p">():</span>
+            <span class="n">row_data</span> <span class="o">=</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">"id"</span><span class="p">],</span><span class="n">phrase</span><span class="p">,</span><span class="n">score</span><span class="p">)</span>
+            <span class="n">data</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">row_data</span><span class="p">)</span>
+    <span class="n">new_df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">'id'</span><span class="p">,</span><span class="s">'phrase'</span><span class="p">,</span><span class="s">'score'</span><span class="p">])</span>
+</code></pre></div></div>
+<p>Hopefully it is clear from the above example that not much needs to change when using Python in Power BI. As mentioned in my <a href="https://drdataanalysis.github.io/blog/NLP-in-PowerBI/">previous post</a> a change of mindset to think of data frames as the outputs rather than print, visuals or export.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#nltk" class="page__taxonomy-item p-category" rel="tag">NLTK</a><span class="sep">, </span>
+    
+      <a href="/tags/#pandas" class="page__taxonomy-item p-category" rel="tag">pandas</a><span class="sep">, </span>
+    
+      <a href="/tags/#power-bi" class="page__taxonomy-item p-category" rel="tag">Power BI</a><span class="sep">, </span>
+    
+      <a href="/tags/#python" class="page__taxonomy-item p-category" rel="tag">Python</a><span class="sep">, </span>
+    
+      <a href="/tags/#rake" class="page__taxonomy-item p-category" rel="tag">RAKE</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#blog" class="page__taxonomy-item p-category" rel="tag">Blog</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time class="dt-published" datetime="2021-02-26T00:00:00+00:00">February 26, 2021</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=RAKE+in+Power+BI%20http%3A%2F%2Flocalhost%3A4000%2Fblog%2FRAKE%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fblog%2FRAKE%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fblog%2FRAKE%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/blog/NLP-in-PowerBI/" class="pagination--pager" title="NLP in PowerBI
+">Previous</a>
+    
+    
+      <a href="/blog/TextBlob-and-PowerBI/" class="pagination--pager" title="TextBlob and Power BI
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">You May Also Enjoy</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/posts/2022-07-28-Teaser.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/Shapefile-Map-Report-Builder/" rel="permalink">Fix Issue with Shapefile Maps
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">How to fix issue with Shapefile spacial data in Power BI Report Builder (and SSRS).
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/posts/2022-03-01-Teaser.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/Organisational-Data/" rel="permalink">Org Data in Power BI
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">How to set up organisational data in Power BI and what you need to know to get it working right.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/posts/2022-02-24-Teaser.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/QR-Code-Citations/" rel="permalink">Digital Citations for Physical Notes
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">How to use GitHub issues, Python and Mail Merge to QR Code Citations
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src="/assets/images/posts/2021-11-24-Teaser.webp" alt="">
+      </div>
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/blog/Infographic-Designer/" rel="permalink">Infographic Designer in Power BI
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">Resources and experience of using the Infographic Designer custom visual in Power BI
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a>|&nbsp;&nbsp;<a href=/terms><i class="fas fa-balance-scale" aria-hidden="true"></i> Terms and Legal Stuff</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2022 Dean Robinson. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

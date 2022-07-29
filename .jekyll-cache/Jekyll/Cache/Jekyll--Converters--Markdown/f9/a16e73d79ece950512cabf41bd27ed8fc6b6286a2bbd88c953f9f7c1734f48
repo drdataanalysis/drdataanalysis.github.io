@@ -1,0 +1,25 @@
+I"û<blockquote>
+  <p>TextBlob makes me polarity:1</p>
+</blockquote>
+
+<p>Expanding text capabilities with Sentiment in Power BI is one of the key things I have always wanted to be able to do. The code for this is pretty much the same as covered previously and as with all of the tools I have covered so far this is the most basic application of each tool - there is a lot more that can  be done with further customisation based on the types of data you are working with.</p>
+
+<p><a href="https://textblob.readthedocs.io/en/dev/">TextBlob</a> is a Natural Language Processing tool (NLP) to identify the sentiment (polarity) of a text string on a scale of -1 (negative) to 1 (positive). As well as sentiment you can export a subjectivity score on a scale of 0 (objective) to 1 (subjective) which can be a really useful way of exploring your and the correlation between sentiment and subjectivity.</p>
+<h3 id="textblob-in-power-bi">TextBlob in Power BI</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+    <span class="kn">import</span> <span class="nn">textblob</span>
+    <span class="kn">from</span> <span class="nn">textblob</span> <span class="kn">import</span> <span class="n">TextBlob</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="c1">#create a for loop of the rows in the df dataframe
+</span>    <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">dataset</span><span class="p">.</span><span class="n">iterrows</span><span class="p">():</span>
+        <span class="c1">#checks to see if the value in text is a string i.e. contains data if so continue
+</span>        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">'text'</span><span class="p">],</span> <span class="nb">str</span><span class="p">):</span>
+            <span class="k">continue</span>
+        <span class="c1">#blob is the results of the current text value
+</span>        <span class="n">blob</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">'text'</span><span class="p">])</span>
+        <span class="n">row_data</span> <span class="o">=</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">"id"</span><span class="p">],</span><span class="n">blob</span><span class="p">.</span><span class="n">polarity</span><span class="p">,</span><span class="n">blob</span><span class="p">.</span><span class="n">subjectivity</span><span class="p">)</span>
+        <span class="n">data</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">row_data</span><span class="p">)</span>
+    <span class="n">new_df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s">'id'</span><span class="p">,</span><span class="s">'polarity'</span><span class="p">,</span><span class="s">'subjectivity'</span><span class="p">])</span>
+</code></pre></div></div>
+
+:ET
