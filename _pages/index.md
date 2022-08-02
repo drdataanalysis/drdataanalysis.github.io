@@ -17,15 +17,15 @@ excerpt: "Thank you for visiting 👍"
 intro: 
   - excerpt: 'I created this site to showcase and share some of the cool stuff I am doing with data.<br>I write [blog](/blog) posts to demo tools and approaches I am developing.<br>My portfolio includes my recent [projects](/#portfolio) and some background info [about me](#about)<br>[<i class="fas fa-chevron-down" aria-hidden="true"></i>](/#about)'
 feature_row:
-  - image_path: /assets/images/team.svg
+  - image_path: /assets/images/team.webp
     alt: "placeholder image 1"
     title: "Experienced Manager"
     excerpt: "I have lead high performance data teams supporting major change initiatives since **2015**. I am immensely proud of the amazing work we have delivered and our collaborative culture."
-  - image_path: /assets/images/experience.svg
+  - image_path: /assets/images/experience.webp
     alt: "placeholder image 2"
     title: "Skilled Data Analyst"
     excerpt: "Over a decade of experience of working with customers to understand their data. Successfully lead on moving from legacy reporting to utilizing modern and scalable tools like **Power BI**."
-  - image_path: /assets/images/developing.svg
+  - image_path: /assets/images/developing.webp
     title: "Developing Data Scientist"
     excerpt: "In the past few years I have been expanding my use of **Python** in particular for Text Analysis and Web Scraping."
     url: "/about"
@@ -66,7 +66,18 @@ feature_row5:
 ## About
 <table style="width: 80%; margin-left: auto; margin-right: auto;">
 <tr>
-<td>
+<td style="width: 10%">
+<div class="author__avatar">     
+<img src="https://avatars.githubusercontent.com/u/43471619?s=400&u=2740f03b579edf5c1c1f6471c86f5e4808de7a51&v=4" alt="Dean Robinson" itemprop="image">
+</div>
+</td>
+<td style="width: 90%">
+<h2>Hi - I'm Dean Robinson</h2>
+<br>I am an experienced Data Analyst and aspiring Data Scientist with over 10 years experience of working with data.<br>There is a more detailed <a href="/about">about page</a> if you would like to know more but here are the highlights 🙂
+</td>
+</tr>
+<tr style="height: 10em">
+<td colspan="2">
 {% include feature_row %}
 </td>
 </tr>
