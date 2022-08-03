@@ -15,7 +15,7 @@ header:
   caption: "Photo credit: [**DataKind**](https://twitter.com/datakinduk)"
 excerpt: "Thank you for visiting 👍"
 intro: 
-  - excerpt: 'I created this site to showcase and share some of the cool stuff I am doing with data.<br>I write [blog](/blog) posts to demo tools and approaches I am developing.<br>My portfolio includes my recent [projects](/#portfolio) and some background info [about me](#about)<br>[<i class="fas fa-chevron-down" aria-hidden="true"></i>](/#about)'
+  - excerpt: 'I created this site to showcase and share some of the cool stuff I am doing with data.<br>I write [blog](/blog) posts to demo tools and approaches I am developing.<br>My portfolio includes my recent [projects](/#my-latest-projects) and some background info [about me](#about)<br>[<i class="fas fa-chevron-down" aria-hidden="true"></i>](/#about)'
 feature_row:
   - image_path: /assets/images/team.webp
     alt: "placeholder image 1"
@@ -31,35 +31,30 @@ feature_row:
     url: "/about"
     btn_label: "Click here to see more..."
     btn_class: "btn--inverse"
-feature_row2:
-  - image_path: "/assets/images/project1.webp"
-    alt: "Open book with glasses on page"
+feature_row_nlp:
+  - image_path: "/assets/images/nlp.webp"
+    alt: "Whirlpool of Books"
     title: "Python Text Analysis in Power BI"
-    excerpt: '> In this project I have adapted core Python text analytics tools to extract key information and sentiment within the Power BI data import processes.<br>The aim was to develop generalized versions of the code that can easily be adapted for a variety of text sources. <br>Using Power BI to extract, Python to transform, then Power BI to load and present the data means that any data analyst can use powerful data science tools.'
-    url: "/tags/#natural-language-processing"
+    excerpt: '<h3>In this project I have been adapting Python Text analysis tools for text analysis, key word/ phrase extraction, sentiment identification to be used in Power BI reports.</h3><h1> 🧑‍💻</h1>'
+    url: "/tags/nlp/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-feature_row3:
-  - image_path: "/assets/images/project2.webp"
-    alt: "Table with charts and notes"
+feature_row_advanced:
+  - image_path: "/assets/images/advanced.webp"
+    alt: "Person touching advanced visualization"
     title: "Advanced Power BI Visuals"
-    excerpt: '> In this project I have presented examples of customizable visual tools and how to adapt them to fit your needs. <br>In one example I have brought together guides and tools to create custom shape maps adapted from the ones produced by the office of national statistics(ONS).<br>Another example brings together guides for the Infographic Designer custom visual and looks at a few custom ideas that I have produced using the tool.'
-    url: "/tags/#advanced-visual"
+    excerpt: '<h3>In this project I have been using a variety of tools to bring more advanced reporting and style capabilities to Power BI. This includes marketplace visuals, custom HTML elements and using ShapeMaps.</h3><h1> 🧑‍🔧</h1>'
+    url: "/tags/advanced-visual/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-feature_row4:
-  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
-    alt: "placeholder image 2"
-    title: "Placeholder Image Center Aligned"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
-    url: "#test-link"
+feature_row_report-builder:
+  - image_path: "/assets/images/report-builder.webp"
+    alt: "Laptop in building site"
+    title: "Power BI Report Builder"
+    excerpt: '<h3>I have recently started using Power BI Report Builder to create Paginated Reports and have been diving into using ShapeFile maps and optimizing Ux.</h3><h1> 👷</h1>'
+    url: "/tags/report-builder/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-feature_row5:
-  - url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-
 ---
 
 {% include feature_row id="intro" type="center" %}
@@ -84,15 +79,20 @@ feature_row5:
 </table>
 <br>
 ## My Latest Projects
-<table style="width: 80%; margin-left: auto; margin-right: auto;">
+<table style="width: 100%; margin-left: auto; margin-right: auto;">
 <tr>
 <td>
-{% include feature_row id="feature_row2" type="left" %}
+{% include feature_row id="feature_row_nlp" type="center" %}
 </td>
 </tr>
 <tr>
 <td>
-{% include feature_row id="feature_row3" type="left" %}
+{% include feature_row id="feature_row_advanced" type="center" %}
+</td>
+</tr>
+<tr>
+<td>
+{% include feature_row id="feature_row_report-builder" type="center" %}
 </td>
 </tr>
 </table>
