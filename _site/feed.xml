@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-28T08:33:13+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Python and Power BI!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Fix Issue with Shapefile Maps</title><link href="http://localhost:4000/blog/Shapefile-Map-Report-Builder/" rel="alternate" type="text/html" title="Fix Issue with Shapefile Maps" /><published>2022-07-28T00:00:00+01:00</published><updated>2022-07-28T00:00:00+01:00</updated><id>http://localhost:4000/blog/Shapefile-Map-Report-Builder</id><content type="html" xml:base="http://localhost:4000/blog/Shapefile-Map-Report-Builder/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-12-12T17:52:03+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Python and Power BI!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">A New Era</title><link href="http://localhost:4000/news/New-Era/" rel="alternate" type="text/html" title="A New Era" /><published>2023-12-12T00:00:00+00:00</published><updated>2023-12-12T00:00:00+00:00</updated><id>http://localhost:4000/news/New-Era</id><content type="html" xml:base="http://localhost:4000/news/New-Era/">&lt;blockquote&gt;
+  &lt;p&gt;This post is about why I quit Data Analysis&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;my-comfort-zone&quot;&gt;My Comfort Zone&lt;/h2&gt;
+
+&lt;p&gt;The majority of my career has been dedicated to leading a team of data analysts. I have been fortunate enough to work towards a meaningful cause and have had the flexibility to engage in various other tasks as needed, such as systems development or training. For the longest time, Data Analysis was my primary focus and data engineering supported me and my team in conducting analysis.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-changed&quot;&gt;What Changed?&lt;/h2&gt;
+
+&lt;p&gt;Then, Microsoft announced that within a year, they would discontinue a tool that connected our system to our Azure SQL Database. This tool had facilitated a significant shift in our work process and helped us to create an array of reports. To their credit, Microsoft provided a 12-month notice and presented us with two options: use a data lake or use a data lake with Synapse. I pulled together an options paper based on all the available info and flagged the risk and recommendations to the business within a couple of weeks of the announcement.&lt;/p&gt;
+
+&lt;h2 id=&quot;crunch-point&quot;&gt;Crunch Point&lt;/h2&gt;
+
+&lt;p&gt;Without delving into the details, time passed and the 12 months became 6, then 3, and finally 1. Although the options paper was approved early on, the necessary resources for implementation were not readily available. As a result, the implementation became a last-minute endeavor. With only one month remaining, my proposal to use Synapse was put into action. Two weeks later, it was set up and handed over to me. Thus, I had two weeks to implement a Data Lake solution that would facilitate our core operational reporting.&lt;/p&gt;
+
+&lt;h2 id=&quot;my-response&quot;&gt;My Response&lt;/h2&gt;
+
+&lt;p&gt;Choosing Synapse turned out to be a wise decision. Microsoft had recommended configuring a Data Lake joined with Synapse, which included storage and data factory. Setting up the Synapse link was straightforward, but then the question arose: how do we get the data to the reports?&lt;/p&gt;
+
+&lt;p&gt;Microsoft Learn proved to be invaluable during this time. I cannot stress enough how important it was to have access to this resource. I had to quickly familiarize myself with and implement a whole new way of working with data, including concepts like Data Lake House, Serverless SQL, and Data Factory.&lt;/p&gt;
+
+&lt;p&gt;Initially, I considered switching all reporting to Serverless SQL via the Data Lake, as the tools had changed but the data schema and structure had not. However, I soon realized that this was not feasible given the time constraints. So, my solution was to push new and changed data from the Data Lake into the old SQL database on a nightly basis using Data Factory within Synapse. This ensured that no changes were required for the existing reports, except that any changes made during the current day would not be included (which was not a significant issue for the majority of reporting).&lt;/p&gt;
+
+&lt;p&gt;With just a couple of days left until the deprecation, I was able to turn off the old link at midnight one evening. From that point onwards, data factory started inserting new records and updating existing ones through a scheduled pipeline run using a data flow that I built. It is worth mentioning that this data flow was dynamic from day one, running for each entity on a loop with passed parameters. Interestingly, I take particular pride in adding an if statement that skips entities without any new or altered records. This was achieved by examining the metadata of files in the data lake folder, resulting in a few minutes of processing time saved each day.&lt;/p&gt;
+
+&lt;h2 id=&quot;next-steps&quot;&gt;Next steps&lt;/h2&gt;
+
+&lt;p&gt;Short term - Pyspark and Notebooks to connect tricky APIs and integrate existing pipelines which were using Power Automate. I was able to complete another very short notice data challenge for another part of the organisation and ensure reporting continuity. I got to grips with the power of Delta Tables and started to explore the architecture and structure that a Delta Lake House could facilitate.&lt;/p&gt;
+
+&lt;p&gt;In the short term, I used Pyspark and Notebooks to connect with complex APIs and integrate existing pipelines that were using Power Automate. I completed another data challenge for another department on very short notice, ensuring continuity in reporting. I also started exploring the power of Delta Tables and the architecture and structure that a Delta Lake House can facilitate.&lt;/p&gt;
+
+&lt;p&gt;Medium term - I took the risk to go fully into engineering and architecture in a new role (quitting data analysis) and was successful and this is now the day job and obsession: to enable Data Analysis, Insight and Science to happen.&lt;/p&gt;
+
+&lt;p&gt;In the medium term, I took a risk during a restructure to apply to move into an engineering and architecture role, leaving behind data analysis. I was successful and the new role has now become my day job and passion: enabling Data Analysis, Insight, and Science to flourish.&lt;/p&gt;
+
+&lt;p&gt;Looking ahead in the long term, I have numerous data consolidation projects and exciting projects for both myself and the team. I am eager to expand our use of Synapse and prepare for the introduction of Fabric, which is likely to transform data in a similar way that SharePoint changed file management and collaboration.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;That is how I made the decision to quit data analysis. The past year has presented significant challenges but also incredible opportunities for growth. Along the way, I have discovered new tricks and tips that I intend to share through this blog. For now, the title will remain the same, as Data Analysis (and Science) is what the engineering and architecture work enables.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Data Engineering" /><category term="Data Architecture" /><category term="Synapse" /><summary type="html">This post is about why I quit Data Analysis</summary></entry><entry><title type="html">Fix Issue with Shapefile Maps</title><link href="http://localhost:4000/blog/Shapefile-Map-Report-Builder/" rel="alternate" type="text/html" title="Fix Issue with Shapefile Maps" /><published>2022-07-28T00:00:00+01:00</published><updated>2022-07-28T00:00:00+01:00</updated><id>http://localhost:4000/blog/Shapefile-Map-Report-Builder</id><content type="html" xml:base="http://localhost:4000/blog/Shapefile-Map-Report-Builder/">&lt;blockquote&gt;
   &lt;p&gt;Shapefile up or ship out!&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -71,8 +111,12 @@ The rest of the process was pretty easy to sort out - I need to create QR codes 
   &lt;li&gt;Created a private repo called “journal-links” but it could be public or called anything you want for this to work&lt;/li&gt;
   &lt;li&gt;Setup a Excel file to be used in python and the mail merge with a row for each of the QR codes that need to be generated with formulas for the URls:
 &lt;img src=&quot;http://localhost:4000/assets/images/posts/2022-02-24-ExcelFile.webp&quot; alt=&quot;image-center&quot; /&gt;&lt;/li&gt;
-  &lt;li&gt;Generate the QR codes using python to create a PNG for each of the links:
-true&lt;script src=&quot;https://gist.github.com/cde5e33b3110feb109e897beeefec976.js&quot;&gt; &lt;/script&gt;&lt;/li&gt;
+  &lt;li&gt;Generate the QR codes using python to create a PNG for each of the links:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/cde5e33b3110feb109e897beeefec976.js&quot;&gt; &lt;/script&gt;
+
+&lt;ol&gt;
   &lt;li&gt;Create a mail merge with the generated qr codes as images in stickers (I just googled how to do this)
     &lt;h3 id=&quot;how-it-works&quot;&gt;How it works&lt;/h3&gt;
     &lt;p&gt;So I have label sheets with 16 stickers per sheet and can set the Issue Number to where I am up to (1-16,17-32 etc.), run the Python QR code to generate the new numbers, open the mail merge and print.&lt;nr&gt;&lt;br /&gt;
@@ -268,47 +312,4 @@ On other data I have tested on TextBlob has the advantage when comparing against
             &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;row_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
     &lt;span class=&quot;n&quot;&gt;new_df&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DataFrame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;columns&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;id&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;phrase&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;score&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Hopefully it is clear from the above example that not much needs to change when using Python in Power BI. As mentioned in my &lt;a href=&quot;https://drdataanalysis.github.io/blog/NLP-in-PowerBI/&quot;&gt;previous post&lt;/a&gt; a change of mindset to think of data frames as the outputs rather than print, visuals or export.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Python" /><category term="NLTK" /><category term="Power BI" /><category term="RAKE" /><category term="pandas" /><summary type="html">How to use Rapid Automatic Keyword Extraction (RAKE) using the Natural Language Tool Kit (NLTK) in Python</summary></entry><entry><title type="html">NLP in PowerBI</title><link href="http://localhost:4000/blog/NLP-in-PowerBI/" rel="alternate" type="text/html" title="NLP in PowerBI" /><published>2021-02-25T00:00:00+00:00</published><updated>2021-02-25T00:00:00+00:00</updated><id>http://localhost:4000/blog/NLP-in-PowerBI</id><content type="html" xml:base="http://localhost:4000/blog/NLP-in-PowerBI/">&lt;blockquote&gt;
-  &lt;p&gt;With great Power BI comes great responsibility&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;it-is-time-power-bi--python--amazing&quot;&gt;It is time: Power BI + Python = Amazing!&lt;/h3&gt;
-
-&lt;p&gt;It worked, it is relatively easy to convert the code to run within Power BI. The main thing that changes is the emphasis of using print() or exporting data in some ways things are easier in that you just need to update or create data frames so 🐼s is key… Pandas.&lt;/p&gt;
-
-&lt;p&gt;In terms of a step by step guide the first thing I did was get the code working in Jupyter as a proof that the code will execute successfully.&lt;/p&gt;
-
-&lt;p&gt;Following on from &lt;a href=&quot;https://drdataanalysis.github.io/blog/Lost-in-spaCy/&quot;&gt;using spaCy&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;When you add a Python Script to a Power BI Query it basically takes the data as it stands in the previous step and converts it to a data frame called dataset. &lt;strong&gt;This means that for the code I had for spaCy the name “df” needed to be changed to “dataset”.&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The other thing that needs to be different is what you do with the outputs of your code. I previously was printing out the values to test that it was working which does not work with what we need for Power BI. Another common way of using python is to output to a CSV or summarize in a visual but again this is not something that we want to do when using Python scripts with Power BI Queries (Python with visuals is a whole other conversation). The solution is to either update a the dataset data frame or to create a new dataframe that stores your outputs. In the case of NLP we are taking text and splitting it up into component parts as rows so outputting to a new dataframe is the easiest way to do this - the advantage with Power BI is that you can always load your data in as another table an join your Python powered query outputs back to it which is really useful.&lt;/p&gt;
-
-&lt;p&gt;I created a list called “data” to store the outputs of the for loop and then a last step to create a new data frame called “new_df”. Hopefully the following comparison should make sense of the differences here. The other thing to mention is that I have added the dependencies above the code like you would in Jupiter but Power BI is like a standard Python Script so you need to all code needs to be in one step.&lt;/p&gt;
-
-&lt;h3 id=&quot;previous-position-of-speech-code&quot;&gt;Previous Position of Speech Code&lt;/h3&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/a81e176f18bd11dc90f8b3ffb4b53b69.js&quot;&gt; &lt;/script&gt;
-
-&lt;h3 id=&quot;putting-this-in-power-bi&quot;&gt;Putting this in Power BI&lt;/h3&gt;
-&lt;p&gt;Hopefully this next step should be simple. To get stuff running in Jupyter you will have needed to install the modules etc. so as long as Power BI is using the same Python environment that you are this should work fine.&lt;/p&gt;
-
-&lt;p&gt;First step is to extract and load your data - this is pretty core to Power BI so I am not going to go through it other than to say that the code here is the same as with the spaCy example and expecting a inputs of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id|text&lt;/code&gt; with those headers and only those columns. If you have more columns that you want to include do it in another query and join in your data model - the same is true if you have two (or more) text columns you can either add them all as sperare queries.&lt;/p&gt;
-
-&lt;p&gt;The source I am using is on SharePoint and is a CSV but the advantage of using Power Query on this is it is very easy to pull in data from wherever you want. The data has been processed and converted including filtering out blanks (even though the code will also check for this).&lt;/p&gt;
-
-&lt;p&gt;Once your data looks like this:
-&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-02-25-DataView.webp&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;
-Click on the Transform tab and the Run Python Script button in the far right:
-&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-02-25-Transform.webp&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;
-Paste your code into the box that pops up and click on OK to run. Once the preview has loaded you will see a list of data frames, one is the original data set and the other is the new_df frame the script created:
-&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-02-25-DataView2.webp&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;
-To load the new_df data you can just click on table in the corresponding value column and that import the data frame and automatically do things like changing data types:
-&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-02-25-DataView3.webp&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;
-Then you can load that to your model and join it up with other data sets and if you include both way filters can do some really cool stuff:
-&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-02-25-DataModel.webp&quot; alt=&quot;image-center&quot; class=&quot;align-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;As you can see I have included in this template NER (code bellow), RAKE which I will do a separate posts about and TextBlob which is sentiment analysis and something that there will be many more posts about!&lt;/p&gt;
-&lt;h3 id=&quot;named-entity-recognition-power-bi-code&quot;&gt;Named Entity Recognition Power BI Code&lt;/h3&gt;
-&lt;noscript&gt;&lt;pre&gt;400: Invalid request&lt;/pre&gt;&lt;/noscript&gt;
-&lt;script src=&quot;https://gist.github.com/68a5fdd61221a67cdaa575db53f1d4aa.js&quot;&gt; &lt;/script&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Python" /><category term="Natural Language Processing" /><category term="Power BI" /><category term="spaCy" /><category term="pandas" /><summary type="html">How to use Python Natural Language Processing (NLP) in Power BI!</summary></entry></feed>
+&lt;p&gt;Hopefully it is clear from the above example that not much needs to change when using Python in Power BI. As mentioned in my &lt;a href=&quot;https://drdataanalysis.github.io/blog/NLP-in-PowerBI/&quot;&gt;previous post&lt;/a&gt; a change of mindset to think of data frames as the outputs rather than print, visuals or export.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Python" /><category term="NLTK" /><category term="Power BI" /><category term="RAKE" /><category term="pandas" /><summary type="html">How to use Rapid Automatic Keyword Extraction (RAKE) using the Natural Language Tool Kit (NLTK) in Python</summary></entry></feed>

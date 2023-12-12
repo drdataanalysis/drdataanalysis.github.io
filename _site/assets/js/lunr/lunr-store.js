@@ -70,4 +70,10 @@ var store = [{
         "tags": ["Power BI Report Builder","Geography"],
         "url": "/blog/Shapefile-Map-Report-Builder/",
         "teaser": "/assets/images/posts/2022-07-28-Teaser.webp"
+      },{
+        "title": "A New Era",
+        "excerpt":"This post is about why I quit Data Analysis My Comfort Zone The majority of my career has been dedicated to leading a team of data analysts. I have been fortunate enough to work towards a meaningful cause and have had the flexibility to engage in various other tasks as...","categories": ["News"],
+        "tags": ["Data Engineering","Data Architecture","Synapse"],
+        "url": "/news/New-Era/",
+        "teaser": "/assets/images/posts/2023-12-12-Teaser.webp"
       }]
