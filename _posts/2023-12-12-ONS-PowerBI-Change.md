@@ -4,8 +4,10 @@ excerpt: "How to convert ONS map files to be compatible with Power BI"
 categories:
   - Blog
 tags:
-  - Power BI Report Builder
-  - Geography
+  - Power BI
+  - Advanced Visual
+  - Geomaping
+  - ONS
 layout: single
 header:
   teaser: /assets/images/posts/2023-12-13-Teaser.webp
