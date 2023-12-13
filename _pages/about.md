@@ -12,11 +12,11 @@ excerpt: "🗺 Home is the People's Republic of South Yorkshire (Sheffield)"
 ---
 > I want to make it easy for everyone to use data for good.
 
-`That is why I created this blog - to share tools, techniques and resources I develop or utlize that help make advanced data tools easier to use.`
+`That is why I created this blog - to share tools, techniques and resources I develop or utilize that help make advanced data tools easier to use.`
 
 # Skills and Experience
 
-I have worked with data for over 10 years, worked for a major UK charity since 2012 and have managed data and systems teams since 2015.
+I have worked with data for nearly 15 years, worked for a major UK charity since 2012 and have managed data and systems teams since 2015.
 
 You can find full details of my roles and the organisations I have worked for on [![Linkedin Profile](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/drdataanalysis)
 
@@ -31,10 +31,10 @@ You can find full details of my roles and the organisations I have worked for on
 `Big Science Fiction fan`
 <br>
 <i class="fas fa-gamepad" aria-hidden="true"></i>
-`Play Minecraft and vintage games`
+`Steamdeck player and minecraft obsessive`
 <br>
 <i class="fas fa-guitar" aria-hidden="true"></i>
-`Mess arround on Ukele, Banjo and Guitar`
+`Mess around on Ukele, Banjo and Guitar`
 <br>
 <i class="fas fa-record-vinyl" aria-hidden="true"></i>
 `Slowly expanding vinal collection`

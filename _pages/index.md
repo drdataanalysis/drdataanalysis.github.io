@@ -23,14 +23,22 @@ feature_row:
     excerpt: "I have lead high performance data teams supporting major change initiatives since **2015**. I am immensely proud of the amazing work we have delivered and our collaborative culture."
   - image_path: /assets/images/experience.webp
     alt: "placeholder image 2"
-    title: "Skilled Data Analyst"
-    excerpt: "Over a decade of experience of working with customers to understand their data. Successfully lead on moving from legacy reporting to utilizing modern and scalable tools like **Power BI**."
+    title: "Skilled Data Professional"
+    excerpt: "Nearly 15 years of experience working to unlock value from data and adopting modern and scalable tools like **Azure Synapse Analytics** and **Power BI**."
   - image_path: /assets/images/developing.webp
-    title: "Developing Data Scientist"
-    excerpt: "In the past few years I have been expanding my use of **Python** in particular for Text Analysis and Web Scraping."
+    title: "Always Learning"
+    excerpt: "In the past few years I have been expanding my use of **Python** and am now using **pyspark** and developing my skills around **Delta Lake House**."
     url: "/about"
     btn_label: "Click here to see more..."
     btn_class: "btn--inverse"
+feature_row_delta:
+  - image_path: "/assets/images/delta.webp"
+    alt: "Whirlpool of Books"
+    title: "Delta Lakehouse Architecture and Engineering"
+    excerpt: '<h3>I am currently expanding my use and knoweldge of Delta and unlocking the power of the Delta Lakehouse model.</h3><h1> 🏗️</h1>'
+    url: "/tags/delta/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 feature_row_nlp:
   - image_path: "/assets/images/nlp.webp"
     alt: "Whirlpool of Books"
@@ -80,6 +88,11 @@ feature_row_report-builder:
 <br>
 ## My Latest Projects
 <table style="width: 100%; margin-left: auto; margin-right: auto;">
+<tr>
+<td>
+{% include feature_row id="feature_row_delta" type="center" %}
+</td>
+</tr>
 <tr>
 <td>
 {% include feature_row id="feature_row_nlp" type="center" %}
