@@ -15,7 +15,7 @@ header:
   caption: "Photo credit: [**DataKind**](https://twitter.com/datakinduk)"
 excerpt: "Thank you for visiting 👍"
 intro: 
-  - excerpt: 'I created this site to showcase and share some of the cool stuff I am doing with data.<br>I write [blog](/blog) posts to demo tools and approaches I am developing.<br>My portfolio includes my recent [projects](/#my-latest-projects) and some background info [about me](#about)<br>[<i class="fas fa-chevron-down" aria-hidden="true"></i>](/#about)'
+  - excerpt: '**I want to make it easy for everyone to use data for good.** That is why I created my [blog](/blog) to share tools, techniques and resources I make or use.<br>This portfolio includes my recent [projects](/#my-latest-projects) and some background info [about me](#about).<br>[<i class="fas fa-chevron-down" aria-hidden="true"></i>](/#about)'
 feature_row:
   - image_path: /assets/images/team.webp
     alt: "placeholder image 1"
@@ -76,7 +76,7 @@ feature_row_report-builder:
 </td>
 <td style="width: 90%">
 <h2>Hi - I'm Dean Robinson</h2>
-<br>I am an experienced Data Analyst and aspiring Data Scientist with over 10 years experience of working with data.<br>There is a more detailed <a href="/about">about page</a> if you would like to know more but here are the highlights 🙂
+<br>I am a Data Architect and Engineer with a background in Data Analysis and nearly 15 years experience of working with data. I have a more detailed <a href="/about">about page</a> if you would like to know more but here are the highlights 🙂
 </td>
 </tr>
 <tr style="height: 10em">

@@ -1,5 +1,5 @@
 ---
-title: Delta Lakehouse Architecture and Engineering"
+title: Delta Lakehouse Architecture and Engineering
 layout: tag
 permalink: /tags/delta/
 taxonomy: Delta
