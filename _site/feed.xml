@@ -1,6 +1,22 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-24T08:29:07+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Data!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Medallion Model</title><link href="http://localhost:4000/blog/Medallion-Model/" rel="alternate" type="text/html" title="Medallion Model" /><published>2024-06-24T00:00:00+01:00</published><updated>2024-06-24T00:00:00+01:00</updated><id>http://localhost:4000/blog/Medallion-Model</id><content type="html" xml:base="http://localhost:4000/blog/Medallion-Model/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-06-24T13:52:59+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Data!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Medallion Model</title><link href="http://localhost:4000/blog/Medallion-Model/" rel="alternate" type="text/html" title="Medallion Model" /><published>2024-06-24T00:00:00+01:00</published><updated>2024-06-24T00:00:00+01:00</updated><id>http://localhost:4000/blog/Medallion-Model</id><content type="html" xml:base="http://localhost:4000/blog/Medallion-Model/">&lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Oh, the noodle analogy. You guys are gonna love this.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;h2 id=&quot;chips-analogy-video&quot;&gt;Chips Analogy Video&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I have created this quick video that explains the model using the Analogy of Chips where Bronze is Dirty Potatoes, Silver is cleaned Potatoes and Gold is your final product Chips!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;!-- Courtesy of embedresponsively.com //--&gt;
+
+&lt;div class=&quot;responsive-video-container&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/OtVFGN_uwus&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+
+&lt;p&gt;This analogy was adapted from a book I read where they used Salad in a similar way (apologies I can’t remember the source).&lt;/p&gt;
+
+&lt;p&gt;I also found &lt;a href=&quot;https://www.databricks.com/glossary/medallion-architecture&quot;&gt;this databricks article&lt;/a&gt; really helpful when getting started and there are loads of resources available online about this topic.&lt;/p&gt;
 
 &lt;h1 id=&quot;what-is-the-model&quot;&gt;What is the Model?&lt;/h1&gt;
 &lt;p&gt;Medallion is the most common model used in Data Lake architecture and provides a simple and straight forward basis to help organize your data. Importantly it is not prescriptive in terms of what wording you or how you can adapt it for your needs.&lt;/p&gt;
@@ -23,23 +39,7 @@
 &lt;p&gt;Gold is all about business need - another way of thinking about it is what do your analysts need and how can you best provide the data ready for them to use. Analysts will often have access to silver data and they could use that data to model in Power BI etc. for reporting but the Gold layer provides consistency and safety that whatever business logic you need is reflected in the models being presented.&lt;/p&gt;
 
 &lt;h2 id=&quot;flexible&quot;&gt;Flexible&lt;/h2&gt;
-&lt;p&gt;As mentioned a key feature of this model is that it is flexible - you can use different terms and you can also adapt the model as needed. In my experience for instance I am using medallion but have a level to record processing step output separately from the medallion model - this could be kept in Raw but because the processing is pushing data out of the lake to a source system I have kept it out of the way to avoid confusion.&lt;/p&gt;
-
-&lt;h2 id=&quot;chips-analogy-video&quot;&gt;Chips Analogy Video&lt;/h2&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;I have created this quick video that explains the model using the Analogy of Chips where Bronze is Dirty Potatoes, Silver is cleaned Potatoes and Gold is your final product Chips!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;!-- Courtesy of embedresponsively.com //--&gt;
-
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube-nocookie.com/embed/OtVFGN_uwus&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;This analogy was adapted from a book I read where they used Salad in a similar way (apologies I can’t remember the source).&lt;/p&gt;
-
-&lt;p&gt;I also found &lt;a href=&quot;https://www.databricks.com/glossary/medallion-architecture&quot;&gt;this databricks article&lt;/a&gt; really helpful when getting started and there are loads of resources available online about this topic.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Architecture 101" /><category term="Delta" /><category term="Data Lake" /><summary type="html">Explained with Chips!</summary></entry><entry><title type="html">An Exciting New Era</title><link href="http://localhost:4000/news/New-Era/" rel="alternate" type="text/html" title="An Exciting New Era" /><published>2023-12-12T00:00:00+00:00</published><updated>2023-12-12T00:00:00+00:00</updated><id>http://localhost:4000/news/New-Era</id><content type="html" xml:base="http://localhost:4000/news/New-Era/">&lt;blockquote&gt;
+&lt;p&gt;As mentioned a key feature of this model is that it is flexible - you can use different terms and you can also adapt the model as needed. In my experience for instance I am using medallion but have a level to record processing step output separately from the medallion model - this could be kept in Raw but because the processing is pushing data out of the lake to a source system I have kept it out of the way to avoid confusion.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Architecture 101" /><category term="Delta" /><category term="Data Lake" /><summary type="html">Explained with Chips!</summary></entry><entry><title type="html">An Exciting New Era</title><link href="http://localhost:4000/news/New-Era/" rel="alternate" type="text/html" title="An Exciting New Era" /><published>2023-12-12T00:00:00+00:00</published><updated>2023-12-12T00:00:00+00:00</updated><id>http://localhost:4000/news/New-Era</id><content type="html" xml:base="http://localhost:4000/news/New-Era/">&lt;blockquote&gt;
   &lt;p&gt;This post is about why I quit Data Analysis&lt;/p&gt;
 &lt;/blockquote&gt;
 

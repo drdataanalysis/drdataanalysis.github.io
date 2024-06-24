@@ -84,7 +84,7 @@ var store = [{
         "teaser": "/assets/images/posts/2023-12-13-Teaser.webp"
       },{
         "title": "Medallion Model",
-        "excerpt":"Oh, the noodle analogy. You guys are gonna love this. What is the Model? Medallion is the most common model used in Data Lake architecture and provides a simple and straight forward basis to help organize your data. Importantly it is not prescriptive in terms of what wording you or...","categories": ["Blog"],
+        "excerpt":"Oh, the noodle analogy. You guys are gonna love this. Chips Analogy Video I have created this quick video that explains the model using the Analogy of Chips where Bronze is Dirty Potatoes, Silver is cleaned Potatoes and Gold is your final product Chips! This analogy was adapted from a...","categories": ["Blog"],
         "tags": ["Architecture 101","Delta","Data Lake"],
         "url": "/blog/Medallion-Model/",
         "teaser": "/assets/images/posts/2024-06-24-Teaser.webp"
