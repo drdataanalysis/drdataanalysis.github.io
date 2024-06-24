@@ -10,7 +10,7 @@ tags:
 layout: single
 header:
   teaser: /assets/images/posts/2024-06-24-Teaser.webp
-  og_image: /assets/images/posts/2024-06-24-Teaser.webp
+  og_image: /assets/images/posts/2024-06-24-Teaser.png
   image: /assets/images/posts/2024-06-24-Header.webp
   image_description: "Metal Cut out Map"
   caption: "Photo credit: [**Leonardo Luz**](https://www.pexels.com/@leonardo-luz-338722550/)"
