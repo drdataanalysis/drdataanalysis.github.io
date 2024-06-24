@@ -16,6 +16,16 @@ header:
 ---
 > **Oh, the noodle analogy. You guys are gonna love this.**
 
+## Chips Analogy Video
+
+> I have created this quick video that explains the model using the Analogy of Chips where Bronze is Dirty Potatoes, Silver is cleaned Potatoes and Gold is your final product Chips!
+
+{% include video id="OtVFGN_uwus" provider="youtube" %}
+
+This analogy was adapted from a book I read where they used Salad in a similar way (apologies I can't remember the source).
+
+I also found [this databricks article](https://www.databricks.com/glossary/medallion-architecture) really helpful when getting started and there are loads of resources available online about this topic.
+
 # What is the Model?
 Medallion is the most common model used in Data Lake architecture and provides a simple and straight forward basis to help organize your data. Importantly it is not prescriptive in terms of what wording you or how you can adapt it for your needs.
 
@@ -38,13 +48,3 @@ Gold is all about business need - another way of thinking about it is what do yo
 
 ## Flexible
 As mentioned a key feature of this model is that it is flexible - you can use different terms and you can also adapt the model as needed. In my experience for instance I am using medallion but have a level to record processing step output separately from the medallion model - this could be kept in Raw but because the processing is pushing data out of the lake to a source system I have kept it out of the way to avoid confusion.
-
-## Chips Analogy Video
-
-> I have created this quick video that explains the model using the Analogy of Chips where Bronze is Dirty Potatoes, Silver is cleaned Potatoes and Gold is your final product Chips!
-
-{% include video id="OtVFGN_uwus" provider="youtube" %}
-
-This analogy was adapted from a book I read where they used Salad in a similar way (apologies I can't remember the source).
-
-I also found [this databricks article](https://www.databricks.com/glossary/medallion-architecture) really helpful when getting started and there are loads of resources available online about this topic.
