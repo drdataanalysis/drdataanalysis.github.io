@@ -88,4 +88,10 @@ var store = [{
         "tags": ["Architecture 101","Delta","Data Lake"],
         "url": "/blog/Medallion-Model/",
         "teaser": "/assets/images/posts/2024-06-24-Teaser.webp"
+      },{
+        "title": "2025 Update",
+        "excerpt":"Everyone has a plan until they get punched in the face 2024 Recap Last year seems like a distant memory but was only a couple of weeks ago. On reflection I did not do enough to keep this blog up to date and to share the progress and resources that...","categories": ["Blog"],
+        "tags": ["Data Engineering","Data Architecture","Fabric"],
+        "url": "/blog/Update-2025/",
+        "teaser": "/assets/images/posts/2025-01-17-Teaser.webp"
       }]
