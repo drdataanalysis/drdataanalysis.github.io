@@ -94,4 +94,10 @@ var store = [{
         "tags": ["Data Engineering","Data Architecture","Fabric"],
         "url": "/blog/Update-2025/",
         "teaser": "/assets/images/posts/2025-01-17-Teaser.webp"
+      },{
+        "title": "Using Mermaid Charts",
+        "excerpt":"I don’t see how a world that makes such wonderful things could be bad. What are Mermaid Charts? Mermaid charts are a fantastic free visualization tool built in JS to and designed to work with markdown. The charts are text based so you type what you want to visualize and...","categories": ["Blog"],
+        "tags": ["Data Engineering","Data Architecture","DevOps"],
+        "url": "/blog/Mermaid/",
+        "teaser": "/assets/images/posts/2025-02-28-Teaser.webp"
       }]

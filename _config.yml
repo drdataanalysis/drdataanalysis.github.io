@@ -282,3 +282,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+#Custom JS Scripts
+after_footer_scripts:
+  - https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.js
+  - https://milkyware.github.io/assets/js/mermaid.js

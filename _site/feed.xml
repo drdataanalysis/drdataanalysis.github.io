@@ -1,4 +1,174 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-20T17:17:59+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Data!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">2025 Update</title><link href="http://localhost:4000/blog/Update-2025/" rel="alternate" type="text/html" title="2025 Update" /><published>2025-01-17T00:00:00+00:00</published><updated>2025-01-17T00:00:00+00:00</updated><id>http://localhost:4000/blog/Update-2025</id><content type="html" xml:base="http://localhost:4000/blog/Update-2025/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-28T14:20:52+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Data!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Using Mermaid Charts</title><link href="http://localhost:4000/blog/Mermaid/" rel="alternate" type="text/html" title="Using Mermaid Charts" /><published>2025-02-28T00:00:00+00:00</published><updated>2025-02-28T00:00:00+00:00</updated><id>http://localhost:4000/blog/Mermaid</id><content type="html" xml:base="http://localhost:4000/blog/Mermaid/">&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;I don’t see how a world that makes such wonderful things could be bad.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;what-are-mermaid-charts&quot;&gt;What are Mermaid Charts?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://mermaid.js.org/&quot;&gt;Mermaid charts&lt;/a&gt; are a fantastic free visualization tool built in JS to and designed to work with markdown. The charts are text based so you type what you want to visualize and they are compatible with a variety of tools that support markdown. Most importantly for people like me who use a lot of Microsoft tools Mermaid is supported in Loop components and partially supported in Wikis built in DevOps which is where I do my documentation.&lt;/p&gt;
+
+&lt;p&gt;Here is a quick example of a basic flow chart:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The code&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flowchart TD
+    A[Hard edge] --&amp;gt;|Link text| B(Round edge)
+    B --&amp;gt; C{Decision}
+    C --&amp;gt;|One| D[Result one]
+    C --&amp;gt;|Two| E[Result two]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The visual&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;
+  &lt;code class=&quot;language-mermaid&quot;&gt;
+
+flowchart TD
+    A[Hard edge] --&amp;gt;|Link text| B(Round edge)
+    B --&amp;gt; C{Decision}
+    C --&amp;gt;|One| D[Result one]
+    C --&amp;gt;|Two| E[Result two]
+
+  &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h1 id=&quot;schema-tip&quot;&gt;Schema Tip&lt;/h1&gt;
+
+&lt;p&gt;The main thing I have found in using mermaid charts for documentation is that it can get quite dificult to update and manage complex charts.&lt;/p&gt;
+
+&lt;p&gt;Most demo’s are like the one i presented above using letters as shape IDs and defining shapes, labels and relationships all together.&lt;/p&gt;
+
+&lt;p&gt;I have found it much easier to manage charts by splitting Shapes and Relationships up and ensuring that shape IDs have a meaningful value so that it is easy to understand when just looking at text. You can add comments to Charts using  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%%&lt;/code&gt; so I add commented labels to the sections as well.&lt;/p&gt;
+
+&lt;p&gt;Using the example above:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flowchart TD
+    A[Hard edge] --&amp;gt;|Link text| B(Round edge)
+    B --&amp;gt; C{Decision}
+    C --&amp;gt;|One| D[Result one]
+    C --&amp;gt;|Two| E[Result two]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Becomes This:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flowchart TD
+    %% Shapes
+    id_hard[Hard edge]
+    id_round(Round edge)
+    id_decision{Decision}
+    id_result1[Result one]
+    id_result2[Result two]
+
+    %% Relationships 
+    id_hard --&amp;gt;|Link text| id_round
+    id_round --&amp;gt; id_decision
+    id_decision --&amp;gt;|One| id_result1
+    id_decision --&amp;gt;|Two| id_result2 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You can see below that the result is identical but by splitting the shapes and relationships up and giving meaningful IDs the code is much more readable and if you need to add a third result or a second decision you can more easily see what changes need to be made.&lt;/p&gt;
+
+&lt;pre&gt;
+  &lt;code class=&quot;language-mermaid&quot;&gt;
+flowchart TD
+    %% Shapes
+    id_hard[Hard edge]
+    id_round(Round edge)
+    id_decision{Decision}
+    id_result1[Result one]
+    id_result2[Result two]
+
+    %% Relationships 
+    id_hard --&amp;gt;|Link text| id_round
+    id_round --&amp;gt; id_decision
+    id_decision --&amp;gt;|One| id_result1
+    id_decision --&amp;gt;|Two| id_result2 
+
+      &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h1 id=&quot;devops-wiki-limitations&quot;&gt;DevOps Wiki Limitations&lt;/h1&gt;
+
+&lt;p&gt;As mentioned there are a few limitations to be aware of when you are using mermaid charts in DevOps.&lt;/p&gt;
+
+&lt;p&gt;Firstly you only the following chart types are compatible:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Flowcharts&lt;/li&gt;
+  &lt;li&gt;Sequence Diagrams&lt;/li&gt;
+  &lt;li&gt;Gant Diagrams&lt;/li&gt;
+  &lt;li&gt;Class Diagrams&lt;/li&gt;
+  &lt;li&gt;State Diagrams&lt;/li&gt;
+  &lt;li&gt;User Journeys&lt;/li&gt;
+  &lt;li&gt;Pie Charts&lt;/li&gt;
+  &lt;li&gt;Requirement Diagrams&lt;/li&gt;
+  &lt;li&gt;Gitgraph diagrams&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That leaves a bunch of diagram types that are not compatible and particularly for Data Engineering a big one is Entity Relationship Diagrams which would be really useful.&lt;/p&gt;
+
+&lt;p&gt;I think it is not unusual for the main type of chart to be used to be flowchart which has a few limitations to be aware of but usually theses are not big issues. Fistly you can’t do relationships that join between or two subgraphs in DevOps wikis. I have no idea why  but this can be overcome by joining via the shapes in the subgraph. Also pn subgraphs you cant change the direction of a subgraph in dev ops which is a bit anoying.&lt;/p&gt;
+
+&lt;p&gt;The other limitation is that the &lt;a href=&quot;https://mermaid.js.org/syntax/flowchart.html#complete-list-of-new-shapes&quot;&gt;new shapes&lt;/a&gt; and &lt;a href=&quot;https://mermaid.js.org/syntax/flowchart.html#icon-shape&quot;&gt;icon shape&lt;/a&gt; functionality that has been added recently is not available.&lt;/p&gt;
+
+&lt;p&gt;From experience it does not tend to be a big issue that the functionality in DevOps wikis is a little limited because you can still do a fair amount of customization and core diagraming capabilities. Loop does however look to be up to date with the newest features and is compatible with more types of charts (although I have not extensively tested)&lt;/p&gt;
+
+&lt;h1 id=&quot;the-new-world---copilot-and-ai&quot;&gt;The New World - CoPilot and AI&lt;/h1&gt;
+
+&lt;p&gt;The final thing to say on mermaid is that CoPilot is able to generate mermaid charts based on text input. The way I have found this to be useful is to take for instance some SQL code and ask CoPilot to exalain it using a mermaid chart as part o documentng code.&lt;/p&gt;
+
+&lt;p&gt;As an example I asked CoPilot the following:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Explain this python code using a mermaid chart and ensuring text labels have speech marks:
+
+def tri_recursion(k):
+  if(k &amp;gt; 0):
+    result = k + tri_recursion(k - 1)
+    print(result)
+  else:
+    result = 0
+  return result
+
+print(&quot;Recursion Example Results:&quot;)
+tri_recursion(6)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Copilot’s Response:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Here’s a mermaid chart that explains the Python code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-mermaid&quot;&gt;graph TD
+    A[&quot;tri_recursion(k)&quot;] --&amp;gt; B[&quot;k &amp;gt; 0&quot;]
+    B -- &quot;True&quot; --&amp;gt; C[&quot;result = k + tri_recursion(k - 1)&quot;]
+    C --&amp;gt; D[&quot;print(result)&quot;]
+    D --&amp;gt; E[&quot;return result&quot;]
+    B -- &quot;False&quot; --&amp;gt; F[&quot;result = 0&quot;]
+    F --&amp;gt; E
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This Python code defines a recursive function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tri_recursion(k)&lt;/code&gt; that calculates the sum of all integers from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; down to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; and prints each intermediate result. Here’s a step-by-step explanation:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Function Call&lt;/strong&gt;: The function &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tri_recursion(k)&lt;/code&gt; is called with an initial value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k = 6&lt;/code&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Condition Check&lt;/strong&gt;: The function checks if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; is greater than &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;If &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;True&lt;/code&gt;, it calculates &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;result&lt;/code&gt; as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k + tri_recursion(k - 1)&lt;/code&gt;, prints &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;result&lt;/code&gt;, and returns &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;result&lt;/code&gt;.&lt;/li&gt;
+      &lt;li&gt;If &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;False&lt;/code&gt;, it sets &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;result&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; and returns &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;result&lt;/code&gt;.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Recursion&lt;/strong&gt;: The function calls itself with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k - 1&lt;/code&gt; until &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;k&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt;, at which point it starts returning and printing the results.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Would you like to dive deeper into any specific part of this code?&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;One thing I have found is that you have to specify that data labels be in speach marks or the result will usually not work but this is pretty amazing!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Data Engineering" /><category term="Data Architecture" /><category term="DevOps" /><summary type="html">A quick overview of how I use mermaid charts</summary></entry><entry><title type="html">2025 Update</title><link href="http://localhost:4000/blog/Update-2025/" rel="alternate" type="text/html" title="2025 Update" /><published>2025-01-17T00:00:00+00:00</published><updated>2025-01-17T00:00:00+00:00</updated><id>http://localhost:4000/blog/Update-2025</id><content type="html" xml:base="http://localhost:4000/blog/Update-2025/">&lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Everyone has a plan until they get punched in the face&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -278,24 +448,4 @@ This example is really quite basic and adapted from some of the above. I think I
 
 &lt;p&gt;I have really enjoyed learning to use Jekyll and building the site so far. It defiantly takes work and effort to get to grips with but the results are pretty immediate and rewarding. Knowing some core HTML will definitely be helpful to getting into customisation and more advanced functionality.&lt;/p&gt;
 
-&lt;p&gt;Of course one of the key positives is that GitHub pages are completely free as is the theme and functionality I am using which is amazing!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Jekyll" /><category term="Ruby" /><category term="GitHub" /><summary type="html">Update on my new blog and portfolio using Jekyll and GitHub</summary></entry><entry><title type="html">Shape Maps in Power BI</title><link href="http://localhost:4000/blog/Shape-Maps/" rel="alternate" type="text/html" title="Shape Maps in Power BI" /><published>2021-03-09T00:00:00+00:00</published><updated>2021-03-09T00:00:00+00:00</updated><id>http://localhost:4000/blog/Shape-Maps</id><content type="html" xml:base="http://localhost:4000/blog/Shape-Maps/">&lt;blockquote&gt;
-  &lt;p&gt;Thought it was about time to get in shape&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This is a bit of a tangent but wanted to share useful links as this is something that I have pulled together with multiple sources and not something that I could find a joined view of.&lt;/p&gt;
-
-&lt;p&gt;So maps are tricky. Getting your data in the right format, right place and most difficult correct shape is really difficult. One approach is to focus only on getting your data in the right place by using latitude and longitude to plot data in the correct places but shape maps are definitely the best way to present data about geographies such as Countries, Regions, Local Authorities, Postcode Areas etc.&lt;/p&gt;
-
-&lt;p&gt;Out of the box there are a few shape maps like US states, UK countries but for my purposes I need shape maps for Local Authorities, Postcode Areas, Regions and other geographic distributions inside the UK. Custom maps can be loaded and as &lt;a href=&quot;https://docs.microsoft.com/en-us/power-bi/visuals/desktop-shape-map#use-custom-maps&quot;&gt;this article&lt;/a&gt; says:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;“You can use custom maps with Shape Map as long as they are in the TopoJSON format. If your map is in another format, you can use online tools such as &lt;a href=&quot;https://mapshaper.org/&quot;&gt;Map Shaper&lt;/a&gt; to convert your shapefiles or your GeoJSON maps into the TopoJSON format.”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;In Power Maps (plugin for excel) this is achieved through Shape or KML files but in here we need TopoJSON. On the &lt;a href=&quot;https://geoportal.statistics.gov.uk/&quot;&gt;ONS Geoportal&lt;/a&gt; you need to go to the APIs rather than downloads for the GeoJSON link for whichever boundary you are wanting. Going to the URL and saving the JSON file locally you can then load it into &lt;a href=&quot;https://mapshaper.org/&quot;&gt;Map Shaper&lt;/a&gt; and export as TopoJSON in the top right hand corner.&lt;/p&gt;
-
-&lt;p&gt;So that gives you any boundary published by the ONS as a format that can be loaded into Power BI, from a bit of testing the associated shape data can be matched according to any of the parameters so for Local Authority that is the JSON file ID, Local Authority Code or Local Authority name which is pretty helpful.&lt;/p&gt;
-
-&lt;p&gt;So that is all great until you rightealise that the latest boundary map (at time of writing) is the 2019 Local Authority list and the latest local authority list is 2020 which includes the merging of Aylesbury Vale, Chiltern, South Bucks and Wycombe into Buckinghamshire Local Authority and my data is aligned to the 2020 list. I was able to use &lt;a href=&quot;https://help.flourish.studio/article/187-how-to-merge-regions-with-mapshaper&quot;&gt;this guide&lt;/a&gt; to merge together the old local authority boundaries and adapt this one to create field names for the new shape then re-join the maps and…
-&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-03-09-Comparison.webp&quot; alt=&quot;image-center&quot; /&gt;
-So a bit of a tangent but useful set of tools to be able to use shape maps for the geographies that I need and something that can be built on in the future if I need to do something like creating custom region maps that are not available from the ONS.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Power BI" /><category term="Advanced Visual" /><category term="Geomaping" /><category term="ONS" /><summary type="html">How to use ONS Local Authority shape maps in Power BI and how to create custom maps based of existing.</summary></entry></feed>
+&lt;p&gt;Of course one of the key positives is that GitHub pages are completely free as is the theme and functionality I am using which is amazing!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Jekyll" /><category term="Ruby" /><category term="GitHub" /><summary type="html">Update on my new blog and portfolio using Jekyll and GitHub</summary></entry></feed>
