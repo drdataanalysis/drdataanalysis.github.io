@@ -1,4 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-02-28T14:20:52+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Data!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Using Mermaid Charts</title><link href="http://localhost:4000/blog/Mermaid/" rel="alternate" type="text/html" title="Using Mermaid Charts" /><published>2025-02-28T00:00:00+00:00</published><updated>2025-02-28T00:00:00+00:00</updated><id>http://localhost:4000/blog/Mermaid</id><content type="html" xml:base="http://localhost:4000/blog/Mermaid/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-07T16:13:13+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Data!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Stored Procedure for Fabric Lakehouse</title><link href="http://localhost:4000/blog/YAML-SP-Lakehouse/" rel="alternate" type="text/html" title="Stored Procedure for Fabric Lakehouse" /><published>2025-06-07T00:00:00+01:00</published><updated>2025-06-07T00:00:00+01:00</updated><id>http://localhost:4000/blog/YAML-SP-Lakehouse</id><content type="html" xml:base="http://localhost:4000/blog/YAML-SP-Lakehouse/">&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;We are all interested in the future, for that is where you and I are going to spend the rest of our lives.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;context&quot;&gt;Context&lt;/h1&gt;
+&lt;p&gt;I am in the middle of a major project to move to Fabric for Data Engineering and Warehousing. As part of the Warehousing side I am moving a well established Datawarehouse from Azure SQL Database to Fabric. The warehouse is generated using stored procedures and re-build each time they run… so use data warehouse in Fabric right?&lt;/p&gt;
+
+&lt;p&gt;Well, no. I need to use Lakehouse because the warehouse is built on a schema that is already in Fabric and gets updated as part of the Engineering pipelines so I want to use Schema Shortcuts to simplify accessing the source data and also want to be flexible in terms of what crazy stuff I can get up to.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Please Note&lt;/strong&gt; this is a work in progress I am sure there are many other ways to do things and there will be changes as Fabric develops but this looks good and works.&lt;/p&gt;
+
+&lt;h1 id=&quot;alternative-to-stored-procedure&quot;&gt;Alternative to Stored Procedure&lt;/h1&gt;
+&lt;p&gt;I don’t want to have to replace all the SQL I have with new processes so the questions is then how can I run the component SQL to update tables in my Lakehouse?&lt;/p&gt;
+
+&lt;p&gt;Worth saying that in my Datawarehouse the previous version did a full rebuild of tables which I don’t like so I have changed it to do incremental loads which requires delta load via notebook to upsert. If you don’t need that this can be adapted to output to an array variable in a pipeline to use copy activities (you may also want to do that if you are concerned about scale or want to be able to run multiple queries at a time).&lt;/p&gt;
+
+&lt;p&gt;The alternative I have come up with is to store my SQL in a YAML file as metadata. That file can then be loaded into a notebook and looped over to exicute the SQL. In my live example I pass the query to upsert into the delta tables in the connected Lakehouse but for simplicity I am just going to show running the queries.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-yaml&quot;&gt;The YAML&lt;/h2&gt;
+&lt;p&gt;Here is a quick example YAML I have created:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;---
+steps:
+  - name: &quot;Query 1&quot;
+    query: |
+      SELECT &apos;Q1 Response&apos; as Result
+  - name: &quot;Query 1&quot;
+    query: |
+      SELECT &apos;Q2 Response&apos; as Result
+  - name: &quot;Query 3&quot;
+    query: |
+      SELECT &apos;Q3 Response&apos; as Result
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This is a really basic example and of course this is not real SQL so there are a few things that you will need to know:&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;YAML - goes without saying but you will need to understand YAML there are lots of good resources online for that&lt;/li&gt;
+  &lt;li&gt;YAML Storage - best place for your YAML file is a Repo in Github or DevOps - that makes it version controlled which is a huge advantage of this approach but not required you can have it in your notebook or add it as a data item (I assume not tested that)&lt;/li&gt;
+  &lt;li&gt;Extracting YAML - accessing a file in your repo is pretty easy with a get request&lt;/li&gt;
+  &lt;li&gt;Spark.SQL - One thing that is &lt;strong&gt;really important to know&lt;/strong&gt; is that you are going to need to make sure your SQL is spark.sql compatible, there are quite a few functions that I had to change and a few queries that had to be completely rebuilt.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;On point 4 I found testing my SQL in the notebook was helpful to figure out what I may need to change and also found copilot helpful in doing some of the bigger alterations.&lt;/p&gt;
+
+&lt;p&gt;This would work to test your sql:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;query = &quot;&quot;&quot;
+-- Your SQL instead of this
+SELECT &apos;Q1 Response&apos; as Result
+&quot;&quot;&quot;
+display(spark.sql(query))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;notebook&quot;&gt;Notebook&lt;/h2&gt;
+&lt;h3 id=&quot;load-yaml&quot;&gt;Load YAML&lt;/h3&gt;
+&lt;p&gt;You will need to import yaml and use te SafeLoader functionality to read your returned YAML.&lt;/p&gt;
+
+&lt;p&gt;For my demo I did this as a single string import like this:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import yaml
+yaml_string = &quot;&quot;&quot;
+---
+steps:
+  - name: &quot;Query 1&quot;
+    query: |
+      SELECT &apos;Q1 Response&apos; as Result
+  - name: &quot;Query 1&quot;
+    query: |
+      SELECT &apos;Q2 Response&apos; as Result
+  - name: &quot;Query 3&quot;
+    query: |
+      SELECT &apos;Q3 Response&apos; as Result
+&quot;&quot;&quot;
+queries = yaml.load(yaml_string, Loader=yaml.SafeLoader)
+print(queries)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This returns the YAML a json and strips out any comments from the file which in our example looks like this:&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{&apos;steps&apos;: [{&apos;name&apos;: &apos;Query 1&apos;, &apos;query&apos;: &quot;SELECT &apos;Q1 Response&apos; AS RESULT\n&quot;}, {&apos;name&apos;: &apos;Query 2&apos;, &apos;query&apos;: &quot;SELECT &apos;Q2 Response&apos; AS RESULT\n&quot;}, {&apos;name&apos;: &apos;Query 3&apos;, &apos;query&apos;: &quot;SELECT &apos;Q3 Response&apos; AS RESULT \n&quot;}]}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;run-queries&quot;&gt;Run Queries&lt;/h3&gt;
+&lt;p&gt;Now comes the fun part, the json has now been loaded and you can iterate over the contents of the file. In this basic example I am just running the query for each step but in my live example I have additional metadata stored for each item to allow me to for instance choose to do a complete or a incremental load etc.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;for item in queries[&quot;steps&quot;]:
+  print(item[&quot;name&quot;])
+  display(spark.sql(item[&quot;query&quot;]))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;When that runs it looks like this:
+&lt;br /&gt;&lt;figure&gt;&lt;a href=&quot;/assets/images/posts/2025-06-07-Output.png&quot;&gt;&lt;img src=&quot;/assets/images/posts/2025-06-07-Output.png&quot; /&gt;&lt;/a&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+&lt;p&gt;Hopefully this quick demo gives you an idea of the approach I have been able to apply. I would not want to imply that this is easy - getting your SQL to run is challenging and the more complex the query is the more likely it will be that major components may not be available in spark.sql. That been said this is working for me and has expanded the capacity of the previous code significantly and it is also a lot quicker than in SQL taking 10-15 min to run in the notebook vs. nearly 2 hours in the SQL DB!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Data Engineering" /><category term="Data Architecture" /><category term="DevOps" /><category term="Fabric" /><summary type="html">Use YAML and Notebook as modern stored procedure</summary></entry><entry><title type="html">Using Mermaid Charts</title><link href="http://localhost:4000/blog/Mermaid/" rel="alternate" type="text/html" title="Using Mermaid Charts" /><published>2025-02-28T00:00:00+00:00</published><updated>2025-02-28T00:00:00+00:00</updated><id>http://localhost:4000/blog/Mermaid</id><content type="html" xml:base="http://localhost:4000/blog/Mermaid/">&lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;I don’t see how a world that makes such wonderful things could be bad.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -37,7 +126,7 @@ flowchart TD
 
 &lt;p&gt;The main thing I have found in using mermaid charts for documentation is that it can get quite dificult to update and manage complex charts.&lt;/p&gt;
 
-&lt;p&gt;Most demo’s are like the one i presented above using letters as shape IDs and defining shapes, labels and relationships all together.&lt;/p&gt;
+&lt;p&gt;Most demo’s are like the one I presented above using letters as shape IDs and defining shapes, labels and relationships all together.&lt;/p&gt;
 
 &lt;p&gt;I have found it much easier to manage charts by splitting Shapes and Relationships up and ensuring that shape IDs have a meaningful value so that it is easy to understand when just looking at text. You can add comments to Charts using  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%%&lt;/code&gt; so I add commented labels to the sections as well.&lt;/p&gt;
 
@@ -409,43 +498,4 @@ This is an quick example that I have created using the line chart option and ove
 This example is really quite basic and adapted from some of the above. I think I have seen something similar in other custom visuals but this is quite a simple way of adding custom text, icon or image labels to a column chart (or bar chart).&lt;/p&gt;
 
 &lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;I hope this has been helpful and given some ideas for the kinds of things that you can do with the infographic designer custom visual. The visual is defiantly not the most polished or dynamic custom visual available but I think it has some really powerful functionality and allows a degree of customization that is very cool.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Power BI" /><category term="Infographic Designer" /><category term="Advanced Visual" /><summary type="html">Resources and experience of using the Infographic Designer custom visual in Power BI</summary></entry><entry><title type="html">Creating my New Blog!</title><link href="http://localhost:4000/news/My-New-Blog/" rel="alternate" type="text/html" title="Creating my New Blog!" /><published>2021-11-12T00:00:00+00:00</published><updated>2021-11-27T00:00:00+00:00</updated><id>http://localhost:4000/news/My-New-Blog</id><content type="html" xml:base="http://localhost:4000/news/My-New-Blog/">&lt;blockquote&gt;
-  &lt;p&gt;“When Alexander saw the breadth of his domain, he wept, for there were no more worlds to conquer”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It has been a few weeks since my first commit on the .io github repo for this site and it has been a really interesting learning experience which I would highly recommend… assuming that you already have quite a good grasp of HTML.&lt;/p&gt;
-
-&lt;h3 id=&quot;github-pages&quot;&gt;Github Pages&lt;/h3&gt;
-&lt;p&gt;I can’t remember exactly what it was that brought &lt;a href=&quot;https://docs.github.com/en/pages/quickstart&quot;&gt;GitHub&lt;/a&gt; Pages to my attention. I did not know that this was a feature offered and considering how powerful this is I am amazed it is completely free!&lt;/p&gt;
-
-&lt;p&gt;The only requirement for standard Git Hub users is that your repo for the site that you build has to be public, you can just enable Git Hub pages in the repo settings and with the &lt;a href=&quot;https://docs.github.com/en/pages/quickstart&quot;&gt;quick start guide&lt;/a&gt; you can get a basic blog or site spun up in a few min.&lt;/p&gt;
-
-&lt;p&gt;For a standard site you could write everything on GitHub online and you can choose from some of the standard themes available on github.
-&lt;img src=&quot;https://docs.github.com/assets/images/help/pages/select-theme.png&quot; alt=&quot;image-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is pretty amazing as a start. The default URL will be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io/[reponame]&lt;/code&gt; which is useful if you want multiple sites from multiple repos but what about if you want a landing page that is just &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt;? Well that is pretty simple - if you call your repo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt; this sets the pages url to be just your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;jekyll--ruby--vs-code&quot;&gt;Jekyll &amp;amp; Ruby &amp;amp; VS Code&lt;/h3&gt;
-&lt;p&gt;While the out of the box pages functionality is great I wanted something more. Pages can still support other Jekyll themes and functionality that is published to your pages repo but you need to do that from your PC. In my case I am using VS code and GIT to connect to the repo from my Ubuntu laptop and installed the &lt;a href=&quot;https://jekyllrb.com/docs/installation/ubuntu/#install-dependencies&quot;&gt;Ruby and Jekyll dependencies&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Before starting the final site I had a go at creating a clean install based on the following this &lt;a href=&quot;https://www.youtube.com/watch?v=T1itpPvFWHI&amp;amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&quot;&gt;youtube guide&lt;/a&gt; to learn the fundamentals of Jekyll.&lt;/p&gt;
-
-&lt;p&gt;Once I had the basics I started to look at options in terms of &lt;a href=&quot;https://github.com/topics/jekyll-theme&quot;&gt;themes&lt;/a&gt;. One that looks really good was &lt;a href=&quot;https://raviriley.github.io/agency-jekyll-theme-starter/&quot;&gt;the agency theme&lt;/a&gt; which I really like the look of but because I wanted to do a combined Portfolio and Blog I needed a theme that worked for both of those uses.&lt;/p&gt;
-
-&lt;h3 id=&quot;minimal-mistakes&quot;&gt;Minimal Mistakes&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;Minimal Mistakes&lt;/a&gt; is a really popular theme that includes a lot of page styles and theme options. The documentation is also very good and it was very easy to get started and customise fom the &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes&quot;&gt;github repo&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-post.png&quot; alt=&quot;image-center&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;customisation&quot;&gt;Customisation&lt;/h3&gt;
-
-&lt;p&gt;I did end up messing around in the templates to customise the theme a little and going quite deep into the &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/configuration/&quot;&gt;configuration&lt;/a&gt;. I should probably have done that in a forked repo that I could customise but instead I brought the code into the site repo to edit which means that it is a bit of a mess… but then I am still trying to figure stuff out.&lt;/p&gt;
-
-&lt;p&gt;Another great thing about minimal mistakes is that it is very popular so there is quite a bit of guidance available in issues etc. One example is finding &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/issues/490&quot;&gt;this issue&lt;/a&gt; explaining how I could edit the header to make it fixed at the top of each page.&lt;/p&gt;
-
-&lt;h3 id=&quot;take-aways&quot;&gt;Take Aways&lt;/h3&gt;
-
-&lt;p&gt;I have really enjoyed learning to use Jekyll and building the site so far. It defiantly takes work and effort to get to grips with but the results are pretty immediate and rewarding. Knowing some core HTML will definitely be helpful to getting into customisation and more advanced functionality.&lt;/p&gt;
-
-&lt;p&gt;Of course one of the key positives is that GitHub pages are completely free as is the theme and functionality I am using which is amazing!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Jekyll" /><category term="Ruby" /><category term="GitHub" /><summary type="html">Update on my new blog and portfolio using Jekyll and GitHub</summary></entry></feed>
+&lt;p&gt;I hope this has been helpful and given some ideas for the kinds of things that you can do with the infographic designer custom visual. The visual is defiantly not the most polished or dynamic custom visual available but I think it has some really powerful functionality and allows a degree of customization that is very cool.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Power BI" /><category term="Infographic Designer" /><category term="Advanced Visual" /><summary type="html">Resources and experience of using the Infographic Designer custom visual in Power BI</summary></entry></feed>

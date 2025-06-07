@@ -100,4 +100,10 @@ var store = [{
         "tags": ["Data Engineering","Data Architecture","DevOps"],
         "url": "/blog/Mermaid/",
         "teaser": "/assets/images/posts/2025-02-28-Teaser.webp"
+      },{
+        "title": "Stored Procedure for Fabric Lakehouse",
+        "excerpt":"We are all interested in the future, for that is where you and I are going to spend the rest of our lives. Context I am in the middle of a major project to move to Fabric for Data Engineering and Warehousing. As part of the Warehousing side I am...","categories": ["Blog"],
+        "tags": ["Data Engineering","Data Architecture","DevOps","Fabric"],
+        "url": "/blog/YAML-SP-Lakehouse/",
+        "teaser": "/assets/images/posts/2025-06-07-Teaser.webp"
       }]
