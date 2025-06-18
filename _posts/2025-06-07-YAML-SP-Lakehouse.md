@@ -49,7 +49,7 @@ steps:
   - name: "Query 1"
     query: |
       SELECT 'Q1 Response' as Result
-  - name: "Query 1"
+  - name: "Query 2
     query: |
       SELECT 'Q2 Response' as Result
   - name: "Query 3"
@@ -87,7 +87,7 @@ steps:
   - name: "Query 1"
     query: |
       SELECT 'Q1 Response' as Result
-  - name: "Query 1"
+  - name: "Query 2"
     query: |
       SELECT 'Q2 Response' as Result
   - name: "Query 3"
