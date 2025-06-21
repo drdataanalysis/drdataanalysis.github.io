@@ -33,7 +33,7 @@ The problem is fairly rare but if you have the scenario where you have a source 
 
 I have used the steps of the orignal video many times over the years but have also included a couple of similar videos with alternative ways of doing the same thing that may be more efficient in certain circumstances. Again all credit should be with [Curbal](https://www.youtube.com/@CurbalEN) for this content.
 
-# Origianal Vide
+# Origianal Video
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7CqXdSEN2k4?si=rgM9rrctqIII-TDR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Steps
