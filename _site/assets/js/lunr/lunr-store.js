@@ -106,4 +106,10 @@ var store = [{
         "tags": ["Data Engineering","Data Architecture","DevOps","Fabric"],
         "url": "/blog/YAML-SP-Lakehouse/",
         "teaser": "/assets/images/posts/2025-06-07-Teaser.webp"
+      },{
+        "title": "Power Query Handling Dupes",
+        "excerpt":"This is not the greatest song in the world, no. This is just a tribute. Couldn’t remember the greatest song in the world, no. This is a tribute About Disclaimer - this is not my work it is a shortcut to a couple of amazing videos by Curbal which I...","categories": ["Blog"],
+        "tags": ["Fabric","Dataflow Gen2","Power BI","Power Query"],
+        "url": "/blog/PowerQuery-Dedupe/",
+        "teaser": "/assets/images/posts/2025-06-21-Teaser.webp"
       }]
