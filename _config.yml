@@ -112,7 +112,7 @@ author:
       # url: "https://twitter.com/"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://linkedin.com/drdataanalysis"
+      url: "https://uk.linkedin.com/in/drdataanalysis"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/drdataanalysis"
@@ -123,15 +123,24 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Home"
+      icon: "fas fa-fw fa-house-user"
+      url: "https://drdataanalysis.github.io"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:drdataanalysis@gmail.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://uk.linkedin.com/in/drdataanalysis"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/drdataanalysis"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -141,6 +150,10 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
+    - label: "Site Terms"
+      icon: "fas fa-fw fa-link"
+      url: /terms
+
 
 # Reading Files
 include:
@@ -286,3 +299,4 @@ defaults:
 after_footer_scripts:
   - https://cdn.jsdelivr.net/npm/mermaid@9.4.3/dist/mermaid.js
   - https://milkyware.github.io/assets/js/mermaid.js
+  - /assets/js/cookie-consent.js

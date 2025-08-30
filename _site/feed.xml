@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-06-21T10:47:32+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Data!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Power Query Handling Dupes</title><link href="http://localhost:4000/blog/PowerQuery-Dedupe/" rel="alternate" type="text/html" title="Power Query Handling Dupes" /><published>2025-06-21T00:00:00+01:00</published><updated>2025-06-21T00:00:00+01:00</updated><id>http://localhost:4000/blog/PowerQuery-Dedupe</id><content type="html" xml:base="http://localhost:4000/blog/PowerQuery-Dedupe/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-30T16:27:49+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Data!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Power Query Handling Dupes</title><link href="http://localhost:4000/blog/PowerQuery-Dedupe/" rel="alternate" type="text/html" title="Power Query Handling Dupes" /><published>2025-06-21T00:00:00+01:00</published><updated>2025-06-21T00:00:00+01:00</updated><id>http://localhost:4000/blog/PowerQuery-Dedupe</id><content type="html" xml:base="http://localhost:4000/blog/PowerQuery-Dedupe/">&lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;This is not the greatest song in the world, no. This is just a tribute. Couldn’t remember the greatest song in the world, no. This is a tribute&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -9,7 +9,7 @@
 
 &lt;p&gt;I have used the steps of the orignal video many times over the years but have also included a couple of similar videos with alternative ways of doing the same thing that may be more efficient in certain circumstances. Again all credit should be with &lt;a href=&quot;https://www.youtube.com/@CurbalEN&quot;&gt;Curbal&lt;/a&gt; for this content.&lt;/p&gt;
 
-&lt;h1 id=&quot;origianal-vide&quot;&gt;Origianal Vide&lt;/h1&gt;
+&lt;h1 id=&quot;origianal-video&quot;&gt;Origianal Video&lt;/h1&gt;
 &lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/7CqXdSEN2k4?si=rgM9rrctqIII-TDR&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share&quot; referrerpolicy=&quot;strict-origin-when-cross-origin&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;h2 id=&quot;steps&quot;&gt;Steps&lt;/h2&gt;
@@ -337,28 +337,7 @@ tri_recursion(6)
 
 &lt;hr /&gt;
 
-&lt;p&gt;One thing I have found is that you have to specify that data labels be in speach marks or the result will usually not work but this is pretty amazing!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Data Engineering" /><category term="Data Architecture" /><category term="DevOps" /><summary type="html">A quick overview of how I use mermaid charts</summary></entry><entry><title type="html">2025 Update</title><link href="http://localhost:4000/blog/Update-2025/" rel="alternate" type="text/html" title="2025 Update" /><published>2025-01-17T00:00:00+00:00</published><updated>2025-01-17T00:00:00+00:00</updated><id>http://localhost:4000/blog/Update-2025</id><content type="html" xml:base="http://localhost:4000/blog/Update-2025/">&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;Everyone has a plan until they get punched in the face&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h1 id=&quot;2024-recap&quot;&gt;2024 Recap&lt;/h1&gt;
-&lt;p&gt;Last year seems like a distant memory but was only a couple of weeks ago.&lt;/p&gt;
-
-&lt;p&gt;On reflection I did not do enough to keep this blog up to date and to share the progress and resources that I had found on the major projects of the year.&lt;/p&gt;
-
-&lt;p&gt;The biggest project by far has been expanding my use of Synapse to demonstrate the capabilities and capacity of the tool. This is very much a work project and a team effort but as an example using Synapse to mange an ETL pipeline that our legacy system took nearly 15 hours to Load the data down to 1 hr 45 min using Synapse.&lt;/p&gt;
-
-&lt;p&gt;The general theme of last year was proving that Lake was the way forward and that Microsoft tools were able to handle challenging and complex scenarios.&lt;/p&gt;
-
-&lt;h1 id=&quot;the-year-ahead&quot;&gt;The Year ahead&lt;/h1&gt;
-
-&lt;h2 id=&quot;2025-is-the-year-of-fabric&quot;&gt;2025 is the year of Fabric!&lt;/h2&gt;
-
-&lt;p&gt;I am working through DP 600 and just starting DP 700 prep to support with a major project that has kicked off to implement Microsoft Fabric as a ETL platform. The project is just getting started at the moment and has a pretty tight turn around but is very exiting and brings a lot of new stuff to learn and play with.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-blog&quot;&gt;The Blog&lt;/h2&gt;
-
-&lt;p&gt;My plan with this Blog has been to share cool stuff that I find or make so to that end I am setting a goal of doing at least a post per month - sometimes very techie sometimes more of a design area that I have been digging into.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Data Engineering" /><category term="Data Architecture" /><category term="Fabric" /><summary type="html">General update and plans for the year ahead</summary></entry><entry><title type="html">Medallion Model</title><link href="http://localhost:4000/blog/Medallion-Model/" rel="alternate" type="text/html" title="Medallion Model" /><published>2024-06-24T00:00:00+01:00</published><updated>2024-06-24T00:00:00+01:00</updated><id>http://localhost:4000/blog/Medallion-Model</id><content type="html" xml:base="http://localhost:4000/blog/Medallion-Model/">&lt;blockquote&gt;
+&lt;p&gt;One thing I have found is that you have to specify that data labels be in speach marks or the result will usually not work but this is pretty amazing!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Data Engineering" /><category term="Data Architecture" /><category term="DevOps" /><summary type="html">A quick overview of how I use mermaid charts</summary></entry><entry><title type="html">Medallion Model</title><link href="http://localhost:4000/blog/Medallion-Model/" rel="alternate" type="text/html" title="Medallion Model" /><published>2024-06-24T00:00:00+01:00</published><updated>2024-06-24T00:00:00+01:00</updated><id>http://localhost:4000/blog/Medallion-Model</id><content type="html" xml:base="http://localhost:4000/blog/Medallion-Model/">&lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Oh, the noodle analogy. You guys are gonna love this.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -399,43 +378,7 @@ tri_recursion(6)
 &lt;p&gt;Gold is all about business need - another way of thinking about it is what do your analysts need and how can you best provide the data ready for them to use. Analysts will often have access to silver data and they could use that data to model in Power BI etc. for reporting but the Gold layer provides consistency and safety that whatever business logic you need is reflected in the models being presented.&lt;/p&gt;
 
 &lt;h2 id=&quot;flexible&quot;&gt;Flexible&lt;/h2&gt;
-&lt;p&gt;As mentioned a key feature of this model is that it is flexible - you can use different terms and you can also adapt the model as needed. In my experience for instance I am using medallion but have a level to record processing step output separately from the medallion model - this could be kept in Raw but because the processing is pushing data out of the lake to a source system I have kept it out of the way to avoid confusion.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Architecture 101" /><category term="Delta" /><category term="Data Lake" /><summary type="html">Explained with Chips!</summary></entry><entry><title type="html">An Exciting New Era</title><link href="http://localhost:4000/news/New-Era/" rel="alternate" type="text/html" title="An Exciting New Era" /><published>2023-12-12T00:00:00+00:00</published><updated>2023-12-12T00:00:00+00:00</updated><id>http://localhost:4000/news/New-Era</id><content type="html" xml:base="http://localhost:4000/news/New-Era/">&lt;blockquote&gt;
-  &lt;p&gt;This post is about why I quit Data Analysis&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;my-comfort-zone&quot;&gt;My Comfort Zone&lt;/h2&gt;
-
-&lt;p&gt;The majority of my career has been dedicated to leading a team of data analysts. I have been fortunate enough to work towards a meaningful cause and have had the flexibility to engage in various other tasks as needed, such as systems development or training. For the longest time, Data Analysis was my primary focus and data engineering supported me and my team in conducting analysis.&lt;/p&gt;
-
-&lt;h2 id=&quot;what-changed&quot;&gt;What Changed?&lt;/h2&gt;
-
-&lt;p&gt;Then, Microsoft announced that within a year, they would discontinue a tool that connected our system to our Azure SQL Database. This tool had facilitated a significant shift in our work process and helped us to create an array of reports. To their credit, Microsoft provided a 12-month notice and presented us with two options: use a data lake or use a data lake with Synapse. I pulled together an options paper based on all the available info and flagged the risk and recommendations to the business within a couple of weeks of the announcement.&lt;/p&gt;
-
-&lt;h2 id=&quot;crunch-point&quot;&gt;Crunch Point&lt;/h2&gt;
-
-&lt;p&gt;Without delving into the details, time passed and the 12 months became 6, then 3, and finally 1. Although the options paper was approved early on, the necessary resources for implementation were not readily available. As a result, the implementation became a last-minute endeavor. With only one month remaining, my proposal to use Synapse was put into action. Two weeks later, it was set up and handed over to me. Thus, I had two weeks to implement a Data Lake solution that would facilitate our core operational reporting.&lt;/p&gt;
-
-&lt;h2 id=&quot;my-response&quot;&gt;My Response&lt;/h2&gt;
-
-&lt;p&gt;Choosing Synapse turned out to be a wise decision. Microsoft had recommended configuring a Data Lake joined with Synapse, which included storage and data factory. Setting up the Synapse link was straightforward, but then the question arose: how do we get the data to the reports?&lt;/p&gt;
-
-&lt;p&gt;Microsoft Learn proved to be invaluable during this time. I cannot stress enough how important it was to have access to this resource. I had to quickly familiarize myself with and implement a whole new way of working with data, including concepts like Data Lake House, Serverless SQL, and Data Factory.&lt;/p&gt;
-
-&lt;p&gt;Initially, I considered switching all reporting to Serverless SQL via the Data Lake, as the tools had changed but the data schema and structure had not. However, I soon realized that this was not feasible given the time constraints. So, my solution was to push new and changed data from the Data Lake into the old SQL database on a nightly basis using Data Factory within Synapse. This ensured that no changes were required for the existing reports, except that any changes made during the current day would not be included (which was not a significant issue for the majority of reporting).&lt;/p&gt;
-
-&lt;p&gt;With just a couple of days left until the deprecation, I was able to turn off the old link at midnight one evening. From that point onwards, data factory started inserting new records and updating existing ones through a scheduled pipeline run using a data flow that I built. It is worth mentioning that this data flow was dynamic from day one, running for each entity on a loop with passed parameters. Interestingly, I take particular pride in adding an if statement that skips entities without any new or altered records. This was achieved by examining the metadata of files in the data lake folder, resulting in a few minutes of processing time saved each day.&lt;/p&gt;
-
-&lt;h2 id=&quot;next-steps&quot;&gt;Next steps&lt;/h2&gt;
-
-&lt;p&gt;In the short term, I used Pyspark and Notebooks to connect with complex APIs and integrate existing pipelines that were using Power Automate. I completed another data challenge for another department on very short notice, ensuring continuity in reporting. I also started exploring the power of Delta Tables and the architecture and structure that a Delta Lake House can facilitate.&lt;/p&gt;
-
-&lt;p&gt;In the medium term, I took a risk during a restructure to apply to move into an engineering and architecture role, leaving behind data analysis. I was successful and the new role has now become my day job and passion: enabling Data Analysis, Insight, and Science to flourish.&lt;/p&gt;
-
-&lt;p&gt;Looking ahead in the long term, I have numerous data consolidation projects and exciting projects for both myself and the team. I am eager to expand our use of Synapse and prepare for the introduction of Fabric, which is likely to transform data in a similar way that SharePoint changed file management and collaboration.&lt;/p&gt;
-
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;That is how I made the decision to quit data analysis. The past year has presented significant challenges but also incredible opportunities for growth. Along the way, I have discovered new tricks and tips that I intend to share through this blog. For now, the title will remain the same, as Data Analysis (and Science) is what the engineering and architecture work enables.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Data Engineering" /><category term="Data Architecture" /><category term="Synapse" /><summary type="html">This post is about why I quit Data Analysis</summary></entry><entry><title type="html">Fix ONS Maps for Power BI</title><link href="http://localhost:4000/blog/ONS-PowerBI-Change/" rel="alternate" type="text/html" title="Fix ONS Maps for Power BI" /><published>2023-12-12T00:00:00+00:00</published><updated>2023-12-12T00:00:00+00:00</updated><id>http://localhost:4000/blog/ONS-PowerBI-Change</id><content type="html" xml:base="http://localhost:4000/blog/ONS-PowerBI-Change/">&lt;blockquote&gt;
+&lt;p&gt;As mentioned a key feature of this model is that it is flexible - you can use different terms and you can also adapt the model as needed. In my experience for instance I am using medallion but have a level to record processing step output separately from the medallion model - this could be kept in Raw but because the processing is pushing data out of the lake to a source system I have kept it out of the way to avoid confusion.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Architecture 101" /><category term="Delta" /><category term="Data Lake" /><summary type="html">Explained with Chips!</summary></entry><entry><title type="html">Fix ONS Maps for Power BI</title><link href="http://localhost:4000/blog/ONS-PowerBI-Change/" rel="alternate" type="text/html" title="Fix ONS Maps for Power BI" /><published>2023-12-12T00:00:00+00:00</published><updated>2023-12-12T00:00:00+00:00</updated><id>http://localhost:4000/blog/ONS-PowerBI-Change</id><content type="html" xml:base="http://localhost:4000/blog/ONS-PowerBI-Change/">&lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Just when I thought I was out, they pull me back in!&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -547,4 +490,74 @@ To view the cited links I can use google lens search to read the qr code which t
     &lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
     &lt;p&gt;This may be a very niche need which is why I struggled to find a solution I liked but I am very happy with the solution I have created. It is worth noting that for my needs I created the first two sheets (32 stickers) and am still only half way through the first one. If high volumes are expected - i.e. your a full time student it may be necessary to tweak the process to be able to more easily generate larger numbers of stickers at once.&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="GitHub" /><category term="Python" /><category term="Bullet Journal" /><summary type="html">How to use GitHub issues, Python and Mail Merge to QR Code Citations</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="GitHub" /><category term="Python" /><category term="Bullet Journal" /><summary type="html">How to use GitHub issues, Python and Mail Merge to QR Code Citations</summary></entry><entry><title type="html">Infographic Designer in Power BI</title><link href="http://localhost:4000/blog/Infographic-Designer/" rel="alternate" type="text/html" title="Infographic Designer in Power BI" /><published>2021-11-24T00:00:00+00:00</published><updated>2021-11-24T00:00:00+00:00</updated><id>http://localhost:4000/blog/Infographic-Designer</id><content type="html" xml:base="http://localhost:4000/blog/Infographic-Designer/">&lt;blockquote&gt;
+  &lt;p&gt;5 Years since it was released and I am only now realising quite how amazing this is!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I have used this tool a few times over the years but have never really grasped its capabilities. Making basic charts is pretty straight forward and there is quite a bit of documentation available. After some investigation there are a few more advanced examples that I have been able to adapt which I have included below.&lt;/p&gt;
+
+&lt;p&gt;In terms of guidance there are a number of guide videos on You Tube which go creating fill charts using shapes and some of the more standard use for instance these ones from Curbal: &lt;a href=&quot;https://www.youtube.com/watch?v=XwOIIuRg-EI&quot;&gt;#37 Easily create infographics in Power BI with infographic designer&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=3671_O2iOu0&quot;&gt;#D52 Easy and fast infographics in Power BI 📈&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://www.microsoft.com/en-us/research/uploads/prod/2016/07/InfoNice-Quick-Start.pdf&quot;&gt;official quick start guide&lt;/a&gt; is a really good and goes into a good level of detail on the capabilities of the tool. The videos and gallery on the &lt;a href=&quot;https://www.microsoft.com/en-us/research/project/infonice/&quot;&gt;original research site&lt;/a&gt; give a great overview of capabilities and I will embed a few of the most interesting below.&lt;/p&gt;
+
+&lt;h4 id=&quot;demo-video&quot;&gt;&lt;a href=&quot;https://youtu.be/QyxQ-ceN1d8&quot;&gt;Demo Video&lt;/a&gt;&lt;/h4&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/QyxQ-ceN1d8&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h4 id=&quot;demo-video-1&quot;&gt;&lt;a href=&quot;https://youtu.be/H8sRlqEYf7c&quot;&gt;Demo Video&lt;/a&gt;&lt;/h4&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/H8sRlqEYf7c&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h4 id=&quot;demo-video-2&quot;&gt;&lt;a href=&quot;https://youtu.be/AUxc_E3idSY&quot;&gt;Demo Video&lt;/a&gt;&lt;/h4&gt;
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/AUxc_E3idSY&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;some-of-my-ideas&quot;&gt;Some of My Ideas&lt;/h3&gt;
+&lt;p&gt;I have used some of the above examples in reports to replace things like gauges with something more engaging and relevant to the measure being used. The one extra tip I would give from using these practically is to open the visual in full screen when you want to use the edit pane. This makes it a lot easier to make design changes as the edit pane will only be as big as the size of the visual on the screen so it can be quite difficult to see even if your chart is quite big.&lt;/p&gt;
+
+&lt;h4 id=&quot;custom-icon-line-chart&quot;&gt;Custom Icon Line Chart&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-11-24-LineChart.webp&quot; alt=&quot;image-center&quot; /&gt;
+This is an quick example that I have created using the line chart option and overlaying a custom shape which I then bound to the Month which is the X-Axis of my chart. This allows you to customise the shape used and in the case of the above I have manually set these to represent weather to present seasonality but this could be useful for things like identifying the start of a global pandemic or lockdowns (to pull random hypothetical scenarios from the air).&lt;/p&gt;
+
+&lt;h4 id=&quot;category-picture-charts&quot;&gt;Category Picture Charts&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/posts/2021-11-24-BarChart.webp&quot; alt=&quot;image-center&quot; /&gt;
+This example is really quite basic and adapted from some of the above. I think I have seen something similar in other custom visuals but this is quite a simple way of adding custom text, icon or image labels to a column chart (or bar chart).&lt;/p&gt;
+
+&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;I hope this has been helpful and given some ideas for the kinds of things that you can do with the infographic designer custom visual. The visual is defiantly not the most polished or dynamic custom visual available but I think it has some really powerful functionality and allows a degree of customization that is very cool.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Power BI" /><category term="Infographic Designer" /><category term="Advanced Visual" /><summary type="html">Resources and experience of using the Infographic Designer custom visual in Power BI</summary></entry><entry><title type="html">Creating my New Blog!</title><link href="http://localhost:4000/news/My-New-Blog/" rel="alternate" type="text/html" title="Creating my New Blog!" /><published>2021-11-12T00:00:00+00:00</published><updated>2021-11-27T00:00:00+00:00</updated><id>http://localhost:4000/news/My-New-Blog</id><content type="html" xml:base="http://localhost:4000/news/My-New-Blog/">&lt;blockquote&gt;
+  &lt;p&gt;“When Alexander saw the breadth of his domain, he wept, for there were no more worlds to conquer”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;It has been a few weeks since my first commit on the .io github repo for this site and it has been a really interesting learning experience which I would highly recommend… assuming that you already have quite a good grasp of HTML.&lt;/p&gt;
+
+&lt;h3 id=&quot;github-pages&quot;&gt;Github Pages&lt;/h3&gt;
+&lt;p&gt;I can’t remember exactly what it was that brought &lt;a href=&quot;https://docs.github.com/en/pages/quickstart&quot;&gt;GitHub&lt;/a&gt; Pages to my attention. I did not know that this was a feature offered and considering how powerful this is I am amazed it is completely free!&lt;/p&gt;
+
+&lt;p&gt;The only requirement for standard Git Hub users is that your repo for the site that you build has to be public, you can just enable Git Hub pages in the repo settings and with the &lt;a href=&quot;https://docs.github.com/en/pages/quickstart&quot;&gt;quick start guide&lt;/a&gt; you can get a basic blog or site spun up in a few min.&lt;/p&gt;
+
+&lt;p&gt;For a standard site you could write everything on GitHub online and you can choose from some of the standard themes available on github.
+&lt;img src=&quot;https://docs.github.com/assets/images/help/pages/select-theme.png&quot; alt=&quot;image-center&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is pretty amazing as a start. The default URL will be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io/[reponame]&lt;/code&gt; which is useful if you want multiple sites from multiple repos but what about if you want a landing page that is just &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt;? Well that is pretty simple - if you call your repo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt; this sets the pages url to be just your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;jekyll--ruby--vs-code&quot;&gt;Jekyll &amp;amp; Ruby &amp;amp; VS Code&lt;/h3&gt;
+&lt;p&gt;While the out of the box pages functionality is great I wanted something more. Pages can still support other Jekyll themes and functionality that is published to your pages repo but you need to do that from your PC. In my case I am using VS code and GIT to connect to the repo from my Ubuntu laptop and installed the &lt;a href=&quot;https://jekyllrb.com/docs/installation/ubuntu/#install-dependencies&quot;&gt;Ruby and Jekyll dependencies&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Before starting the final site I had a go at creating a clean install based on the following this &lt;a href=&quot;https://www.youtube.com/watch?v=T1itpPvFWHI&amp;amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&quot;&gt;youtube guide&lt;/a&gt; to learn the fundamentals of Jekyll.&lt;/p&gt;
+
+&lt;p&gt;Once I had the basics I started to look at options in terms of &lt;a href=&quot;https://github.com/topics/jekyll-theme&quot;&gt;themes&lt;/a&gt;. One that looks really good was &lt;a href=&quot;https://raviriley.github.io/agency-jekyll-theme-starter/&quot;&gt;the agency theme&lt;/a&gt; which I really like the look of but because I wanted to do a combined Portfolio and Blog I needed a theme that worked for both of those uses.&lt;/p&gt;
+
+&lt;h3 id=&quot;minimal-mistakes&quot;&gt;Minimal Mistakes&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;Minimal Mistakes&lt;/a&gt; is a really popular theme that includes a lot of page styles and theme options. The documentation is also very good and it was very easy to get started and customise fom the &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes&quot;&gt;github repo&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-post.png&quot; alt=&quot;image-center&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;customisation&quot;&gt;Customisation&lt;/h3&gt;
+
+&lt;p&gt;I did end up messing around in the templates to customise the theme a little and going quite deep into the &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/configuration/&quot;&gt;configuration&lt;/a&gt;. I should probably have done that in a forked repo that I could customise but instead I brought the code into the site repo to edit which means that it is a bit of a mess… but then I am still trying to figure stuff out.&lt;/p&gt;
+
+&lt;p&gt;Another great thing about minimal mistakes is that it is very popular so there is quite a bit of guidance available in issues etc. One example is finding &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/issues/490&quot;&gt;this issue&lt;/a&gt; explaining how I could edit the header to make it fixed at the top of each page.&lt;/p&gt;
+
+&lt;h3 id=&quot;take-aways&quot;&gt;Take Aways&lt;/h3&gt;
+
+&lt;p&gt;I have really enjoyed learning to use Jekyll and building the site so far. It defiantly takes work and effort to get to grips with but the results are pretty immediate and rewarding. Knowing some core HTML will definitely be helpful to getting into customisation and more advanced functionality.&lt;/p&gt;
+
+&lt;p&gt;Of course one of the key positives is that GitHub pages are completely free as is the theme and functionality I am using which is amazing!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Jekyll" /><category term="Ruby" /><category term="GitHub" /><summary type="html">Update on my new blog and portfolio using Jekyll and GitHub</summary></entry></feed>
