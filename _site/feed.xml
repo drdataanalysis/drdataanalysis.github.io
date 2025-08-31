@@ -1,4 +1,260 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-30T16:27:49+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Data!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Power Query Handling Dupes</title><link href="http://localhost:4000/blog/PowerQuery-Dedupe/" rel="alternate" type="text/html" title="Power Query Handling Dupes" /><published>2025-06-21T00:00:00+01:00</published><updated>2025-06-21T00:00:00+01:00</updated><id>http://localhost:4000/blog/PowerQuery-Dedupe</id><content type="html" xml:base="http://localhost:4000/blog/PowerQuery-Dedupe/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-31T12:04:43+01:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dean Robinson</title><subtitle>Check out my Portfolio and Blog about the cool stuff I am doing with Data!</subtitle><author><name>Dean Robinson</name></author><entry><title type="html">Styling Mermaid Charts</title><link href="http://localhost:4000/blog/Mermaid-Style/" rel="alternate" type="text/html" title="Styling Mermaid Charts" /><published>2025-08-31T00:00:00+01:00</published><updated>2025-08-31T00:00:00+01:00</updated><id>http://localhost:4000/blog/Mermaid-Style</id><content type="html" xml:base="http://localhost:4000/blog/Mermaid-Style/">&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;You Got Your Own Style, Now Let It Shine Through And Remember No Matter What, You’ve Got To Be You.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h1 id=&quot;please-note&quot;&gt;Please Note&lt;/h1&gt;
+&lt;p&gt;In this post I am going to be using the Mermaid markdown approach I have developed and described in my previous post about using &lt;a href=&quot;/blog/Mermaid/&quot;&gt;Mermaid Charts&lt;/a&gt;. The styling options presented are available in the standard layout but would be more confusing than helpful if presented in this quick guide.&lt;/p&gt;
+
+&lt;p&gt;I am also not using more advanced custom css file styling options here because this guide relates primarily to usage in DevOps Wiki where this is not something that can be configured (or at least I have not found a way yet).&lt;/p&gt;
+
+&lt;p&gt;Last thing to note is that I will be using flow diagrams in these examples. There will be some elements that are spesifc to that chart type and some that are universal. Please remember not all chart types currently work with DevOps wiki (including some functionality for flow charts) so if you are not sure on how to format a different chart type a useful tool is the new &lt;a href=&quot;https://www.mermaidchart.com/play&quot;&gt;mermaid playground&lt;/a&gt; which allows you to alter formatting etc. using a user interface. You can copy and paste the code from that tool or use it to see how to apply formatting to your existing charts.&lt;/p&gt;
+
+&lt;h1 id=&quot;connections-links-lines&quot;&gt;Connections/ Links/ Lines&lt;/h1&gt;
+&lt;p&gt;When it comes to connections (links or lines) between shapes (nodes) the formatting options are in the syntax of how you create the connection. This is documented in the &lt;a href=&quot;https://docs.mermaidchart.com/mermaid-oss/syntax/flowchart.html?id=flowcharts-basic-syntax&quot;&gt;mermaid guidance&lt;/a&gt; under “Links between nodes”.&lt;/p&gt;
+
+&lt;h2 id=&quot;line-formatting&quot;&gt;Line Formatting&lt;/h2&gt;
+&lt;h3 id=&quot;line-type&quot;&gt;Line Type&lt;/h3&gt;
+&lt;p&gt;Here is an example of options when it comes to lines formats.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flowchart LR
+    %% Shapes
+    id_start[Start Shape]
+    id_line[Standard Line]
+    id_thickline[Thick Line]
+    id_dottedline[Dotted Line]
+    %% Connections
+    id_start---id_line
+    id_start===id_thickline
+    id_start-.-id_dottedline
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The Chart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;
+  &lt;code class=&quot;language-mermaid&quot;&gt;
+
+graph LR   
+    %% Shapes
+    id_start[Start Shape]
+    id_line[Standard Line]
+    id_thickline[Thick Line]
+    id_dottedline[Dotted Line]
+    %% Connections
+    id_start---id_line
+    id_start===id_thickline
+    id_start-.-id_dottedline
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;~~~&lt;/code&gt; is also an option which creates a connection but the line does not show. For some reason I can’t get this working on this site so this may be one of the eccentricities of mermaid chart verssions you may come accross.&lt;/p&gt;
+
+&lt;h3 id=&quot;arrow-type&quot;&gt;Arrow Type&lt;/h3&gt;
+&lt;p&gt;As the example above shows you can have a line without arrow shapes at the end. The below is an example of the available arrow shapes and how to use them&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flowchart LR
+    %% Shapes
+    id_arrowright[Arrow Right]
+    id_arrowrightend[Arrow Right]
+    id_arrowboth[Arrow Both]
+    id_arrowbothend[Arrow Both]
+    id_crossboth[Cross Both]
+    id_crossbothend[Cross Both]
+    id_circleboth[Circle Both]
+    id_circlebothend[Circle Both]
+    
+    %% Connections
+    id_arrowright ---&amp;gt; id_arrowrightend
+    id_arrowboth &amp;lt;---&amp;gt; id_arrowbothend
+    id_crossboth x---x id_crossbothend
+    id_circleboth o---o id_circlebothend
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The Chart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;
+  &lt;code class=&quot;language-mermaid&quot;&gt;
+
+graph LR
+    %% Shapes
+    id_arrowright[Arrow Right]
+    id_arrowrightend[Arrow Right]
+    id_arrowboth[Arrow Both]
+    id_arrowbothend[Arrow Both]
+    id_crossboth[Cross Both]
+    id_crossbothend[Cross Both]
+    id_circleboth[Circle Both]
+    id_circlebothend[Circle Both]
+    
+    %% Connections
+    id_arrowright ---&amp;gt; id_arrowrightend
+    id_arrowboth &amp;lt;---&amp;gt; id_arrowbothend
+    id_crossboth x---x id_crossbothend
+    id_circleboth o---o id_circlebothend
+
+&lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;line-length&quot;&gt;Line Length&lt;/h3&gt;
+&lt;p&gt;A very useful feature if you are wanting to add emphasis or re-arrange your chart to make reading easier is the line length feature.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flowchart TB
+    %% Shapes
+    id_three[Three Length]
+    id_threeend[Three Length]
+    id_four[Four Length]
+    id_fourend[Four Length]
+    id_five[Five Length]
+    id_fiveend[Five Length]
+    id_six[Six Length]
+    id_sixend[Six Length]
+
+    %% Connections
+    id_three --- id_threeend
+    id_four ---- id_fourend
+    id_five ----- id_fiveend
+    id_six ------ id_sixend
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The Chart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;
+  &lt;code class=&quot;language-mermaid&quot;&gt;
+graph TB
+    %% Shapes
+    id_three[Three Length]
+    id_threeend[Three Length]
+    id_four[Four Length]
+    id_fourend[Four Length]
+    id_five[Five Length]
+    id_fiveend[Five Length]
+    id_six[Six Length]
+    id_sixend[Six Length]
+
+    %% Connections
+    id_three --- id_threeend
+    id_four ---- id_fourend
+    id_five ----- id_fiveend
+    id_six ------ id_sixend
+
+    &lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;Here is a more practical example of how this can be helpful.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flowchart TB
+    %% Shapes
+    id_decision{A, B or C}
+    id_a[Process A]
+    id_aend[Next A]
+    id_b[Process B]
+    id_bend[Next B]
+    id_c[Process C]
+    id_cend[Next C]
+
+    %% Connections
+    id_decision ---&amp;gt; id_a
+    id_decision ----&amp;gt; id_b
+    id_decision -----&amp;gt; id_c
+    id_a ---&amp;gt; id_aend
+    id_b ---&amp;gt; id_bend
+    id_c ---&amp;gt; id_cend
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The Chart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;
+  &lt;code class=&quot;language-mermaid&quot;&gt;
+graph TB
+    %% Shapes
+    id_decision{A, B or C}
+    id_a[Process A]
+    id_aend[Next A]
+    id_b[Process B]
+    id_bend[Next B]
+    id_c[Process C]
+    id_cend[Next C]
+
+    %% Connections
+    id_decision ---&amp;gt; id_a
+    id_decision ----&amp;gt; id_b
+    id_decision -----&amp;gt; id_c
+    id_a ---&amp;gt; id_aend
+    id_b ---&amp;gt; id_bend
+    id_c ---&amp;gt; id_cend
+
+    &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h2 id=&quot;styling-elements&quot;&gt;Styling Elements&lt;/h2&gt;
+&lt;h3 id=&quot;line-shape&quot;&gt;Line Shape&lt;/h3&gt;
+&lt;p&gt;This feature allows for various line type selections. From experience &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;stepAfter&lt;/code&gt; is the only one I have found useful as it matches the style people are used to from Visio but there are other styles that can be experimented with: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;basis, bumpX, bumpY, cardinal, catmullRom, linear, monotoneX, monotoneY, natural, step, stepAfter, and stepBefore&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;%% This line needs to be added before your chart code
+%%{ init: { &apos;flowchart&apos;: { &apos;curve&apos;: &apos;stepAfter&apos; } } }%%
+flowchart TB
+    %% Shapes
+    id_decision{A or B}
+    id_a[Process A]
+    id_b[Process B]
+
+    %% Connections
+    id_decision ---&amp;gt; id_a
+    id_decision ---&amp;gt; id_b
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The Chart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;
+  &lt;code class=&quot;language-mermaid&quot;&gt;
+%%{ init: { &apos;flowchart&apos;: { &apos;curve&apos;: &apos;stepAfter&apos; } } }%%
+graph TB
+    %% Shapes
+    id_decision{A or B}
+    id_a[Process A]
+    id_b[Process B]
+
+    %% Connections
+    id_decision ---&amp;gt; id_a
+    id_decision ---&amp;gt; id_b
+
+    &lt;/code&gt;
+&lt;/pre&gt;
+
+&lt;h3 id=&quot;style-shapes&quot;&gt;Style Shapes&lt;/h3&gt;
+&lt;p&gt;You can add styling to a shape using the syntax &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;style [shape_id] [element]:[value]&lt;/code&gt; this is just like in line styling in HTML if you are familiar with that. Again using &lt;a href=&quot;https://www.mermaidchart.com/play&quot;&gt;mermaid playground&lt;/a&gt; can be helpful to see how styling works and what options there are.&lt;/p&gt;
+
+&lt;p&gt;One thing you may need to keep in mind with altering the style of shapes is that not all users will see charts the same way as you. If you are like me and are in Dark Mode everywhere keep in mind that the format will need to work for users who’s default is light mode. Basically if you set a background colour to black it is worth setting the text colour to white because although that is your default in dark mode in light mode the default is black and your text will not be visible for some users.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;flowchart LR
+    %% Shapes
+    id_standard[No Styling]
+    id_background[Background is custom]
+    id_text[Text is custom]
+    id_border[Border is custom]
+    id_all[Lots of custom]
+    
+    %%style
+    style id_background fill:#FF6D00
+    style id_text color:#D50000
+    style id_border stroke:#AA00FF
+    style id_all color:#000000,fill:#00C853,stroke:#D50000,stroke-width:4px,stroke-dasharray: 5
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The Chart&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;
+  &lt;code class=&quot;language-mermaid&quot;&gt;
+
+graph LR
+    %% Shapes
+    id_standard[No Styling]
+    id_background[Background is custom]
+    id_text[Text is custom]
+    id_border[Border is custom]
+    id_all[Lots of custom]
+    %%style
+    style id_background fill:#FF6D00
+    style id_text color:#D50000
+    style id_border stroke:#AA00FF
+    style id_all color:#000000,fill:#00C853,stroke:#D50000,stroke-width:4px,stroke-dasharray: 5
+&lt;/code&gt;
+&lt;/pre&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Data Architecture" /><category term="DevOps" /><category term="Documentation" /><category term="Mermaid" /><summary type="html">How to reformat Mermaid Charts</summary></entry><entry><title type="html">Power Query Handling Dupes</title><link href="http://localhost:4000/blog/PowerQuery-Dedupe/" rel="alternate" type="text/html" title="Power Query Handling Dupes" /><published>2025-06-21T00:00:00+01:00</published><updated>2025-06-21T00:00:00+01:00</updated><id>http://localhost:4000/blog/PowerQuery-Dedupe</id><content type="html" xml:base="http://localhost:4000/blog/PowerQuery-Dedupe/">&lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;This is not the greatest song in the world, no. This is just a tribute. Couldn’t remember the greatest song in the world, no. This is a tribute&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -337,7 +593,7 @@ tri_recursion(6)
 
 &lt;hr /&gt;
 
-&lt;p&gt;One thing I have found is that you have to specify that data labels be in speach marks or the result will usually not work but this is pretty amazing!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Data Engineering" /><category term="Data Architecture" /><category term="DevOps" /><summary type="html">A quick overview of how I use mermaid charts</summary></entry><entry><title type="html">Medallion Model</title><link href="http://localhost:4000/blog/Medallion-Model/" rel="alternate" type="text/html" title="Medallion Model" /><published>2024-06-24T00:00:00+01:00</published><updated>2024-06-24T00:00:00+01:00</updated><id>http://localhost:4000/blog/Medallion-Model</id><content type="html" xml:base="http://localhost:4000/blog/Medallion-Model/">&lt;blockquote&gt;
+&lt;p&gt;One thing I have found is that you have to specify that data labels be in speach marks or the result will usually not work but this is pretty amazing!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Data Architecture" /><category term="DevOps" /><category term="Documentation" /><category term="Mermaid" /><summary type="html">A quick overview of how I use mermaid charts</summary></entry><entry><title type="html">Medallion Model</title><link href="http://localhost:4000/blog/Medallion-Model/" rel="alternate" type="text/html" title="Medallion Model" /><published>2024-06-24T00:00:00+01:00</published><updated>2024-06-24T00:00:00+01:00</updated><id>http://localhost:4000/blog/Medallion-Model</id><content type="html" xml:base="http://localhost:4000/blog/Medallion-Model/">&lt;blockquote&gt;
   &lt;p&gt;&lt;strong&gt;Oh, the noodle analogy. You guys are gonna love this.&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -521,43 +777,4 @@ This is an quick example that I have created using the line chart option and ove
 This example is really quite basic and adapted from some of the above. I think I have seen something similar in other custom visuals but this is quite a simple way of adding custom text, icon or image labels to a column chart (or bar chart).&lt;/p&gt;
 
 &lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;I hope this has been helpful and given some ideas for the kinds of things that you can do with the infographic designer custom visual. The visual is defiantly not the most polished or dynamic custom visual available but I think it has some really powerful functionality and allows a degree of customization that is very cool.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Power BI" /><category term="Infographic Designer" /><category term="Advanced Visual" /><summary type="html">Resources and experience of using the Infographic Designer custom visual in Power BI</summary></entry><entry><title type="html">Creating my New Blog!</title><link href="http://localhost:4000/news/My-New-Blog/" rel="alternate" type="text/html" title="Creating my New Blog!" /><published>2021-11-12T00:00:00+00:00</published><updated>2021-11-27T00:00:00+00:00</updated><id>http://localhost:4000/news/My-New-Blog</id><content type="html" xml:base="http://localhost:4000/news/My-New-Blog/">&lt;blockquote&gt;
-  &lt;p&gt;“When Alexander saw the breadth of his domain, he wept, for there were no more worlds to conquer”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It has been a few weeks since my first commit on the .io github repo for this site and it has been a really interesting learning experience which I would highly recommend… assuming that you already have quite a good grasp of HTML.&lt;/p&gt;
-
-&lt;h3 id=&quot;github-pages&quot;&gt;Github Pages&lt;/h3&gt;
-&lt;p&gt;I can’t remember exactly what it was that brought &lt;a href=&quot;https://docs.github.com/en/pages/quickstart&quot;&gt;GitHub&lt;/a&gt; Pages to my attention. I did not know that this was a feature offered and considering how powerful this is I am amazed it is completely free!&lt;/p&gt;
-
-&lt;p&gt;The only requirement for standard Git Hub users is that your repo for the site that you build has to be public, you can just enable Git Hub pages in the repo settings and with the &lt;a href=&quot;https://docs.github.com/en/pages/quickstart&quot;&gt;quick start guide&lt;/a&gt; you can get a basic blog or site spun up in a few min.&lt;/p&gt;
-
-&lt;p&gt;For a standard site you could write everything on GitHub online and you can choose from some of the standard themes available on github.
-&lt;img src=&quot;https://docs.github.com/assets/images/help/pages/select-theme.png&quot; alt=&quot;image-center&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This is pretty amazing as a start. The default URL will be &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io/[reponame]&lt;/code&gt; which is useful if you want multiple sites from multiple repos but what about if you want a landing page that is just &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt;? Well that is pretty simple - if you call your repo &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt; this sets the pages url to be just your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[username].github.io&lt;/code&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;jekyll--ruby--vs-code&quot;&gt;Jekyll &amp;amp; Ruby &amp;amp; VS Code&lt;/h3&gt;
-&lt;p&gt;While the out of the box pages functionality is great I wanted something more. Pages can still support other Jekyll themes and functionality that is published to your pages repo but you need to do that from your PC. In my case I am using VS code and GIT to connect to the repo from my Ubuntu laptop and installed the &lt;a href=&quot;https://jekyllrb.com/docs/installation/ubuntu/#install-dependencies&quot;&gt;Ruby and Jekyll dependencies&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Before starting the final site I had a go at creating a clean install based on the following this &lt;a href=&quot;https://www.youtube.com/watch?v=T1itpPvFWHI&amp;amp;list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB&quot;&gt;youtube guide&lt;/a&gt; to learn the fundamentals of Jekyll.&lt;/p&gt;
-
-&lt;p&gt;Once I had the basics I started to look at options in terms of &lt;a href=&quot;https://github.com/topics/jekyll-theme&quot;&gt;themes&lt;/a&gt;. One that looks really good was &lt;a href=&quot;https://raviriley.github.io/agency-jekyll-theme-starter/&quot;&gt;the agency theme&lt;/a&gt; which I really like the look of but because I wanted to do a combined Portfolio and Blog I needed a theme that worked for both of those uses.&lt;/p&gt;
-
-&lt;h3 id=&quot;minimal-mistakes&quot;&gt;Minimal Mistakes&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot;&gt;Minimal Mistakes&lt;/a&gt; is a really popular theme that includes a lot of page styles and theme options. The documentation is also very good and it was very easy to get started and customise fom the &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes&quot;&gt;github repo&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://mmistakes.github.io/minimal-mistakes/assets/images/dark-skin-post.png&quot; alt=&quot;image-center&quot; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;customisation&quot;&gt;Customisation&lt;/h3&gt;
-
-&lt;p&gt;I did end up messing around in the templates to customise the theme a little and going quite deep into the &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/configuration/&quot;&gt;configuration&lt;/a&gt;. I should probably have done that in a forked repo that I could customise but instead I brought the code into the site repo to edit which means that it is a bit of a mess… but then I am still trying to figure stuff out.&lt;/p&gt;
-
-&lt;p&gt;Another great thing about minimal mistakes is that it is very popular so there is quite a bit of guidance available in issues etc. One example is finding &lt;a href=&quot;https://github.com/mmistakes/minimal-mistakes/issues/490&quot;&gt;this issue&lt;/a&gt; explaining how I could edit the header to make it fixed at the top of each page.&lt;/p&gt;
-
-&lt;h3 id=&quot;take-aways&quot;&gt;Take Aways&lt;/h3&gt;
-
-&lt;p&gt;I have really enjoyed learning to use Jekyll and building the site so far. It defiantly takes work and effort to get to grips with but the results are pretty immediate and rewarding. Knowing some core HTML will definitely be helpful to getting into customisation and more advanced functionality.&lt;/p&gt;
-
-&lt;p&gt;Of course one of the key positives is that GitHub pages are completely free as is the theme and functionality I am using which is amazing!&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="News" /><category term="Jekyll" /><category term="Ruby" /><category term="GitHub" /><summary type="html">Update on my new blog and portfolio using Jekyll and GitHub</summary></entry></feed>
+&lt;p&gt;I hope this has been helpful and given some ideas for the kinds of things that you can do with the infographic designer custom visual. The visual is defiantly not the most polished or dynamic custom visual available but I think it has some really powerful functionality and allows a degree of customization that is very cool.&lt;/p&gt;</content><author><name>Dean Robinson</name></author><category term="Blog" /><category term="Power BI" /><category term="Infographic Designer" /><category term="Advanced Visual" /><summary type="html">Resources and experience of using the Infographic Designer custom visual in Power BI</summary></entry></feed>

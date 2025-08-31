@@ -18,7 +18,7 @@ header:
   # Header 1876x500
   image: /assets/images/posts/2025-06-21-Header.webp
   image_description: "Circled Data"
-  caption: "Photo credit: [**RDNE Stock project*](https://www.pexels.com/@rdne/)"
+  caption: "Photo credit: [**RDNE Stock project**](https://www.pexels.com/@rdne/)"
 toc: false
 toc_label: "On this page"
 toc_icon: "cog"

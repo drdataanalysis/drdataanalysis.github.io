@@ -79,7 +79,7 @@ var store = [{
       },{
         "title": "Using Mermaid Charts",
         "excerpt":"I don’t see how a world that makes such wonderful things could be bad. What are Mermaid Charts? Mermaid charts are a fantastic free visualization tool built in JS to and designed to work with markdown. The charts are text based so you type what you want to visualize and...","categories": ["Blog"],
-        "tags": ["Data Engineering","Data Architecture","DevOps"],
+        "tags": ["Data Architecture","DevOps","Documentation","Mermaid"],
         "url": "/blog/Mermaid/",
         "teaser": "/assets/images/posts/2025-02-28-Teaser.webp"
       },{
@@ -94,4 +94,10 @@ var store = [{
         "tags": ["Fabric","Dataflow Gen2","Power BI","Power Query"],
         "url": "/blog/PowerQuery-Dedupe/",
         "teaser": "/assets/images/posts/2025-06-21-Teaser.webp"
+      },{
+        "title": "Styling Mermaid Charts",
+        "excerpt":"You Got Your Own Style, Now Let It Shine Through And Remember No Matter What, You’ve Got To Be You. Please Note In this post I am going to be using the Mermaid markdown approach I have developed and described in my previous post about using Mermaid Charts. The styling...","categories": ["Blog"],
+        "tags": ["Data Architecture","DevOps","Documentation","Mermaid"],
+        "url": "/blog/Mermaid-Style/",
+        "teaser": "/assets/images/posts/2025-08-31-Teaser.webp"
       }]
