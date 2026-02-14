@@ -31,10 +31,10 @@ You can find full details of my roles and the organisations I have worked for on
 `Big Science Fiction fan`
 <br>
 <i class="fas fa-gamepad" aria-hidden="true"></i>
-`Steamdeck player and minecraft obsessive`
+`Steamdeck fan and minecraft obsessive`
 <br>
 <i class="fas fa-guitar" aria-hidden="true"></i>
-`Mess around on Ukele, Banjo and Guitar`
+`Mess around on Concertina, Ukulele, Banjo and Guitar`
 <br>
 <i class="fas fa-record-vinyl" aria-hidden="true"></i>
-`Slowly expanding vinal collection`
+`Slowly expanding vinyl collection`

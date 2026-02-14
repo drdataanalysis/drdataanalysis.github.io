@@ -20,22 +20,31 @@ feature_row:
   - image_path: /assets/images/team.webp
     alt: "placeholder image 1"
     title: "Experienced Manager"
-    excerpt: "I have lead high performance data teams supporting major change initiatives since **2015**. I am immensely proud of the amazing work we have delivered and our collaborative culture."
+    excerpt: "I lead high performance data teams supporting major change initiatives for **10 years** at a large UK Charity. I am immensely proud of the amazing work we delivered and bring that experience to my new role as a consultant. "
   - image_path: /assets/images/experience.webp
     alt: "placeholder image 2"
     title: "Skilled Data Professional"
-    excerpt: "Nearly 15 years of experience working to unlock value from data and adopting modern and scalable tools like **Azure Synapse Analytics** and **Power BI**."
+    excerpt: "Over 15 years of experience working to unlock value from data and adopting modern and scalable tools like **Microsoft Fabric** and **Azure Synapse Analytics**."
   - image_path: /assets/images/developing.webp
     title: "Always Learning"
-    excerpt: "In the past few years I have been expanding my use of **Python** and am now using **pyspark** and developing my skills around **Delta Lake House**."
+    alt: "Person learning and developing skills"
+    excerpt: "I have **Microsoft Data Certifications** and looking at **TOGAF** as a area to further develop my Architecture skills."
     url: "/about"
     btn_label: "Click here to see more..."
     btn_class: "btn--inverse"
+feature_row_fabric:
+  - image_path: "/assets/images/Microsoft.webp"
+    alt: "Microsoft Logo"
+    title: "Microsoft Fabric"
+    excerpt: '<h3>I have been working with Microsoft Fabric since 2024 and working on a bunch of customization, standards and use cases.</h3><h1> 💻</h1>'
+    url: "/tags/fabric/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
 feature_row_delta:
   - image_path: "/assets/images/delta.webp"
-    alt: "Whirlpool of Books"
-    title: "Delta Lakehouse Architecture and Engineering"
-    excerpt: '<h3>I am currently expanding my use and knoweldge of Delta and unlocking the power of the Delta Lakehouse model.</h3><h1> 🏗️</h1>'
+    alt: "Whiteboard"
+    title: "Lakehouse Architecture and Engineering"
+    excerpt: '<h3>I am obsessed with Delta and have been using it since long before Fabric.</h3><h1> 🏗️</h1>'
     url: "/tags/delta/"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -76,7 +85,7 @@ feature_row_report-builder:
 </td>
 <td style="width: 90%">
 <h2>Hi - I'm Dean Robinson</h2>
-<br>I am a Data Architect and Engineer with a background in Data Analysis and nearly 15 years experience of working with data. I have a more detailed <a href="/about">about page</a> if you would like to know more but here are the highlights 🙂
+<br>I am a Data Solution Architect with a background in Data Analysis and over 15 years experience of working with data. I have a more detailed <a href="/about">about page</a> if you would like to know more but here are the highlights 🙂
 </td>
 </tr>
 <tr style="height: 10em">
@@ -88,6 +97,11 @@ feature_row_report-builder:
 <br>
 ## My Latest Projects
 <table style="width: 100%; margin-left: auto; margin-right: auto;">
+<tr>
+<td>
+{% include feature_row id="feature_row_fabric" type="center" %}
+</td>
+</tr>
 <tr>
 <td>
 {% include feature_row id="feature_row_delta" type="center" %}
